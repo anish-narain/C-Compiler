@@ -1,0 +1,2 @@
+Compiling: compiler_tests/array/index_constant.c
+Compiled to: ./bin/output/compiler_tests_array_index_constant.s

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Integration test">
+<testcase name="compiler_tests/_example/example.c">
+</testcase>
+<testcase name="compiler_tests/array/declare_global.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/array/declare_local.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/array/index_constant.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/array/index_expression.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/array/index_variable.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/control_flow/for_multiple.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/control_flow/for_one.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/control_flow/for_zero_v1.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/control_flow/for_zero_v2.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/control_flow/if_else_false.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/control_flow/if_else_true.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/control_flow/if_false.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/control_flow/if_true.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/control_flow/sequence.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/control_flow/while_multiple.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/control_flow/while_once.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/control_flow/while_zero.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/default/test_ADD0.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/default/test_ADD1.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/default/test_CALL.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/default/test_LOCAL.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_default_test_LOCAL.linker.stderr.log and ./bin/output/compiler_tests_default_test_LOCAL.linker.stdout.log">Fail: see ./bin/output/compiler_tests_default_test_LOCAL.linker.stderr.log and ./bin/output/compiler_tests_default_test_LOCAL.linker.stdout.log</error>
+</testcase>
+<testcase name="compiler_tests/default/test_RETURN.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/float/add_double.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/float/add.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/float/add_mul.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/float/mul_add.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/float/mul_double.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/float/mul.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/float/pow.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/functions/call_constant_external.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/functions/call_constant_internal.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/functions/call_five_args_external.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/functions/call_five_args_internal.c">

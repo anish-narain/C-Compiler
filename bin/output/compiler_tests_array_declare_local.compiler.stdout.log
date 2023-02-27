@@ -1,0 +1,2 @@
+Compiling: compiler_tests/array/declare_local.c
+Compiled to: ./bin/output/compiler_tests_array_declare_local.s
