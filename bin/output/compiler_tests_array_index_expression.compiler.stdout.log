@@ -1,2 +1,5 @@
+        Function Definition [
+intf          Integer = 8
+        ]
 Compiling: compiler_tests/array/index_expression.c
 Compiled to: ./bin/output/compiler_tests_array_index_expression.s
