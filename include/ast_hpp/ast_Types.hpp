@@ -22,6 +22,9 @@ public:
 
     std::string type;
 
+    //Code gen
+    void RISCOutput(std::ostream &dst, int destReg) const override;
+
 };
 
 #endif

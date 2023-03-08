@@ -1,8 +1,10 @@
-.text
 .globl f
-
 f:
-addi  t0, zero, 0
-addi  t0, t0,   5
-add   a0, zero, t0
-ret
+addi    sp,sp,-16
+sw      s0,12(sp)
+addi    s0,sp,16
+li a5,10
+mv      a0,a5
+lw      s0,12(sp)
+addi    sp,sp,16
+jr      ra

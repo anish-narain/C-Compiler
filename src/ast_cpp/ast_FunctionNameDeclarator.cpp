@@ -18,3 +18,9 @@ void Function_Name_Declarator::print(std::ostream &dst, std::string indent) cons
   
 }
 
+void Function_Name_Declarator::RISCOutput(std::ostream &dst, int destReg) const
+{
+  dst << ".globl "<< id << std::endl; // will need to add parameters 
+  dst << id << ":" << std::endl; // will need to add parameters 
+}
+

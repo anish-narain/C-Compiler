@@ -20,3 +20,8 @@ Base::~Base() // Destructor
 void Base::print(std::ostream &dst, std::string indent) const{
   dst << indent << "Base Class Reached. ERROR!!!" << std::endl;
 }
+
+void Base::RISCOutput(std::ostream &dst, int destReg) const
+{
+  dst << "foof" << std::endl;
+}

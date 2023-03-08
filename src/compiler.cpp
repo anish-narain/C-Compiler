@@ -33,6 +33,9 @@ int main(int argc, char **argv)
     const Base *ast=parseAST(sourcePath);
     ast->print(std::cout, "        ");
 
+    //ast->RISCOutput(std::cout, 1);
+
+
     // TODO: uncomment the below lines if you're using Flex/Bison.
     // This configures Flex to look at sourcePath instead of
     // reading from stdin.
@@ -47,9 +50,11 @@ int main(int argc, char **argv)
     std::ofstream output;
     output.open(outputPath, std::ios::trunc);
 
+    std::cout << std::endl;
     // Compile the input
     std::cout << "Compiling: " << sourcePath << std::endl;
-    compile(output);
+   // compile(output);
+    ast->RISCOutput(output, 1);
     std::cout << "Compiled to: " << outputPath << std::endl;
 
     output.close();

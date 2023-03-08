@@ -22,3 +22,16 @@ void Function_Definition::print(std::ostream &dst, std::string indent) const
   branchList[2]->print(dst, indent+"  ");
   dst << indent << "]" << std::endl;
 }
+
+void Function_Definition::RISCOutput(std::ostream &dst, int destReg) const
+{
+  branchList[1]->RISCOutput(dst, destReg);
+  dst << "addi    sp,sp,-16" << std::endl;
+  dst << "sw      s0,12(sp)" << std::endl;
+  dst << "addi    s0,sp,16" << std::endl;
+  branchList[2]->RISCOutput(dst, destReg);
+  dst << "mv      a0,a5" << std::endl;
+  dst << "lw      s0,12(sp)" << std::endl;
+  dst << "addi    sp,sp,16" << std::endl;
+  dst << "jr      ra" << std::endl;
+}

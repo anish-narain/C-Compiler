@@ -28,6 +28,9 @@ public:
 
   // Destructor
   virtual ~Base();
+  
+  //Code gen
+  virtual void RISCOutput(std::ostream &dst, int destReg) const;
 
 };
 

@@ -21,3 +21,8 @@ void Return_Statement::print(std::ostream &dst, std::string indent) const
   branchList[0]->print(dst, indent+"  ");
   dst << indent << "]" << std::endl;
 }
+
+void Return_Statement::RISCOutput(std::ostream &dst, int destReg) const
+{
+  branchList[0]->RISCOutput(dst, destReg);
+}

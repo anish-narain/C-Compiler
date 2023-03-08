@@ -20,6 +20,9 @@ public:
     //Printing
     virtual void print(std::ostream &dst, std::string indent) const override;
 
+   //Code gen
+    void RISCOutput(std::ostream &dst, int destReg) const override;
+
 
 };
 

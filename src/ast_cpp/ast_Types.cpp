@@ -14,3 +14,6 @@ void Types::print(std::ostream &dst, std::string indent) const
     dst << "int";
   }
 }
+
+void Types::RISCOutput(std::ostream &dst, int destReg) const
+{}
