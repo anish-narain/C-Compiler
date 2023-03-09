@@ -1,2 +1,8 @@
-        Function Definition [
-intf          Return: [
+ Function Definition [
+   int   
+     IDENTIFIER f
+   Function Parameters [
+       int       
+       IDENTIFIER a
+   ]
+   Return: [

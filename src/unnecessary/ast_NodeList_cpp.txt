@@ -1,0 +1,25 @@
+#include "ast_hpp/ast_NodeList.hpp"
+
+// Constructors
+NodeList::NodeList(std::vector<BasePtr> nodes)
+{
+  branchList = nodes;
+}
+
+// Destructor
+NodeList::~NodeList()
+{
+  for(unsigned i = 0; i < branchList.size(); i++){
+    delete branchList[i];
+  }
+}
+
+// printing
+void NodeList::print(std::ostream &dst, std::string indent) const
+{
+  dst << indent << "NodeList [" << std::endl;
+  for(unsigned i = 0; i < branchList.size(); i++){
+    branchList[i]->print(dst, indent+"  ");
+  }
+  dst << indent << "]" << std::endl;
+}

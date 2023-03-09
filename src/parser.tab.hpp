@@ -203,7 +203,7 @@ union YYSTYPE
 #line 14 "src/parser.y"
 
   BasePtr base; //will come in our version of ast.hpp
-  //VectPtr vect; will come in our version of "List.hpp"
+  //VectPtr vect; //will come in our version of "List.hpp"
   int int_num;
   double float_num;
   std::string *string;

@@ -31,7 +31,7 @@ int main(int argc, char **argv)
     }
 
     const Base *ast=parseAST(sourcePath);
-    ast->print(std::cout, "        ");
+    ast->print(std::cout, " ");
 
     //ast->RISCOutput(std::cout, 1);
 

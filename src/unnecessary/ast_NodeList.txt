@@ -1,0 +1,25 @@
+#ifndef ast_nodeList_hpp
+#define ast_nodeList_hpp
+
+//#include "ast_BaseClass.hpp"
+
+class NodeList;
+typedef NodeList* NodeListPtr;
+
+class NodeList
+  : public Base
+{
+public:
+  // Constructors
+  NodeList(std::vector<BasePtr> nodes);
+  NodeList();
+
+  // Destructor
+  virtual ~NodeList();
+
+  // Visualising
+  virtual void print(std::ostream &dst, std::string indent) const override;
+
+};
+
+#endif

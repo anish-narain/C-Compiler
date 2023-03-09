@@ -11,7 +11,7 @@ Types::~Types()
 void Types::print(std::ostream &dst, std::string indent) const
 {
   if (type == "int"){
-    dst << "int";
+    dst << indent << "int" << indent << std::endl;
   }
 }
 

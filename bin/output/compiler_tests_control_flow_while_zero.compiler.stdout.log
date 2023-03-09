@@ -1,6 +1,8 @@
-        Function Definition [
-intf          Integer = 0
-        ]
+ Function Definition [
+   int   
+   IDENTIFIER f
+   Integer : 0
+ ]
 
 Compiling: compiler_tests/control_flow/while_zero.c
 Compiled to: ./bin/output/compiler_tests_control_flow_while_zero.s

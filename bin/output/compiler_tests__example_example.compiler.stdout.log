@@ -1,8 +1,10 @@
-        Function Definition [
-intf          Return: [
-            Integer = 5
-          ]
-        ]
+ Function Definition [
+   int   
+   IDENTIFIER f
+   Return: [
+     Integer : 5
+   ]
+ ]
 
 Compiling: compiler_tests/_example/example.c
 Compiled to: ./bin/output/compiler_tests__example_example.s

@@ -13,8 +13,8 @@ Name_Declarator::~Name_Declarator()
 //Print
 void Name_Declarator::print(std::ostream &dst, std::string indent) const
 {
-  
-    dst << id;
+
+  dst << indent << "IDENTIFIER " << id << std::endl;
   
 }
 

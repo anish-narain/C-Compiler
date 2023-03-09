@@ -13,7 +13,7 @@
 
 %union{
   BasePtr base; //will come in our version of ast.hpp
-  //VectPtr vect; will come in our version of "List.hpp"
+  //VectPtr vect; //will come in our version of "List.hpp"
   int int_num;
   double float_num;
   std::string *string;
@@ -56,8 +56,8 @@
 
 %type <base> translation_unit declaration_list specifier_qualifier_list
 %type <base> struct_declaration_list struct_declarator_list enumerator_list
-%type <base> parameter_list argument_expression_list IDENTIFIER_list initializer_list
-%type <base> statement_list
+%type <base> argument_expression_list IDENTIFIER_list initializer_list
+%type <base> statement_list parameter_type_list parameter_list
 
 %type <int_num> T_INT
 %type <string> IDENTIFIER
@@ -103,7 +103,7 @@ direct_declarator
 	| '(' declarator ')'
 	| direct_declarator '[' constant_expression ']'
 	| direct_declarator '[' ']'
-	| direct_declarator '(' parameter_type_list ')'  //relevant
+	| direct_declarator '(' parameter_type_list ')' {$$ = new Function_Declarator_With_Param($1, $3);}//relevant
 	| direct_declarator '(' IDENTIFIER_list ')'
 	| direct_declarator '(' ')'{$$ = $1;} 
 	;
@@ -252,7 +252,7 @@ postfix_expression
 	;
 
 primary_expression
-	: IDENTIFIER
+	: IDENTIFIER {}
 	| CONSTANT  
 	| T_INT { $$ = new Int($1);}
 	| STRING_LITERAL
@@ -260,17 +260,17 @@ primary_expression
 	;
 
 parameter_type_list
-	: parameter_list //relevant
-	| parameter_list ',' ELLIPSIS
+	: parameter_list {$$ = $1;}//relevant
+	//| parameter_list ',' ELLIPSIS
 	;
 
 parameter_list
-	: parameter_declaration
-	| parameter_list ',' parameter_declaration //relevant
+	: parameter_declaration {$$ = $1;}
+	| parameter_list ',' parameter_declaration {$$ = new Param_List_Declarator($1, $3);}//relevant
 	;
 
 parameter_declaration
-	: declaration_specifiers declarator
+	: declaration_specifiers declarator {$$ = new Param_Declarator($1, $2);}
 	| declaration_specifiers abstract_declarator
 	| declaration_specifiers
 	;

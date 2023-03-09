@@ -1,6 +1,8 @@
-        Function Definition [
-intf          Integer = 1
-        ]
+ Function Definition [
+   int   
+   IDENTIFIER f
+   Integer : 1
+ ]
 
 Compiling: compiler_tests/control_flow/if_else_true.c
 Compiled to: ./bin/output/compiler_tests_control_flow_if_else_true.s

@@ -1,6 +1,6 @@
 chliteral.c: strings folder
 size of (2): types folder
-
+index.c, arithmetic.c: pointer folder
 
 cases: 
 12 in Integer
