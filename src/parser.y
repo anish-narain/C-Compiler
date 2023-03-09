@@ -99,13 +99,13 @@ declarator
 	;
 
 direct_declarator
-	: IDENTIFIER  {$$ = new Function_Name_Declarator(*$1); delete $1;} //relevant
+	: IDENTIFIER  {$$ = new Name_Declarator(*$1); delete $1;} //relevant
 	| '(' declarator ')'
 	| direct_declarator '[' constant_expression ']'
 	| direct_declarator '[' ']'
-	| direct_declarator '(' parameter_type_list ')' 
+	| direct_declarator '(' parameter_type_list ')'  //relevant
 	| direct_declarator '(' IDENTIFIER_list ')'
-	| direct_declarator '(' ')'{$$ = $1;} //relevant
+	| direct_declarator '(' ')'{$$ = $1;} 
 	;
 
 compound_statement
@@ -258,6 +258,22 @@ primary_expression
 	| STRING_LITERAL
 	| '(' expression ')'
 	;
+
+parameter_type_list
+	: parameter_list //relevant
+	| parameter_list ',' ELLIPSIS
+	;
+
+parameter_list
+	: parameter_declaration
+	| parameter_list ',' parameter_declaration //relevant
+	;
+
+parameter_declaration
+	: declaration_specifiers declarator
+	| declaration_specifiers abstract_declarator
+	| declaration_specifiers
+	;
 //=========================================================================
 declaration
 	: declaration_specifiers ';'
@@ -392,22 +408,6 @@ type_qualifier_list
 	| type_qualifier_list type_qualifier
 	;
 
-
-parameter_type_list
-	: parameter_list
-	| parameter_list ',' ELLIPSIS
-	;
-
-parameter_list
-	: parameter_declaration
-	| parameter_list ',' parameter_declaration
-	;
-
-parameter_declaration
-	: declaration_specifiers declarator
-	| declaration_specifiers abstract_declarator
-	| declaration_specifiers
-	;
 
 IDENTIFIER_list
 	: IDENTIFIER
