@@ -1,8 +1,8 @@
- Function Definition [
-   int   
-   IDENTIFIER f
-   Integer : 0
- ]
+  Function Definition [
+    TYPE: int    
+    IDENTIFIER f
+    Integer : 0
+  ]
 
 Compiling: compiler_tests/control_flow/if_false.c
 Compiled to: ./bin/output/compiler_tests_control_flow_if_false.s

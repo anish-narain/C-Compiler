@@ -1,10 +1,10 @@
- Function Definition [
-   int   
-     IDENTIFIER f
-   Function Parameters [
-         int         
-         IDENTIFIER a
-         int         
-         IDENTIFIER b
-   ]
-   Return: [
+  Function Definition [
+    TYPE: int    
+      IDENTIFIER f
+      Function Parameters [
+          TYPE: int          
+          IDENTIFIER a
+          TYPE: int          
+          IDENTIFIER b
+      ]
+    Return: [

@@ -1,8 +1,6 @@
- Function Definition [
-   int   
-     IDENTIFIER f
-   Function Parameters [
-       int       
-       IDENTIFIER a
-   ]
-   Return: [
+  Function Definition [
+    TYPE: int    
+      IDENTIFIER f
+        TYPE: int        
+        IDENTIFIER a
+    Return: [

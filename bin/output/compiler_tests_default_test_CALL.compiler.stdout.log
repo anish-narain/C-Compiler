@@ -1,4 +1,4 @@
- int 
+  TYPE: int  
 
 Compiling: compiler_tests/default/test_CALL.c
 Compiled to: ./bin/output/compiler_tests_default_test_CALL.s

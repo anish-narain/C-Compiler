@@ -15,8 +15,10 @@ Param_List_Declarator::~Param_List_Declarator()
 
 void Param_List_Declarator::print(std::ostream &dst, std::string indent) const
 {
+    dst << indent << "Function Parameters [" << std::endl;
     branchList[0]->print(dst, indent+"  ");
     branchList[1]->print(dst, indent+"  ");
+    dst << indent << "]" << std::endl;
 }
 
 void Param_List_Declarator::RISCOutput(std::ostream &dst, int destReg) const
