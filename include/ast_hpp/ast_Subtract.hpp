@@ -1,5 +1,5 @@
-#ifndef ast_Sub_hpp
-#define ast_Sub_hpp
+#ifndef ast_Subtract_hpp
+#define ast_Subtract_hpp
 #include <vector>
 #include <string>
 #include <iostream>
@@ -7,15 +7,15 @@
 #include <memory>
 #include "ast_BaseClass.hpp"
 
-class Sub
+class Subtract
  : public Base
 {
 public:
     //Constructor
-    Sub(BasePtr left, BasePtr right);
+    Subtract(BasePtr left, BasePtr right);
 
     //Destructor
-    virtual ~Sub();
+    virtual ~Subtract();
 
     //Printing
     virtual void print(std::ostream &dst, std::string indent) const override;

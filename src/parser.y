@@ -169,41 +169,41 @@ conditional_expression
 
 logical_or_expression
 	: logical_and_expression {$$ = $1;}
-	| logical_or_expression OR_OP logical_and_expression
+	| logical_or_expression OR_OP logical_and_expression {$$ = new LogicalOr($1, $3);}
 	;
 
 logical_and_expression
 	: inclusive_or_expression {$$ = $1;}
-	| logical_and_expression AND_OP inclusive_or_expression
+	| logical_and_expression AND_OP inclusive_or_expression {$$ = new LogicalAnd($1, $3);}
 	;
 
 inclusive_or_expression
 	: exclusive_or_expression {$$ = $1;}
-	| inclusive_or_expression '|' exclusive_or_expression
+	| inclusive_or_expression '|' exclusive_or_expression {$$ = new BitwiseOr($1, $3);}
 	;
 
 exclusive_or_expression
 	: and_expression {$$ = $1;}
-	| exclusive_or_expression '^' and_expression
+	| exclusive_or_expression '^' and_expression {$$ = new BitwiseXor($1, $3);}
 	;
 
 and_expression
-	: equality_expression {$$ = $1;}
-	| and_expression '&' equality_expression
+	: equality_expression {$$ = $1;} 
+	| and_expression '&' equality_expression  {$$ = new BitwiseAnd($1, $3);}
 	;
 
 equality_expression
 	: relational_expression {$$ = $1;}
-	| equality_expression EQ_OP relational_expression
+	| equality_expression EQ_OP relational_expression  {$$ = new Equal($1, $3);}
 	| equality_expression NE_OP relational_expression
 	;
 
 relational_expression
 	: shift_expression {$$ = $1;}
-	| relational_expression '<' shift_expression
-	| relational_expression '>' shift_expression
-	| relational_expression LE_OP shift_expression
-	| relational_expression GE_OP shift_expression
+	| relational_expression '<' shift_expression {$$ = new LessThan($1, $3);}
+	| relational_expression '>' shift_expression {$$ = new GreaterThan($1, $3);}
+	| relational_expression LE_OP shift_expression {$$ = new LessThanEqual($1, $3);}
+	| relational_expression GE_OP shift_expression {$$ = new GreaterThanEqual($1, $3);}
 	;
 
 shift_expression 
@@ -215,13 +215,13 @@ shift_expression
 additive_expression
 	: multiplicative_expression {$$ = $1;}
 	| additive_expression '+' multiplicative_expression {$$ = new Add($1, $3);}
-	| additive_expression '-' multiplicative_expression
+	| additive_expression '-' multiplicative_expression {$$ = new Subtract($1, $3);}
 	;
 
 multiplicative_expression
 	: cast_expression {$$ = $1;}
-	| multiplicative_expression '*' cast_expression
-	| multiplicative_expression '/' cast_expression
+	| multiplicative_expression '*' cast_expression {$$ = new Multiply($1, $3);}
+	| multiplicative_expression '/' cast_expression {$$ = new Divide($1, $3);}
 	| multiplicative_expression '%' cast_expression
 	;
 
@@ -252,7 +252,7 @@ postfix_expression
 	;
 
 primary_expression
-	: IDENTIFIER {$$ = new Identifier($1);}
+	: IDENTIFIER {$$ = new Identifier(*$1);}
 	| CONSTANT  
 	| T_INT { $$ = new Int($1);}
 	| STRING_LITERAL

@@ -4,3 +4,14 @@
         TYPE: int        
         IDENTIFIER a
     Return: [
+      Add Operation[
+      Left Operator
+        IDENTIFIER a
+      Right Operator
+        Integer : 10
+      ]
+    ]
+  ]
+
+Compiling: compiler_tests/default/test_ADD1.c
+Compiled to: ./bin/output/compiler_tests_default_test_ADD1.s

@@ -24,5 +24,5 @@ void GreaterThan::print(std::ostream &dst, std::string indent) const
   dst << indent << "]" << std::endl;
 }
 
-void Types::RISCOutput(std::ostream &dst, int destReg) const
+void GreaterThan::RISCOutput(std::ostream &dst, int destReg) const
 {}

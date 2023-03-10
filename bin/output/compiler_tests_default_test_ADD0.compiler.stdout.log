@@ -8,3 +8,14 @@
           IDENTIFIER b
       ]
     Return: [
+      Add Operation[
+      Left Operator
+        IDENTIFIER a
+      Right Operator
+        IDENTIFIER b
+      ]
+    ]
+  ]
+
+Compiling: compiler_tests/default/test_ADD0.c
+Compiled to: ./bin/output/compiler_tests_default_test_ADD0.s

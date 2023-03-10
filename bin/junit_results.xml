@@ -54,10 +54,10 @@
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/default/test_ADD0.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_default_test_ADD0.compiler.stderr.log and ./bin/output/compiler_tests_default_test_ADD0.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_default_test_ADD0.compiler.stderr.log and ./bin/output/compiler_tests_default_test_ADD0.compiler.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_default_test_ADD0.linker.stderr.log and ./bin/output/compiler_tests_default_test_ADD0.linker.stdout.log">Fail: see ./bin/output/compiler_tests_default_test_ADD0.linker.stderr.log and ./bin/output/compiler_tests_default_test_ADD0.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/default/test_ADD1.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_default_test_ADD1.compiler.stderr.log and ./bin/output/compiler_tests_default_test_ADD1.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_default_test_ADD1.compiler.stderr.log and ./bin/output/compiler_tests_default_test_ADD1.compiler.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_default_test_ADD1.linker.stderr.log and ./bin/output/compiler_tests_default_test_ADD1.linker.stdout.log">Fail: see ./bin/output/compiler_tests_default_test_ADD1.linker.stderr.log and ./bin/output/compiler_tests_default_test_ADD1.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/default/test_CALL.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_default_test_CALL.linker.stderr.log and ./bin/output/compiler_tests_default_test_CALL.linker.stdout.log">Fail: see ./bin/output/compiler_tests_default_test_CALL.linker.stderr.log and ./bin/output/compiler_tests_default_test_CALL.linker.stdout.log</error>
@@ -98,13 +98,13 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_five_args_external.linker.stderr.log and ./bin/output/compiler_tests_functions_call_five_args_external.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_five_args_external.linker.stderr.log and ./bin/output/compiler_tests_functions_call_five_args_external.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_five_args_internal.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_five_args_internal.compiler.stderr.log and ./bin/output/compiler_tests_functions_call_five_args_internal.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_five_args_internal.compiler.stderr.log and ./bin/output/compiler_tests_functions_call_five_args_internal.compiler.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_five_args_internal.linker.stderr.log and ./bin/output/compiler_tests_functions_call_five_args_internal.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_five_args_internal.linker.stderr.log and ./bin/output/compiler_tests_functions_call_five_args_internal.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_identity_external.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_identity_external.linker.stderr.log and ./bin/output/compiler_tests_functions_call_identity_external.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_identity_external.linker.stderr.log and ./bin/output/compiler_tests_functions_call_identity_external.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_identity_internal.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_identity_internal.compiler.stderr.log and ./bin/output/compiler_tests_functions_call_identity_internal.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_identity_internal.compiler.stderr.log and ./bin/output/compiler_tests_functions_call_identity_internal.compiler.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_identity_internal.linker.stderr.log and ./bin/output/compiler_tests_functions_call_identity_internal.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_identity_internal.linker.stderr.log and ./bin/output/compiler_tests_functions_call_identity_internal.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_mutual_recursive.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_mutual_recursive.linker.stderr.log and ./bin/output/compiler_tests_functions_call_mutual_recursive.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_mutual_recursive.linker.stderr.log and ./bin/output/compiler_tests_functions_call_mutual_recursive.linker.stdout.log</error>
@@ -116,40 +116,40 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_two_args_external.linker.stderr.log and ./bin/output/compiler_tests_functions_call_two_args_external.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_two_args_external.linker.stderr.log and ./bin/output/compiler_tests_functions_call_two_args_external.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_two_args_internal.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_two_args_internal.compiler.stderr.log and ./bin/output/compiler_tests_functions_call_two_args_internal.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_two_args_internal.compiler.stderr.log and ./bin/output/compiler_tests_functions_call_two_args_internal.compiler.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_two_args_internal.linker.stderr.log and ./bin/output/compiler_tests_functions_call_two_args_internal.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_two_args_internal.linker.stderr.log and ./bin/output/compiler_tests_functions_call_two_args_internal.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/add.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_add.compiler.stderr.log and ./bin/output/compiler_tests_integer_add.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_add.compiler.stderr.log and ./bin/output/compiler_tests_integer_add.compiler.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_add.linker.stderr.log and ./bin/output/compiler_tests_integer_add.linker.stdout.log">Fail: see ./bin/output/compiler_tests_integer_add.linker.stderr.log and ./bin/output/compiler_tests_integer_add.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/bitwise_and.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_bitwise_and.compiler.stderr.log and ./bin/output/compiler_tests_integer_bitwise_and.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_bitwise_and.compiler.stderr.log and ./bin/output/compiler_tests_integer_bitwise_and.compiler.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_bitwise_and.linker.stderr.log and ./bin/output/compiler_tests_integer_bitwise_and.linker.stdout.log">Fail: see ./bin/output/compiler_tests_integer_bitwise_and.linker.stderr.log and ./bin/output/compiler_tests_integer_bitwise_and.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/bitwise_or.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_integer_bitwise_or.linker.stderr.log and ./bin/output/compiler_tests_integer_bitwise_or.linker.stdout.log">Fail: see ./bin/output/compiler_tests_integer_bitwise_or.linker.stderr.log and ./bin/output/compiler_tests_integer_bitwise_or.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/bitwise_xor.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_bitwise_xor.compiler.stderr.log and ./bin/output/compiler_tests_integer_bitwise_xor.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_bitwise_xor.compiler.stderr.log and ./bin/output/compiler_tests_integer_bitwise_xor.compiler.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_bitwise_xor.linker.stderr.log and ./bin/output/compiler_tests_integer_bitwise_xor.linker.stdout.log">Fail: see ./bin/output/compiler_tests_integer_bitwise_xor.linker.stderr.log and ./bin/output/compiler_tests_integer_bitwise_xor.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/div.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_div.compiler.stderr.log and ./bin/output/compiler_tests_integer_div.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_div.compiler.stderr.log and ./bin/output/compiler_tests_integer_div.compiler.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_div.linker.stderr.log and ./bin/output/compiler_tests_integer_div.linker.stdout.log">Fail: see ./bin/output/compiler_tests_integer_div.linker.stderr.log and ./bin/output/compiler_tests_integer_div.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/equal.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_equal.compiler.stderr.log and ./bin/output/compiler_tests_integer_equal.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_equal.compiler.stderr.log and ./bin/output/compiler_tests_integer_equal.compiler.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_equal.linker.stderr.log and ./bin/output/compiler_tests_integer_equal.linker.stdout.log">Fail: see ./bin/output/compiler_tests_integer_equal.linker.stderr.log and ./bin/output/compiler_tests_integer_equal.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/less_than.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_less_than.compiler.stderr.log and ./bin/output/compiler_tests_integer_less_than.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_less_than.compiler.stderr.log and ./bin/output/compiler_tests_integer_less_than.compiler.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_less_than.linker.stderr.log and ./bin/output/compiler_tests_integer_less_than.linker.stdout.log">Fail: see ./bin/output/compiler_tests_integer_less_than.linker.stderr.log and ./bin/output/compiler_tests_integer_less_than.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/less_than_equal.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_integer_less_than_equal.linker.stderr.log and ./bin/output/compiler_tests_integer_less_than_equal.linker.stdout.log">Fail: see ./bin/output/compiler_tests_integer_less_than_equal.linker.stderr.log and ./bin/output/compiler_tests_integer_less_than_equal.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/logical_and.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_logical_and.compiler.stderr.log and ./bin/output/compiler_tests_integer_logical_and.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_logical_and.compiler.stderr.log and ./bin/output/compiler_tests_integer_logical_and.compiler.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_logical_and.linker.stderr.log and ./bin/output/compiler_tests_integer_logical_and.linker.stdout.log">Fail: see ./bin/output/compiler_tests_integer_logical_and.linker.stderr.log and ./bin/output/compiler_tests_integer_logical_and.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/logical_or.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_logical_or.compiler.stderr.log and ./bin/output/compiler_tests_integer_logical_or.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_logical_or.compiler.stderr.log and ./bin/output/compiler_tests_integer_logical_or.compiler.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_logical_or.linker.stderr.log and ./bin/output/compiler_tests_integer_logical_or.linker.stdout.log">Fail: see ./bin/output/compiler_tests_integer_logical_or.linker.stderr.log and ./bin/output/compiler_tests_integer_logical_or.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/mul.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_mul.compiler.stderr.log and ./bin/output/compiler_tests_integer_mul.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_mul.compiler.stderr.log and ./bin/output/compiler_tests_integer_mul.compiler.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_mul.linker.stderr.log and ./bin/output/compiler_tests_integer_mul.linker.stdout.log">Fail: see ./bin/output/compiler_tests_integer_mul.linker.stderr.log and ./bin/output/compiler_tests_integer_mul.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/sub.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_integer_sub.linker.stderr.log and ./bin/output/compiler_tests_integer_sub.linker.stdout.log">Fail: see ./bin/output/compiler_tests_integer_sub.linker.stderr.log and ./bin/output/compiler_tests_integer_sub.linker.stdout.log</error>
@@ -163,7 +163,7 @@
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/local_var/identity.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_local_var_identity.compiler.stderr.log and ./bin/output/compiler_tests_local_var_identity.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_local_var_identity.compiler.stderr.log and ./bin/output/compiler_tests_local_var_identity.compiler.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_local_var_identity.linker.stderr.log and ./bin/output/compiler_tests_local_var_identity.linker.stdout.log">Fail: see ./bin/output/compiler_tests_local_var_identity.linker.stderr.log and ./bin/output/compiler_tests_local_var_identity.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/local_var/return_constant.c">
 </testcase>
