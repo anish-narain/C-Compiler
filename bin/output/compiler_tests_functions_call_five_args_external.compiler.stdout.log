@@ -1,4 +1,23 @@
-  TYPE: int  
+    TYPE: int    
+      IDENTIFIER g
+      Function Parameters [
+        Function Parameters [
+          Function Parameters [
+            Function Parameters [
+                TYPE: int                
+                IDENTIFIER a
+                TYPE: int                
+                IDENTIFIER b
+            ]
+              TYPE: int              
+              IDENTIFIER c
+          ]
+            TYPE: int            
+            IDENTIFIER d
+        ]
+          TYPE: int          
+          IDENTIFIER e
+      ]
 
 Compiling: compiler_tests/functions/call_five_args_external.c
 Compiled to: ./bin/output/compiler_tests_functions_call_five_args_external.s

@@ -2,4 +2,15 @@
     TYPE: int    
     IDENTIFIER f
     Compound Statements [
-      TYPE: int      
+        TYPE: int        
+        IDENTIFIER x
+          TYPE: int          
+          IDENTIFIER x
+        Return: [
+          Integer : 19937
+        ]
+    ]
+  ]
+
+Compiling: compiler_tests/control_flow/for_zero_v2.c
+Compiled to: ./bin/output/compiler_tests_control_flow_for_zero_v2.s

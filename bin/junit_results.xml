@@ -21,13 +21,13 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_control_flow_for_multiple.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_for_multiple.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_control_flow_for_multiple.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_for_multiple.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/for_one.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_control_flow_for_one.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_for_one.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_control_flow_for_one.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_for_one.compiler.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/for_zero_v1.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_control_flow_for_zero_v1.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_for_zero_v1.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_control_flow_for_zero_v1.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_for_zero_v1.compiler.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/for_zero_v2.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_control_flow_for_zero_v2.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_for_zero_v2.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_control_flow_for_zero_v2.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_for_zero_v2.compiler.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/if_else_false.c">
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
@@ -241,7 +241,7 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_types_sizeof_char_inst.compiler.stderr.log and ./bin/output/compiler_tests_types_sizeof_char_inst.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_types_sizeof_char_inst.compiler.stderr.log and ./bin/output/compiler_tests_types_sizeof_char_inst.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/types/sizeof_int_inst.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_types_sizeof_int_inst.compiler.stderr.log and ./bin/output/compiler_tests_types_sizeof_int_inst.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_types_sizeof_int_inst.compiler.stderr.log and ./bin/output/compiler_tests_types_sizeof_int_inst.compiler.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/types/unsigned.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_types_unsigned.compiler.stderr.log and ./bin/output/compiler_tests_types_unsigned.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_types_unsigned.compiler.stderr.log and ./bin/output/compiler_tests_types_unsigned.compiler.stdout.log</error>

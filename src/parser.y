@@ -138,7 +138,7 @@ statement_list
 statement
 	: labeled_statement
 	| compound_statement
-	| expression_statement
+	| expression_statement {$$ = $1;}
 	| selection_statement
 	| iteration_statement
 	| jump_statement {$$ = $1;}//relevant
@@ -281,8 +281,8 @@ declaration_list
 	;
 //=========================================================================
 declaration
-	: declaration_specifiers ';'  
-	| declaration_specifiers init_declarator_list ';' {$$ = $1;}
+	: declaration_specifiers ';' 
+	| declaration_specifiers init_declarator_list ';' {$$ = new MultiDec($1, $2);}
 	;
 
 
@@ -462,7 +462,7 @@ labeled_statement
 
 expression_statement
 	: ';'
-	| expression ';'
+	| expression ';' {$$ = $1;}
 	;
 
 selection_statement

@@ -2,6 +2,8 @@
     TYPE: int    
     IDENTIFIER f
     Compound Statements [
-        TYPE: int        
-        TYPE: int        
+          TYPE: int          
+          IDENTIFIER x
+          TYPE: int          
+          IDENTIFIER y
           IDENTIFIER y
