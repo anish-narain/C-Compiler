@@ -1,5 +1,5 @@
-#ifndef ast_FunctionDefinition_hpp
-#define ast_FunctionDefinition_hpp
+#ifndef ast_Divide_hpp
+#define ast_Divide_hpp
 #include <vector>
 #include <string>
 #include <iostream>
@@ -7,15 +7,15 @@
 #include <memory>
 #include "ast_BaseClass.hpp"
 
-class Function_Definition
+class Divide
  : public Base
 {
 public:
     //Constructor
-    Function_Definition(BasePtr declaration_specifier, BasePtr declarator, BasePtr compound_statement);
+    Divide(BasePtr left, BasePtr right);
 
     //Destructor
-    virtual ~Function_Definition();
+    virtual ~Divide();
 
     //Printing
     virtual void print(std::ostream &dst, std::string indent) const override;

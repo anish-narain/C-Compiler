@@ -214,7 +214,7 @@ shift_expression
 
 additive_expression
 	: multiplicative_expression {$$ = $1;}
-	| additive_expression '+' multiplicative_expression
+	| additive_expression '+' multiplicative_expression {$$ = new Add($1, $3);}
 	| additive_expression '-' multiplicative_expression
 	;
 
@@ -252,7 +252,7 @@ postfix_expression
 	;
 
 primary_expression
-	: IDENTIFIER {}
+	: IDENTIFIER {$$ = new Identifier($1);}
 	| CONSTANT  
 	| T_INT { $$ = new Int($1);}
 	| STRING_LITERAL

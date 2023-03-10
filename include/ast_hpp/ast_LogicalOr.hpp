@@ -1,5 +1,5 @@
-#ifndef ast_FunctionDefinition_hpp
-#define ast_FunctionDefinition_hpp
+#ifndef ast_LogicalOr_hpp
+#define ast_LogicalOr_hpp
 #include <vector>
 #include <string>
 #include <iostream>
@@ -7,15 +7,15 @@
 #include <memory>
 #include "ast_BaseClass.hpp"
 
-class Function_Definition
+class LogicalOr
  : public Base
 {
 public:
     //Constructor
-    Function_Definition(BasePtr declaration_specifier, BasePtr declarator, BasePtr compound_statement);
+    LogicalOr(BasePtr left, BasePtr right);
 
     //Destructor
-    virtual ~Function_Definition();
+    virtual ~LogicalOr();
 
     //Printing
     virtual void print(std::ostream &dst, std::string indent) const override;

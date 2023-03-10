@@ -1,5 +1,5 @@
-#ifndef ast_FunctionDefinition_hpp
-#define ast_FunctionDefinition_hpp
+#ifndef ast_Identifier_hpp
+#define ast_Identifier_hpp
 #include <vector>
 #include <string>
 #include <iostream>
@@ -7,21 +7,24 @@
 #include <memory>
 #include "ast_BaseClass.hpp"
 
-class Function_Definition
+class Identifier
  : public Base
 {
 public:
     //Constructor
-    Function_Definition(BasePtr declaration_specifier, BasePtr declarator, BasePtr compound_statement);
+    Identifier(std::string IDENTIFIER);
+
+    std::string id;
 
     //Destructor
-    virtual ~Function_Definition();
+    virtual ~Identifier();
 
     //Printing
     virtual void print(std::ostream &dst, std::string indent) const override;
-    
+
     //Code gen
     void RISCOutput(std::ostream &dst, int destReg) const override;
+
 
 };
 

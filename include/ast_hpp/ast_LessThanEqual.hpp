@@ -1,5 +1,5 @@
-#ifndef ast_FunctionDefinition_hpp
-#define ast_FunctionDefinition_hpp
+#ifndef ast_LessThanEqual_hpp
+#define ast_LessThanEqual_hpp
 #include <vector>
 #include <string>
 #include <iostream>
@@ -7,15 +7,15 @@
 #include <memory>
 #include "ast_BaseClass.hpp"
 
-class Function_Definition
+class LessThanEqual
  : public Base
 {
 public:
     //Constructor
-    Function_Definition(BasePtr declaration_specifier, BasePtr declarator, BasePtr compound_statement);
+    LessThanEqual(BasePtr left, BasePtr right);
 
     //Destructor
-    virtual ~Function_Definition();
+    virtual ~LessThanEqual();
 
     //Printing
     virtual void print(std::ostream &dst, std::string indent) const override;

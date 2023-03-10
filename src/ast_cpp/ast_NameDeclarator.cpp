@@ -3,8 +3,7 @@
 //Constructor 
 Name_Declarator::Name_Declarator(std::string IDENTIFIER)
   :id(IDENTIFIER) 
-{
-}
+{}
 //Destructor
 Name_Declarator::~Name_Declarator()
 {
@@ -13,9 +12,7 @@ Name_Declarator::~Name_Declarator()
 //Print
 void Name_Declarator::print(std::ostream &dst, std::string indent) const
 {
-
   dst << indent << "IDENTIFIER " << id << std::endl;
-  
 }
 
 void Name_Declarator::RISCOutput(std::ostream &dst, int destReg) const
