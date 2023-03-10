@@ -516,7 +516,7 @@ Nonterminals, with rules where they appear
     constant_expression <base> (124)
         on left: 138
         on right: 20 163 164 171 189 191 202
-    init_declarator_list (125)
+    init_declarator_list <base> (125)
         on left: 139 140
         on right: 118 140
     init_declarator <base> (126)

@@ -57,7 +57,7 @@
 %type <base> translation_unit declaration_list specifier_qualifier_list
 %type <base> struct_declaration_list struct_declarator_list enumerator_list
 %type <base> argument_expression_list IDENTIFIER_list initializer_list
-%type <base> statement_list parameter_type_list parameter_list
+%type <base> statement_list parameter_type_list parameter_list init_declarator_list
 
 %type <int_num> T_INT
 %type <string> IDENTIFIER
@@ -281,8 +281,8 @@ declaration_list
 	;
 //=========================================================================
 declaration
-	: declaration_specifiers ';' 
-	| declaration_specifiers init_declarator_list ';'
+	: declaration_specifiers ';'  
+	| declaration_specifiers init_declarator_list ';' {$$ = $1;}
 	;
 
 
@@ -323,13 +323,13 @@ constant_expression
 
 
 init_declarator_list
-	: init_declarator
+	: init_declarator {$$ = $1;}
 	| init_declarator_list ',' init_declarator
 	;
 
 init_declarator
-	: declarator
-	| declarator '=' initializer
+	: declarator {$$ = $1;}
+	| declarator '=' initializer {$$ = $1;}
 	;
 
 storage_class_specifier
