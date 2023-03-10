@@ -1,3 +1,14 @@
   Function Definition [
     TYPE: int    
     IDENTIFIER ffff
+    Compound Statements [
+      TYPE: int      
+        IDENTIFIER x
+        Return: [
+          IDENTIFIER x
+        ]
+    ]
+  ]
+
+Compiling: compiler_tests/default/test_LOCAL.c
+Compiled to: ./bin/output/compiler_tests_default_test_LOCAL.s

@@ -112,7 +112,7 @@ compound_statement
 	: '{' '}'
 	| '{' statement_list '}' {$$ = $2;}//relevant
 	| '{' declaration_list '}' {$$ = $2;}
-	| '{' declaration_list statement_list '}' {}
+	| '{' declaration_list statement_list '}' {$$ = new Multiline($2, $3);}
 	;
 
 type_specifier
@@ -132,7 +132,7 @@ type_specifier
 
 statement_list
 	: statement {$$ = $1;}//relevant
-	| statement_list statement
+	| statement_list statement {$$ = new MultiStatement($1, $2);}
 	;
 
 statement
@@ -194,8 +194,8 @@ and_expression
 
 equality_expression
 	: relational_expression {$$ = $1;}
-	| equality_expression EQ_OP relational_expression  {$$ = new Equal($1, $3);}
-	| equality_expression NE_OP relational_expression
+	| equality_expression EQ_OP relational_expression  {$$ = new Equal($1, $3);} 
+	| equality_expression NE_OP relational_expression {$$ = new NotEqual($1, $3);} //added
 	;
 
 relational_expression
@@ -208,8 +208,8 @@ relational_expression
 
 shift_expression 
 	: additive_expression {$$ = $1;}
-	| shift_expression LEFT_OP additive_expression
-	| shift_expression RIGHT_OP additive_expression
+	| shift_expression LEFT_OP additive_expression {$$ = new ShiftLeft($1, $3);} //added
+	| shift_expression RIGHT_OP additive_expression {$$ = new ShiftRight($1, $3);} //added
 	;
 
 additive_expression
@@ -222,7 +222,7 @@ multiplicative_expression
 	: cast_expression {$$ = $1;}
 	| multiplicative_expression '*' cast_expression {$$ = new Multiply($1, $3);}
 	| multiplicative_expression '/' cast_expression {$$ = new Divide($1, $3);}
-	| multiplicative_expression '%' cast_expression
+	| multiplicative_expression '%' cast_expression {$$ = new Modulus($1, $3);} //added
 	;
 
 cast_expression
@@ -274,9 +274,14 @@ parameter_declaration
 	| declaration_specifiers abstract_declarator
 	| declaration_specifiers
 	;
+
+declaration_list
+	: declaration {$$ = $1;}
+	| declaration_list declaration {$$ = new MultiDeclaration($1, $2);}
+	;
 //=========================================================================
 declaration
-	: declaration_specifiers ';'
+	: declaration_specifiers ';' 
 	| declaration_specifiers init_declarator_list ';'
 	;
 
@@ -454,13 +459,6 @@ labeled_statement
 	| CASE constant_expression ':' statement
 	| DEFAULT ':' statement
 	;
-
-
-declaration_list
-	: declaration
-	| declaration_list declaration
-	;
-
 
 expression_statement
 	: ';'

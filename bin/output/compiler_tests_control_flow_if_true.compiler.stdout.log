@@ -1,7 +1,10 @@
   Function Definition [
     TYPE: int    
     IDENTIFIER f
-    Integer : 1
+      Integer : 1
+      Return: [
+        Integer : 10
+      ]
   ]
 
 Compiling: compiler_tests/control_flow/if_true.c

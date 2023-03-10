@@ -1,7 +1,14 @@
   Function Definition [
     TYPE: int    
     IDENTIFIER f
-    Integer : 8
+    Compound Statements [
+        TYPE: int        
+        TYPE: int        
+        IDENTIFIER y
+        Return: [
+          IDENTIFIER y
+        ]
+    ]
   ]
 
 Compiling: compiler_tests/array/declare_local.c

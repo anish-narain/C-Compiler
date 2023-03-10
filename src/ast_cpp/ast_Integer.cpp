@@ -7,8 +7,7 @@ Int::Int(int val)
 
 //Destructor
 Int::~Int()
-{
-}
+{}
 
 // Visualising
 void Int::print(std::ostream &dst, std::string indent) const

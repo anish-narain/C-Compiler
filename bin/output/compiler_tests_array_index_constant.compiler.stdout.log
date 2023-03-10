@@ -1,7 +1,13 @@
   Function Definition [
     TYPE: int    
     IDENTIFIER f
-    Integer : 8
+    Compound Statements [
+      TYPE: int      
+        IDENTIFIER x
+        Return: [
+          IDENTIFIER x
+        ]
+    ]
   ]
 
 Compiling: compiler_tests/array/index_constant.c

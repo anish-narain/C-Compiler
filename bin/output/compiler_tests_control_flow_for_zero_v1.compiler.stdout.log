@@ -1,3 +1,5 @@
   Function Definition [
     TYPE: int    
     IDENTIFIER f
+    Compound Statements [
+      TYPE: int      
