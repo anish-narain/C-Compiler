@@ -111,8 +111,8 @@ direct_declarator
 compound_statement
 	: '{' '}'
 	| '{' statement_list '}' {$$ = $2;}//relevant
-	| '{' declaration_list '}'
-	| '{' declaration_list statement_list '}'
+	| '{' declaration_list '}' {$$ = $2;}
+	| '{' declaration_list statement_list '}' {}
 	;
 
 type_specifier

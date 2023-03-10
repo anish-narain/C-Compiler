@@ -9,7 +9,7 @@
 #include "ast_hpp/ast_Types.hpp"
 
 
-#include "ast_hpp/ast_Add.hpp"
+#include "ast_hpp/operators/ast_Add.hpp"
 #include "ast_hpp/ast_Divide.hpp"
 #include "ast_hpp/ast_Multiply.hpp"
 #include "ast_hpp/ast_Subtract.hpp"
