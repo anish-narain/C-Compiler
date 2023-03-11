@@ -4,7 +4,12 @@
     Compound Statements [
         TYPE: int        
         IDENTIFIER x
-        IDENTIFIER x
+        Binary Assignment[
+        LHS
+          IDENTIFIER x
+        RHS
+          Integer : 23
+        ]
         Return: [
           IDENTIFIER x
         ]

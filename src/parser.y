@@ -144,6 +144,11 @@ statement
 	| jump_statement {$$ = $1;}//relevant
 	;
 
+expression_statement
+	: ';'
+	| expression ';' {$$ = $1;}
+	;
+
 jump_statement
 	: GOTO IDENTIFIER ';'
 	| CONTINUE ';'
@@ -159,7 +164,7 @@ expression
 
 assignment_expression
 	: conditional_expression {$$ = $1;}
-	| unary_expression assignment_operator assignment_expression
+	| unary_expression '=' assignment_expression { $$ = new ValueAssign($1, $3);}
 	;
 
 conditional_expression
@@ -458,11 +463,6 @@ labeled_statement
 	: IDENTIFIER ':' statement
 	| CASE constant_expression ':' statement
 	| DEFAULT ':' statement
-	;
-
-expression_statement
-	: ';'
-	| expression ';' {$$ = $1;}
 	;
 
 selection_statement

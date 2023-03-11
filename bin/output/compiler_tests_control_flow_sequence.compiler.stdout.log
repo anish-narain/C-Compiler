@@ -4,8 +4,23 @@
     Compound Statements [
         TYPE: int        
         IDENTIFIER x
-          IDENTIFIER x
-          IDENTIFIER x
+          Binary Assignment[
+          LHS
+            IDENTIFIER x
+          RHS
+            Integer : 1
+          ]
+          Binary Assignment[
+          LHS
+            IDENTIFIER x
+          RHS
+            Add Operation[
+            Left Operator
+              IDENTIFIER x
+            Right Operator
+              IDENTIFIER x
+            ]
+          ]
         Return: [
           IDENTIFIER x
         ]

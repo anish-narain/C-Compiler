@@ -28,6 +28,7 @@
 #include "ast_hpp/operators/ast_ShiftLeft.hpp"
 #include "ast_hpp/operators/ast_ShiftRight.hpp"
 #include "ast_hpp/operators/ast_Subtract.hpp"
+#include "ast_hpp/operators/ast_ValueAssign.hpp"
 
 
 #include "ast_hpp/multi/ast_Multiline.hpp"

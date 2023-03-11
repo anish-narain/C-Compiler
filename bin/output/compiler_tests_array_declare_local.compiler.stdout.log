@@ -6,7 +6,12 @@
           IDENTIFIER y
           TYPE: int          
           IDENTIFIER x
-        IDENTIFIER y
+        Binary Assignment[
+        LHS
+          IDENTIFIER y
+        RHS
+          Integer : 13
+        ]
         Return: [
           IDENTIFIER y
         ]

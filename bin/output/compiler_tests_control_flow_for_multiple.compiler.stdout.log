@@ -6,4 +6,9 @@
           IDENTIFIER x
           TYPE: int          
           IDENTIFIER y
-          IDENTIFIER y
+          Binary Assignment[
+          LHS
+            IDENTIFIER y
+          RHS
+            Integer : 0
+          ]
