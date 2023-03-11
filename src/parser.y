@@ -334,7 +334,7 @@ init_declarator_list
 
 init_declarator
 	: declarator {$$ = $1;}
-	| declarator '=' initializer {$$ = $1;}
+	| declarator '=' initializer 
 	;
 
 storage_class_specifier
