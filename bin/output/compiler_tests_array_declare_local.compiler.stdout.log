@@ -2,21 +2,7 @@
     TYPE: int    
     IDENTIFIER f
     Compound Statements [
-          TYPE: int          
-          IDENTIFIER y
-          TYPE: int          
-          IDENTIFIER x
-        Binary Assignment[
-        LHS
-          IDENTIFIER y
-        RHS
-          Integer : 13
-        ]
-        Return: [
-          IDENTIFIER y
-        ]
-    ]
-  ]
-
-Compiling: compiler_tests/array/declare_local.c
-Compiled to: ./bin/output/compiler_tests_array_declare_local.s
+      TYPE: int      
+      IDENTIFIER y
+      TYPE: int      
+      Array [

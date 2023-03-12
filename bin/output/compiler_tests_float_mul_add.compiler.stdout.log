@@ -2,18 +2,12 @@
     TYPE: float    
       IDENTIFIER f
       Function Parameters [
-                    TYPE: float                    
-                    IDENTIFIER x
-                    TYPE: float                    
-                    IDENTIFIER y
-                  TYPE: float                  
-                  IDENTIFIER z
-                TYPE: float                
-                IDENTIFIER a
-              TYPE: float              
-              IDENTIFIER b
-            TYPE: float            
-            IDENTIFIER c
+        TYPE: float        
+        IDENTIFIER x
+        TYPE: float        
+        IDENTIFIER y
+        TYPE: float        
+        IDENTIFIER z
       ]
     Return: [
       Add Operation[

@@ -39,9 +39,9 @@
 
 #include "ast_hpp/statements/ast_ReturnStatement.hpp"
 
-#include "ast_hpp/ast_Identifier.hpp"
+#include "ast_hpp/types/ast_Array.hpp"
 
-//#include "ast_hpp/operators/"
+#include "ast_hpp/ast_Identifier.hpp"
 
 typedef std::vector<BasePtr> Vect;
 typedef Vect* VectPtr;

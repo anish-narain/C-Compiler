@@ -15,8 +15,8 @@ MultiDeclaration::~MultiDeclaration()
 
 void MultiDeclaration::print(std::ostream &dst, std::string indent) const
 {
-    branchList[0]->print(dst, indent+"  ");
-    branchList[1]->print(dst, indent+"  ");
+    branchList[0]->print(dst, indent);
+    branchList[1]->print(dst, indent);
 }
 
 void MultiDeclaration::RISCOutput(std::ostream &dst, int destReg) const

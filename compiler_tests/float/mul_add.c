@@ -1,4 +1,4 @@
-float f(float x, float y, float z, float a, float b, float c)
+float f(float x, float y, float z)
 {
     return x*y+z;
 }

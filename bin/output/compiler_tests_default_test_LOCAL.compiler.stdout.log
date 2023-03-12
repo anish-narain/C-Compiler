@@ -2,17 +2,17 @@
     TYPE: int    
     IDENTIFIER ffff
     Compound Statements [
-        TYPE: int        
+      TYPE: int      
+      IDENTIFIER x
+      Binary Assignment[
+      LHS
         IDENTIFIER x
-        Binary Assignment[
-        LHS
-          IDENTIFIER x
-        RHS
-          Integer : 10
-        ]
-        Return: [
-          IDENTIFIER x
-        ]
+      RHS
+        Integer : 10
+      ]
+      Return: [
+        IDENTIFIER x
+      ]
     ]
   ]
 

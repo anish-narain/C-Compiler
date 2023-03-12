@@ -1,5 +1,2 @@
-    TYPE: int    
-    IDENTIFIER x
-
-Compiling: compiler_tests/array/declare_global.c
-Compiled to: ./bin/output/compiler_tests_array_declare_global.s
+  TYPE: int  
+  Array [

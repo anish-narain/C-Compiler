@@ -2,11 +2,11 @@
     TYPE: int    
     IDENTIFIER f
     Compound Statements [
-        TYPE: int        
+      TYPE: int      
+      IDENTIFIER x
+      Binary Assignment[
+      LHS
         IDENTIFIER x
-          Binary Assignment[
-          LHS
-            IDENTIFIER x
-          RHS
-            Integer : 1
-          ]
+      RHS
+        Integer : 1
+      ]

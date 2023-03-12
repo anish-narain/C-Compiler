@@ -2,28 +2,28 @@
     TYPE: int    
     IDENTIFIER f
     Compound Statements [
-        TYPE: int        
+      TYPE: int      
+      IDENTIFIER x
+      Binary Assignment[
+      LHS
         IDENTIFIER x
-          Binary Assignment[
-          LHS
-            IDENTIFIER x
-          RHS
-            Integer : 1
-          ]
-          Binary Assignment[
-          LHS
-            IDENTIFIER x
-          RHS
-            Add Operation[
-            Left Operator
-              IDENTIFIER x
-            Right Operator
-              IDENTIFIER x
-            ]
-          ]
-        Return: [
+      RHS
+        Integer : 1
+      ]
+      Binary Assignment[
+      LHS
+        IDENTIFIER x
+      RHS
+        Add Operation[
+        Left Operator
+          IDENTIFIER x
+        Right Operator
           IDENTIFIER x
         ]
+      ]
+      Return: [
+        IDENTIFIER x
+      ]
     ]
   ]
 

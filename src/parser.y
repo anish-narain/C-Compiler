@@ -101,7 +101,7 @@ declarator
 direct_declarator
 	: IDENTIFIER  {$$ = new Name_Declarator(*$1); delete $1;} //relevant
 	| '(' declarator ')'
-	| direct_declarator '[' constant_expression ']'
+	| direct_declarator '[' constant_expression ']' {$$ = new Array($1, $3);}
 	| direct_declarator '[' ']'
 	| direct_declarator '(' parameter_type_list ')' {$$ = new Function_Declarator_With_Param($1, $3);}//relevant
 	| direct_declarator '(' IDENTIFIER_list ')'
@@ -323,7 +323,7 @@ assignment_operator
 
 
 constant_expression
-	: conditional_expression
+	: conditional_expression {$$ = $1;}
 	;
 
 

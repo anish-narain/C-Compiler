@@ -2,18 +2,18 @@
     TYPE: int    
     IDENTIFIER f
     Compound Statements [
-        TYPE: int        
-        IDENTIFIER x
-          TYPE: int          
+      TYPE: int      
+      IDENTIFIER x
+      TYPE: int      
+      IDENTIFIER x
+      Return: [
+        Add Operation[
+        Left Operator
           IDENTIFIER x
-        Return: [
-          Add Operation[
-          Left Operator
-            IDENTIFIER x
-          Right Operator
-            Integer : 19937
-          ]
+        Right Operator
+          Integer : 19937
         ]
+      ]
     ]
   ]
 

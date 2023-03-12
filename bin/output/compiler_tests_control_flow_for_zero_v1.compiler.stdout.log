@@ -2,13 +2,13 @@
     TYPE: int    
     IDENTIFIER f
     Compound Statements [
-        TYPE: int        
-        IDENTIFIER x
-          TYPE: int          
-          IDENTIFIER x
-        Return: [
-          Integer : 19937
-        ]
+      TYPE: int      
+      IDENTIFIER x
+      TYPE: int      
+      IDENTIFIER x
+      Return: [
+        Integer : 19937
+      ]
     ]
   ]
 

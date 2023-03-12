@@ -2,10 +2,10 @@
     TYPE: int    
       IDENTIFIER f
       Function Parameters [
-            TYPE: int            
-            IDENTIFIER a
-            TYPE: int            
-            IDENTIFIER b
+        TYPE: int        
+        IDENTIFIER a
+        TYPE: int        
+        IDENTIFIER b
       ]
     Return: [
       Add Operation[

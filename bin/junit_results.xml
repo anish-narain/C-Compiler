@@ -3,13 +3,13 @@
 <testcase name="compiler_tests/_example/example.c">
 </testcase>
 <testcase name="compiler_tests/array/declare_global.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_array_declare_global.linker.stderr.log and ./bin/output/compiler_tests_array_declare_global.linker.stdout.log">Fail: see ./bin/output/compiler_tests_array_declare_global.linker.stderr.log and ./bin/output/compiler_tests_array_declare_global.linker.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_array_declare_global.compiler.stderr.log and ./bin/output/compiler_tests_array_declare_global.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_array_declare_global.compiler.stderr.log and ./bin/output/compiler_tests_array_declare_global.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/array/declare_local.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_array_declare_local.compiler.stderr.log and ./bin/output/compiler_tests_array_declare_local.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_array_declare_local.compiler.stderr.log and ./bin/output/compiler_tests_array_declare_local.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/array/index_constant.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_array_index_constant.compiler.stderr.log and ./bin/output/compiler_tests_array_index_constant.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_array_index_constant.compiler.stderr.log and ./bin/output/compiler_tests_array_index_constant.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/array/index_expression.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_array_index_expression.compiler.stderr.log and ./bin/output/compiler_tests_array_index_expression.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_array_index_expression.compiler.stderr.log and ./bin/output/compiler_tests_array_index_expression.compiler.stdout.log</error>
