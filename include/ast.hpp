@@ -1,9 +1,7 @@
 #include "ast_hpp/ast_BaseClass.hpp"
-#include "ast_hpp/ast_Identifier.hpp"
+
 #include "ast_hpp/ast_Integer.hpp"
 #include "ast_hpp/ast_Types.hpp"
-#include "ast_hpp/ast_VectTypes.hpp"
-
 
 #include "ast_hpp/declarations/ast_FunctionDeclaratorWithParam.hpp"
 #include "ast_hpp/declarations/ast_FunctionDefinition.hpp" 
@@ -39,12 +37,13 @@
 #include "ast_hpp/multi/ast_MultiDeclaration.hpp"
 #include "ast_hpp/multi/ast_MultiDec.hpp"
 
-#include "ast_hpp/arrays/ast_Array.hpp"
-
 #include "ast_hpp/statements/ast_ReturnStatement.hpp"
 
-
+#include "ast_hpp/ast_Identifier.hpp"
 
 //#include "ast_hpp/operators/"
+
+typedef std::vector<BasePtr> Vect;
+typedef Vect* VectPtr;
 
 extern Base *parseAST(std::string filename);

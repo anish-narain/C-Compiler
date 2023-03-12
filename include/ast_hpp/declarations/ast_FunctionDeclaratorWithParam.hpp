@@ -6,7 +6,6 @@
 #include <map>
 #include <memory>
 #include "ast_hpp/ast_BaseClass.hpp"
-#include "ast.hpp"
 
 class Function_Declarator_With_Param
  : public Base
@@ -14,9 +13,7 @@ class Function_Declarator_With_Param
 public:
     //Constructor
     Function_Declarator_With_Param(BasePtr direct_declarator, BasePtr parameter_type_list);
-    Function_Declarator_With_Param(BasePtr direct_declarator, VectTypePtr parameter_type_list);
-    
-    
+
     //Destructor
     virtual ~Function_Declarator_With_Param();
 

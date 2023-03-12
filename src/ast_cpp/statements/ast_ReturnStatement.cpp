@@ -18,7 +18,7 @@ Return_Statement::~Return_Statement()
 void Return_Statement::print(std::ostream &dst, std::string indent) const
 {
   dst << indent << "Return: [" << std::endl;
-  branchList[0]->print(dst, indent);
+  branchList[0]->print(dst, indent+"  ");
   dst << indent << "]" << std::endl;
 }
 

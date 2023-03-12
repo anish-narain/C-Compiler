@@ -7,13 +7,13 @@
 #include <vector>
 #include "ast_BaseClass.hpp"
 
-typedef std::vector<BasePtr> vect;
+typedef std::vector<BasePtr> build_vector;
 // this is used to build a new NodePtr vector
-typedef vect* VectTypePtr;
+typedef build_vector* VectTypePtr;
 // define a pointer to the vector
 
 inline VectTypePtr new_vect(BasePtr vectItem){
-    VectTypePtr result = new vect;
+    VectTypePtr result = new build_vector;
     result->push_back(vectItem);
     return result;
 }
