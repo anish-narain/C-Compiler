@@ -247,7 +247,7 @@ unary_expression
 
 postfix_expression
 	: primary_expression {$$ = $1;}
-	| postfix_expression '[' expression ']'
+	| postfix_expression '[' expression ']'  {$$ = new Array($1, $3);}
 	| postfix_expression '(' ')'
 	| postfix_expression '(' argument_expression_list ')'
 	| postfix_expression '.' IDENTIFIER

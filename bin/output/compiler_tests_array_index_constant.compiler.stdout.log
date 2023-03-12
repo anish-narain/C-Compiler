@@ -9,12 +9,18 @@
       ]
       Binary Assignment[
       LHS
-        IDENTIFIER x
+        Array [
+          IDENTIFIER x
+          Integer : 0
+        ]
       RHS
         Integer : 23
       ]
       Return: [
-        IDENTIFIER x
+        Array [
+          IDENTIFIER x
+          Integer : 0
+        ]
       ]
     ]
   ]
