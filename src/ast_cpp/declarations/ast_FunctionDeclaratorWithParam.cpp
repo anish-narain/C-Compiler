@@ -5,6 +5,12 @@ Function_Declarator_With_Param::Function_Declarator_With_Param(BasePtr direct_de
 {
     branchList.insert(branchList.end(), {direct_declarator, parameter_type_list});
 }
+
+Function_Declarator_With_Param::Function_Declarator_With_Param(BasePtr direct_declarator, VectTypePtr parameter_type_list)
+{
+    branchList.insert(branchList.end(), {direct_declarator, parameter_type_list});
+}
+
 //Destructor
 Function_Declarator_With_Param::~Function_Declarator_With_Param()
 {
@@ -15,8 +21,8 @@ Function_Declarator_With_Param::~Function_Declarator_With_Param()
 
 void Function_Declarator_With_Param::print(std::ostream &dst, std::string indent) const
 {
-    branchList[0]->print(dst, indent+"  ");
-    branchList[1]->print(dst, indent+"  ");
+    branchList[0]->print(dst, indent);
+    branchList[1]->print(dst, indent);
 }
 
 void Function_Declarator_With_Param::RISCOutput(std::ostream &dst, int destReg) const

@@ -12,8 +12,8 @@
 }
 
 %union{
-  BasePtr base; //will come in our version of ast.hpp
-  //VectPtr vect; //will come in our version of "List.hpp"
+  BasePtr base; 
+  VectTypePtr vect; 
   int int_num;
   double float_num;
   std::string *string;
@@ -54,17 +54,19 @@
 %type <base> selection_statement iteration_statement jump_statement external_declaration
 %type <base> function_definition cast_expression
 
-%type <base> translation_unit declaration_list specifier_qualifier_list
+%type <base> specifier_qualifier_list
 %type <base> struct_declaration_list struct_declarator_list enumerator_list
 %type <base> argument_expression_list IDENTIFIER_list initializer_list
-%type <base> statement_list parameter_type_list parameter_list init_declarator_list
+%type <base> parameter_type_list init_declarator_list
+
+%type <vect> translation_unit parameter_list statement_list declaration_list 
 
 %type <int_num> T_INT
 %type <string> IDENTIFIER
 
 %start StartTree
 %%
-StartTree: translation_unit {g_root = $1; }
+StartTree: translation_unit {g_root = *$1; }
 
 translation_unit
 	: external_declaration { $$ = new_vect($1); }
@@ -101,9 +103,9 @@ declarator
 direct_declarator
 	: IDENTIFIER  {$$ = new Name_Declarator(*$1); delete $1;} //relevant
 	| '(' declarator ')'
-	| direct_declarator '[' constant_expression ']'
+	| direct_declarator '[' constant_expression ']' {$$ = new Array($1, $3);}
 	| direct_declarator '[' ']'
-	| direct_declarator '(' parameter_type_list ')' {$$ = new Function_Declarator_With_Param($1, *$3);}//relevant
+	| direct_declarator '(' parameter_type_list ')' {$$ = new Function_Declarator_With_Param($1, $3);}//relevant
 	| direct_declarator '(' IDENTIFIER_list ')'
 	| direct_declarator '(' ')'{$$ = $1;} 
 	;
@@ -323,7 +325,7 @@ assignment_operator
 
 
 constant_expression
-	: conditional_expression
+	: conditional_expression {$$ = $1;}
 	;
 
 
