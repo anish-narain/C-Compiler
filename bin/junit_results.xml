@@ -68,22 +68,22 @@
 <testcase name="compiler_tests/default/test_RETURN.c">
 </testcase>
 <testcase name="compiler_tests/float/add_double.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_float_add_double.compiler.stderr.log and ./bin/output/compiler_tests_float_add_double.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_float_add_double.compiler.stderr.log and ./bin/output/compiler_tests_float_add_double.compiler.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_float_add_double.linker.stderr.log and ./bin/output/compiler_tests_float_add_double.linker.stdout.log">Fail: see ./bin/output/compiler_tests_float_add_double.linker.stderr.log and ./bin/output/compiler_tests_float_add_double.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/float/add.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_float_add.compiler.stderr.log and ./bin/output/compiler_tests_float_add.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_float_add.compiler.stderr.log and ./bin/output/compiler_tests_float_add.compiler.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_float_add.linker.stderr.log and ./bin/output/compiler_tests_float_add.linker.stdout.log">Fail: see ./bin/output/compiler_tests_float_add.linker.stderr.log and ./bin/output/compiler_tests_float_add.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/float/add_mul.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_float_add_mul.compiler.stderr.log and ./bin/output/compiler_tests_float_add_mul.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_float_add_mul.compiler.stderr.log and ./bin/output/compiler_tests_float_add_mul.compiler.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_float_add_mul.linker.stderr.log and ./bin/output/compiler_tests_float_add_mul.linker.stdout.log">Fail: see ./bin/output/compiler_tests_float_add_mul.linker.stderr.log and ./bin/output/compiler_tests_float_add_mul.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/float/mul_add.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_float_mul_add.compiler.stderr.log and ./bin/output/compiler_tests_float_mul_add.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_float_mul_add.compiler.stderr.log and ./bin/output/compiler_tests_float_mul_add.compiler.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_float_mul_add.linker.stderr.log and ./bin/output/compiler_tests_float_mul_add.linker.stdout.log">Fail: see ./bin/output/compiler_tests_float_mul_add.linker.stderr.log and ./bin/output/compiler_tests_float_mul_add.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/float/mul_double.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_float_mul_double.compiler.stderr.log and ./bin/output/compiler_tests_float_mul_double.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_float_mul_double.compiler.stderr.log and ./bin/output/compiler_tests_float_mul_double.compiler.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_float_mul_double.linker.stderr.log and ./bin/output/compiler_tests_float_mul_double.linker.stdout.log">Fail: see ./bin/output/compiler_tests_float_mul_double.linker.stderr.log and ./bin/output/compiler_tests_float_mul_double.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/float/mul.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_float_mul.compiler.stderr.log and ./bin/output/compiler_tests_float_mul.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_float_mul.compiler.stderr.log and ./bin/output/compiler_tests_float_mul.compiler.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_float_mul.linker.stderr.log and ./bin/output/compiler_tests_float_mul.linker.stdout.log">Fail: see ./bin/output/compiler_tests_float_mul.linker.stderr.log and ./bin/output/compiler_tests_float_mul.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/float/pow.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_float_pow.compiler.stderr.log and ./bin/output/compiler_tests_float_pow.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_float_pow.compiler.stderr.log and ./bin/output/compiler_tests_float_pow.compiler.stdout.log</error>

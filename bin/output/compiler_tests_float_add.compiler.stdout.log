@@ -1,1 +1,21 @@
   Function Definition [
+    TYPE: float    
+      IDENTIFIER f
+      Function Parameters [
+            TYPE: float            
+            IDENTIFIER x
+            TYPE: float            
+            IDENTIFIER y
+      ]
+    Return: [
+      Add Operation[
+      Left Operator
+        IDENTIFIER x
+      Right Operator
+        IDENTIFIER y
+      ]
+    ]
+  ]
+
+Compiling: compiler_tests/float/add.c
+Compiled to: ./bin/output/compiler_tests_float_add.s

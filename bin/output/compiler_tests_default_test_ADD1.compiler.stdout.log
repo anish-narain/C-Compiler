@@ -1,8 +1,10 @@
   Function Definition [
     TYPE: int    
       IDENTIFIER f
-        TYPE: int        
-        IDENTIFIER a
+      Function Parameters [
+          TYPE: int          
+          IDENTIFIER a
+      ]
     Return: [
       Add Operation[
       Left Operator

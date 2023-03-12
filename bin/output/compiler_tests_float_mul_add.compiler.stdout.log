@@ -1,1 +1,34 @@
   Function Definition [
+    TYPE: float    
+      IDENTIFIER f
+      Function Parameters [
+                    TYPE: float                    
+                    IDENTIFIER x
+                    TYPE: float                    
+                    IDENTIFIER y
+                  TYPE: float                  
+                  IDENTIFIER z
+                TYPE: float                
+                IDENTIFIER a
+              TYPE: float              
+              IDENTIFIER b
+            TYPE: float            
+            IDENTIFIER c
+      ]
+    Return: [
+      Add Operation[
+      Left Operator
+        Multiply Operation[
+        Left Operator
+          IDENTIFIER x
+        Right Operator
+          IDENTIFIER y
+        ]
+      Right Operator
+        IDENTIFIER z
+      ]
+    ]
+  ]
+
+Compiling: compiler_tests/float/mul_add.c
+Compiled to: ./bin/output/compiler_tests_float_mul_add.s

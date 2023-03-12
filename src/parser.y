@@ -120,9 +120,9 @@ type_specifier
 	| CHAR
 	| SHORT
 	| INT { $$ = new Types("int");}
-	| LONG
-	| FLOAT
-	| DOUBLE
+	| LONG 
+	| FLOAT { $$ = new Types("float");}
+	| DOUBLE { $$ = new Types("double");}
 	| SIGNED
 	| UNSIGNED
 	| struct_or_union_specifier
@@ -265,7 +265,7 @@ primary_expression
 	;
 
 parameter_type_list
-	: parameter_list {$$ = $1;}//relevant
+	: parameter_list {$$ = new Param_List($1);}//relevant
 	//| parameter_list ',' ELLIPSIS
 	;
 
@@ -286,7 +286,7 @@ declaration_list
 	;
 //=========================================================================
 declaration
-	: declaration_specifiers ';' 
+	: declaration_specifiers ';'  {$$ = $1;}
 	| declaration_specifiers init_declarator_list ';' {$$ = new MultiDec($1, $2);}
 	;
 

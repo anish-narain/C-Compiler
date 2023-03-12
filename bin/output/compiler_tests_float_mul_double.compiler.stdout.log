@@ -1,1 +1,21 @@
   Function Definition [
+    TYPE: double    
+      IDENTIFIER f
+      Function Parameters [
+            TYPE: double            
+            IDENTIFIER x
+            TYPE: double            
+            IDENTIFIER y
+      ]
+    Return: [
+      Multiply Operation[
+      Left Operator
+        IDENTIFIER x
+      Right Operator
+        IDENTIFIER y
+      ]
+    ]
+  ]
+
+Compiling: compiler_tests/float/mul_double.c
+Compiled to: ./bin/output/compiler_tests_float_mul_double.s
