@@ -100,7 +100,7 @@ declarator
 
 direct_declarator
 	: IDENTIFIER  {$$ = new Name_Declarator(*$1); delete $1;} //relevant
-	| '(' declarator ')'
+	| '(' declarator ')' {$$ = $2;}
 	| direct_declarator '[' constant_expression ']' {$$ = new Array($1, $3);}
 	| direct_declarator '[' ']'
 	| direct_declarator '(' parameter_type_list ')' {$$ = new Function_Declarator_With_Param($1, $3);}//relevant

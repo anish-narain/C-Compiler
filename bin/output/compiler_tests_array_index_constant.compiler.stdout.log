@@ -4,3 +4,20 @@
     Compound Statements [
       TYPE: int      
       Array [
+        IDENTIFIER x
+        Integer : 8
+      ]
+      Binary Assignment[
+      LHS
+        IDENTIFIER x
+      RHS
+        Integer : 23
+      ]
+      Return: [
+        IDENTIFIER x
+      ]
+    ]
+  ]
+
+Compiling: compiler_tests/array/index_constant.c
+Compiled to: ./bin/output/compiler_tests_array_index_constant.s

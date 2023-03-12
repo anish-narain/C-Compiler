@@ -6,3 +6,20 @@
       IDENTIFIER y
       TYPE: int      
       Array [
+        IDENTIFIER x
+        Integer : 8
+      ]
+      Binary Assignment[
+      LHS
+        IDENTIFIER y
+      RHS
+        Integer : 13
+      ]
+      Return: [
+        IDENTIFIER y
+      ]
+    ]
+  ]
+
+Compiling: compiler_tests/array/declare_local.c
+Compiled to: ./bin/output/compiler_tests_array_declare_local.s

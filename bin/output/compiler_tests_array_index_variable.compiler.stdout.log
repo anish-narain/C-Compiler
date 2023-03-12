@@ -6,3 +6,6 @@
       IDENTIFIER i
       TYPE: int      
       Array [
+        IDENTIFIER x
+        Integer : 8
+      ]

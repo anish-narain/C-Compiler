@@ -15,8 +15,11 @@ MultiDec::~MultiDec()
 
 void MultiDec::print(std::ostream &dst, std::string indent) const
 {
+    //dst << "Reached" << std::endl;
     branchList[0]->print(dst, indent);
+    //dst << "Passing throug declaration specifier" << std::endl;
     branchList[1]->print(dst, indent);
+    //dst << "Passing throug init_declarator" << std::endl;
 }
 
 void MultiDec::RISCOutput(std::ostream &dst, int destReg) const

@@ -6,3 +6,16 @@
       IDENTIFIER i
       TYPE: int      
       Array [
+        IDENTIFIER x
+        Integer : 8
+      ]
+      TYPE: int      
+      IDENTIFIER acc
+      TYPE: int      
+      IDENTIFIER acc
+      Binary Assignment[
+      LHS
+        IDENTIFIER acc
+      RHS
+        Integer : 0
+      ]

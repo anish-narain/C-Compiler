@@ -1,2 +1,8 @@
   TYPE: int  
   Array [
+    IDENTIFIER x
+    Integer : 8
+  ]
+
+Compiling: compiler_tests/array/declare_global.c
+Compiled to: ./bin/output/compiler_tests_array_declare_global.s
