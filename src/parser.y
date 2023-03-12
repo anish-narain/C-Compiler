@@ -67,7 +67,7 @@
 StartTree: translation_unit {g_root = $1; }
 
 translation_unit
-	: external_declaration { $$ = $1; }
+	: external_declaration { $$ = new_vect($1); }
 	| translation_unit external_declaration 
 	;
 
@@ -103,7 +103,7 @@ direct_declarator
 	| '(' declarator ')'
 	| direct_declarator '[' constant_expression ']'
 	| direct_declarator '[' ']'
-	| direct_declarator '(' parameter_type_list ')' {$$ = new Function_Declarator_With_Param($1, $3);}//relevant
+	| direct_declarator '(' parameter_type_list ')' {$$ = new Function_Declarator_With_Param($1, *$3);}//relevant
 	| direct_declarator '(' IDENTIFIER_list ')'
 	| direct_declarator '(' ')'{$$ = $1;} 
 	;
@@ -131,8 +131,8 @@ type_specifier
 	;
 
 statement_list
-	: statement {$$ = $1;}//relevant
-	| statement_list statement {$$ = new MultiStatement($1, $2);}
+	: statement {$$ = new_vect($1);}//relevant
+	| statement_list statement {$$ = add_to_vect($1, $2);}
 	;
 
 statement
@@ -270,8 +270,8 @@ parameter_type_list
 	;
 
 parameter_list
-	: parameter_declaration {$$ = $1;}
-	| parameter_list ',' parameter_declaration {$$ = new Param_List_Declarator($1, $3);}//relevant
+	: parameter_declaration {$$ = new_vect($1);}
+	| parameter_list ',' parameter_declaration {$$ = add_to_vect($1, $3);}//relevant
 	;
 
 parameter_declaration
@@ -281,8 +281,8 @@ parameter_declaration
 	;
 
 declaration_list
-	: declaration {$$ = $1;}
-	| declaration_list declaration {$$ = new MultiDeclaration($1, $2);}
+	: declaration {$$ = new_vect($1);}
+	| declaration_list declaration {$$ = add_to_vect($1, $3);}
 	;
 //=========================================================================
 declaration
@@ -292,7 +292,7 @@ declaration
 
 
 argument_expression_list
-	: assignment_expression
+	: assignment_expression {$$ = new_vect($1);}
 	| argument_expression_list ',' assignment_expression
 	;
 
