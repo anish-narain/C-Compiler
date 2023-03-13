@@ -21,3 +21,5 @@ void MultiDeclaration::print(std::ostream &dst, std::string indent) const
 
 void MultiDeclaration::RISCOutput(std::ostream &dst, int destReg) const
 {}
+
+int MultiDeclaration::getSize() const{}

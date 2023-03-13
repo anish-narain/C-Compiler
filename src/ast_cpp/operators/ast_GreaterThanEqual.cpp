@@ -26,3 +26,5 @@ void GreaterThanEqual::print(std::ostream &dst, std::string indent) const
 
 void GreaterThanEqual::RISCOutput(std::ostream &dst, int destReg) const
 {}
+
+int GreaterThanEqual::getSize() const{}

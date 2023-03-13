@@ -24,3 +24,5 @@ void MultiDec::print(std::ostream &dst, std::string indent) const
 
 void MultiDec::RISCOutput(std::ostream &dst, int destReg) const
 {}
+
+int MultiDec::getSize() const{}

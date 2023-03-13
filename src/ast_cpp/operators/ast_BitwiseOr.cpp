@@ -26,3 +26,5 @@ void BitwiseOr::print(std::ostream &dst, std::string indent) const
 
 void BitwiseOr::RISCOutput(std::ostream &dst, int destReg) const
 {}
+
+int BitwiseOr::getSize() const{}

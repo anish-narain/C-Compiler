@@ -26,3 +26,5 @@ void GreaterThan::print(std::ostream &dst, std::string indent) const
 
 void GreaterThan::RISCOutput(std::ostream &dst, int destReg) const
 {}
+
+int GreaterThan::getSize() const{}

@@ -26,3 +26,5 @@ void LessThanEqual::print(std::ostream &dst, std::string indent) const
 
 void LessThanEqual::RISCOutput(std::ostream &dst, int destReg) const
 {}
+
+int LessThanEqual::getSize() const{}

@@ -21,3 +21,5 @@ void MultiStatement::print(std::ostream &dst, std::string indent) const
 
 void MultiStatement::RISCOutput(std::ostream &dst, int destReg) const
 {}
+
+int MultiStatement::getSize() const{}

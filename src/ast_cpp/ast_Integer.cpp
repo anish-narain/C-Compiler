@@ -19,3 +19,6 @@ void Int::RISCOutput(std::ostream &dst, int destReg) const
 {
   dst << "li a5," << int_value << std::endl;
 }
+
+int Int::getSize() const{}
+

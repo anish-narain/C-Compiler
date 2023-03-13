@@ -26,3 +26,5 @@ void LessThan::print(std::ostream &dst, std::string indent) const
 
 void LessThan::RISCOutput(std::ostream &dst, int destReg) const
 {}
+
+int LessThan::getSize() const{}

@@ -26,3 +26,5 @@ void LogicalOr::print(std::ostream &dst, std::string indent) const
 
 void LogicalOr::RISCOutput(std::ostream &dst, int destReg) const
 {}
+
+int LogicalOr::getSize() const{}

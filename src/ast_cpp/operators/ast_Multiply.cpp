@@ -26,3 +26,5 @@ void Multiply::print(std::ostream &dst, std::string indent) const
 
 void Multiply::RISCOutput(std::ostream &dst, int destReg) const
 {}
+
+int Multiply::getSize() const{}

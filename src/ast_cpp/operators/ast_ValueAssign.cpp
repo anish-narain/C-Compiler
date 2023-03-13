@@ -26,3 +26,5 @@ void ValueAssign::print(std::ostream &dst, std::string indent) const
 
 void ValueAssign::RISCOutput(std::ostream &dst, int destReg) const
 {}
+
+int ValueAssign::getSize() const{}

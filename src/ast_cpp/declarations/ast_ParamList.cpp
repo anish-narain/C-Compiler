@@ -22,3 +22,5 @@ void Param_List::print(std::ostream &dst, std::string indent) const
 
 void Param_List::RISCOutput(std::ostream &dst, int destReg) const
 {}
+
+int Param_List::getSize() const{}

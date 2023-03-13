@@ -26,3 +26,5 @@ void Equal::print(std::ostream &dst, std::string indent) const
 
 void Equal::RISCOutput(std::ostream &dst, int destReg) const
 {}
+
+int Equal::getSize() const{}

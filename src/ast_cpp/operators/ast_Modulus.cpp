@@ -26,3 +26,5 @@ void Modulus::print(std::ostream &dst, std::string indent) const
 
 void Modulus::RISCOutput(std::ostream &dst, int destReg) const
 {}
+
+int Modulus::getSize() const{}

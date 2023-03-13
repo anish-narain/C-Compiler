@@ -26,3 +26,5 @@ void Add::print(std::ostream &dst, std::string indent) const
 
 void Add::RISCOutput(std::ostream &dst, int destReg) const
 {}
+
+int Add::getSize() const{}

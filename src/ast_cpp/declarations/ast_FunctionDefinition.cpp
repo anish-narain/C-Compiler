@@ -35,3 +35,5 @@ void Function_Definition::RISCOutput(std::ostream &dst, int destReg) const
   dst << "addi    sp,sp,16" << std::endl;
   dst << "jr      ra" << std::endl;
 }
+
+int Function_Definition::getSize() const{}

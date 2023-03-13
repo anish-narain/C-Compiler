@@ -26,3 +26,5 @@ void ShiftRight::print(std::ostream &dst, std::string indent) const
 
 void ShiftRight::RISCOutput(std::ostream &dst, int destReg) const
 {}
+
+int ShiftRight::getSize() const{}

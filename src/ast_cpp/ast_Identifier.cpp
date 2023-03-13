@@ -20,3 +20,5 @@ void Identifier::RISCOutput(std::ostream &dst, int destReg) const
   dst << ".globl "<< id << std::endl; // will need to add parameters 
   dst << id << ":" << std::endl; // will need to add parameters 
 }
+
+int Identifier::getSize() const{}

@@ -26,3 +26,5 @@ void Subtract::print(std::ostream &dst, std::string indent) const
 
 void Subtract::RISCOutput(std::ostream &dst, int destReg) const
 {}
+
+int Subtract::getSize() const{}

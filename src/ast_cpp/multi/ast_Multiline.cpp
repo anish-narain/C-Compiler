@@ -23,3 +23,5 @@ void Multiline::print(std::ostream &dst, std::string indent) const
 
 void Multiline::RISCOutput(std::ostream &dst, int destReg) const
 {}
+
+int Multiline::getSize() const{}

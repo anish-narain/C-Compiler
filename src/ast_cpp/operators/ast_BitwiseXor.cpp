@@ -26,3 +26,5 @@ void BitwiseXor::print(std::ostream &dst, std::string indent) const
 
 void BitwiseXor::RISCOutput(std::ostream &dst, int destReg) const
 {}
+
+int BitwiseXor::getSize() const{}

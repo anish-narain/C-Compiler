@@ -26,3 +26,5 @@ void Divide::print(std::ostream &dst, std::string indent) const
 
 void Divide::RISCOutput(std::ostream &dst, int destReg) const
 {}
+
+int Divide::getSize() const{}

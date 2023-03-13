@@ -24,3 +24,5 @@ void Array::print(std::ostream &dst, std::string indent) const
 
 void Array::RISCOutput(std::ostream &dst, int destReg) const
 {}
+
+int Array::getSize() const{}

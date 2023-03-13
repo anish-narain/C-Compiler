@@ -21,3 +21,5 @@ void Param_Declarator::print(std::ostream &dst, std::string indent) const
 
 void Param_Declarator::RISCOutput(std::ostream &dst, int destReg) const
 {}
+
+int Param_Declarator::getSize() const{}

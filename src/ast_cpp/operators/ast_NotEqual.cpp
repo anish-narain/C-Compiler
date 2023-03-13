@@ -26,3 +26,5 @@ void NotEqual::print(std::ostream &dst, std::string indent) const
 
 void NotEqual::RISCOutput(std::ostream &dst, int destReg) const
 {}
+
+int NotEqual::getSize() const{}

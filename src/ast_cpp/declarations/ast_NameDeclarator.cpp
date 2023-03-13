@@ -21,3 +21,4 @@ void Name_Declarator::RISCOutput(std::ostream &dst, int destReg) const
   dst << id << ":" << std::endl; // will need to add parameters 
 }
 
+int Name_Declarator::getSize() const{}

@@ -23,6 +23,8 @@ public:
     //Code gen
     void RISCOutput(std::ostream &dst, int destReg) const override;
 
+    //Size 
+    virtual int getSize() const override;
 };
 
 #endif

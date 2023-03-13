@@ -26,3 +26,5 @@ void Return_Statement::RISCOutput(std::ostream &dst, int destReg) const
 {
   branchList[0]->RISCOutput(dst, destReg);
 }
+
+int Return_Statement::getSize() const{}
