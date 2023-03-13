@@ -24,7 +24,9 @@ void LogicalAnd::print(std::ostream &dst, std::string indent) const
   dst << indent << "]" << std::endl;
 }
 
-void LogicalAnd::RISCOutput(std::ostream &dst, int destReg) const
+void LogicalAnd::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {}
 
-int LogicalAnd::getSize() const{}
+int LogicalAnd::getSize() const{
+  return branchList[0]->getSize() + branchList[1]->getSize();
+}

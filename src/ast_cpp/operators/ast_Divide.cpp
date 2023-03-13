@@ -24,7 +24,9 @@ void Divide::print(std::ostream &dst, std::string indent) const
   dst << indent << "]" << std::endl;
 }
 
-void Divide::RISCOutput(std::ostream &dst, int destReg) const
+void Divide::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {}
 
-int Divide::getSize() const{}
+int Divide::getSize() const{
+  return branchList[0]->getSize() + branchList[1]->getSize();
+}

@@ -33,7 +33,8 @@ int main(int argc, char **argv)
     const Base *ast=parseAST(sourcePath);
     ast->print(std::cout, "  ");
 
-    //ast->RISCOutput(std::cout, 1);
+    context c;
+    //ast->RISCOutput(std::cout, c, 1);
 
 
     // TODO: uncomment the below lines if you're using Flex/Bison.
@@ -54,7 +55,7 @@ int main(int argc, char **argv)
     // Compile the input
     std::cout << "Compiling: " << sourcePath << std::endl;
    // compile(output);
-    ast->RISCOutput(output, 1);
+    ast->RISCOutput(output, c, 1);
     std::cout << "Compiled to: " << outputPath << std::endl;
 
     output.close();

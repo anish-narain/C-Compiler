@@ -19,7 +19,9 @@ void Param_Declarator::print(std::ostream &dst, std::string indent) const
     branchList[1]->print(dst, indent);
 }
 
-void Param_Declarator::RISCOutput(std::ostream &dst, int destReg) const
+void Param_Declarator::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {}
 
-int Param_Declarator::getSize() const{}
+int Param_Declarator::getSize() const{
+  return branchList[0]->getSize() + branchList[1]->getSize();
+}

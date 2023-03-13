@@ -24,7 +24,9 @@ void Equal::print(std::ostream &dst, std::string indent) const
   dst << indent << "]" << std::endl;
 }
 
-void Equal::RISCOutput(std::ostream &dst, int destReg) const
+void Equal::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {}
 
-int Equal::getSize() const{}
+int Equal::getSize() const{
+  return branchList[0]->getSize() + branchList[1]->getSize();
+}

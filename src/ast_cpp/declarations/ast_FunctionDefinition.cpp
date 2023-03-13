@@ -23,17 +23,25 @@ void Function_Definition::print(std::ostream &dst, std::string indent) const
   dst << indent << "]" << std::endl;
 }
 
-void Function_Definition::RISCOutput(std::ostream &dst, int destReg) const
+void Function_Definition::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
-  branchList[1]->RISCOutput(dst, destReg);
-  dst << "addi    sp,sp,-16" << std::endl;
-  dst << "sw      s0,12(sp)" << std::endl;
-  dst << "addi    s0,sp,16" << std::endl;
-  branchList[2]->RISCOutput(dst, destReg);
-  dst << "mv      a0,a5" << std::endl;
-  dst << "lw      s0,12(sp)" << std::endl;
-  dst << "addi    sp,sp,16" << std::endl;
-  dst << "jr      ra" << std::endl;
+  int stacksize = context.rounding(getSize()); 
+
+  branchList[1]->RISCOutput(dst, context ,destReg);
+  
+  dst << "addi sp,sp,-" << stacksize << std::endl;
+  dst << "sw s0,"<< stacksize - 4 <<"(sp)" << std::endl;
+  dst << "addi s0,sp," << stacksize << std::endl; 
+  
+  branchList[2]->RISCOutput(dst, context ,destReg);
+
+  dst << "mv a0,a5" << std::endl;
+  dst << "lw s0,"<< stacksize - 4 <<"(sp)" << std::endl;
+  dst << "addi sp,sp," << stacksize << std::endl;
+  dst << "jr ra" << std::endl;
 }
 
-int Function_Definition::getSize() const{}
+int Function_Definition::getSize() const
+{
+  return branchList[1]->getSize() + branchList[2]->getSize();
+}

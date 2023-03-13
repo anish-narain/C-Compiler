@@ -23,7 +23,7 @@ public:
     virtual void print(std::ostream &dst, std::string indent) const override;
 
     //Code gen
-    void RISCOutput(std::ostream &dst, int destReg) const override;
+    void RISCOutput(std::ostream &dst, context &context, int destReg) const override;
 
     virtual int getSize() const override;
 

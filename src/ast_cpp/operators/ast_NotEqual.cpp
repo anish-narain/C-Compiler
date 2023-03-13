@@ -24,7 +24,9 @@ void NotEqual::print(std::ostream &dst, std::string indent) const
   dst << indent << "]" << std::endl;
 }
 
-void NotEqual::RISCOutput(std::ostream &dst, int destReg) const
+void NotEqual::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {}
 
-int NotEqual::getSize() const{}
+int NotEqual::getSize() const{
+  return branchList[0]->getSize() + branchList[1]->getSize();
+}

@@ -15,10 +15,12 @@ void Int::print(std::ostream &dst, std::string indent) const
   dst << indent << "Integer : " << int_value << std::endl;
 }
 
-void Int::RISCOutput(std::ostream &dst, int destReg) const
+void Int::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
   dst << "li a5," << int_value << std::endl;
 }
 
-int Int::getSize() const{}
+int Int::getSize() const{
+  return 0;
+}
 

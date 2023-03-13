@@ -19,7 +19,9 @@ void MultiDeclaration::print(std::ostream &dst, std::string indent) const
     branchList[1]->print(dst, indent);
 }
 
-void MultiDeclaration::RISCOutput(std::ostream &dst, int destReg) const
+void MultiDeclaration::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {}
 
-int MultiDeclaration::getSize() const{}
+int MultiDeclaration::getSize() const{
+  return branchList[0]->getSize() + branchList[1]->getSize();
+}

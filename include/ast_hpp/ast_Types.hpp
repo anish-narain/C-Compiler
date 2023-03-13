@@ -23,7 +23,7 @@ public:
     std::string type;
 
     //Code gen
-    void RISCOutput(std::ostream &dst, int destReg) const override;
+    void RISCOutput(std::ostream &dst, context &context, int destReg) const override;
 
     //size
     virtual int getSize() const override;

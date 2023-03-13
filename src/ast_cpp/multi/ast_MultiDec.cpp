@@ -22,7 +22,9 @@ void MultiDec::print(std::ostream &dst, std::string indent) const
     //dst << "Passing throug init_declarator" << std::endl;
 }
 
-void MultiDec::RISCOutput(std::ostream &dst, int destReg) const
+void MultiDec::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {}
 
-int MultiDec::getSize() const{}
+int MultiDec::getSize() const{
+  return branchList[0]->getSize() + branchList[1]->getSize();
+}

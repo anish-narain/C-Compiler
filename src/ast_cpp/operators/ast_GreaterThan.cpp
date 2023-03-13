@@ -24,7 +24,9 @@ void GreaterThan::print(std::ostream &dst, std::string indent) const
   dst << indent << "]" << std::endl;
 }
 
-void GreaterThan::RISCOutput(std::ostream &dst, int destReg) const
+void GreaterThan::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {}
 
-int GreaterThan::getSize() const{}
+int GreaterThan::getSize() const{
+  return branchList[0]->getSize() + branchList[1]->getSize();
+}

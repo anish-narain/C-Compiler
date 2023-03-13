@@ -1,15 +1,9 @@
-#include "ast_hpp/ast_BaseClass.hpp"
-
-#include "ast_hpp/ast_Integer.hpp"
-#include "ast_hpp/ast_Types.hpp"
-
 #include "ast_hpp/declarations/ast_FunctionDeclaratorWithParam.hpp"
 #include "ast_hpp/declarations/ast_FunctionDefinition.hpp" 
 #include "ast_hpp/declarations/ast_NameDeclarator.hpp"
 #include "ast_hpp/declarations/ast_ParamDeclaration.hpp"
 #include "ast_hpp/declarations/ast_ParamListDeclaration.hpp"
 #include "ast_hpp/declarations/ast_ParamList.hpp"
-
 
 #include "ast_hpp/operators/ast_Add.hpp"
 #include "ast_hpp/operators/ast_BitwiseAnd.hpp"
@@ -41,7 +35,13 @@
 
 #include "ast_hpp/types/ast_Array.hpp"
 
+#include "ast_hpp/ast_BaseClass.hpp"
 #include "ast_hpp/ast_Identifier.hpp"
+#include "ast_hpp/ast_Integer.hpp"
+#include "ast_hpp/ast_Types.hpp"
+
+#include "ast_hpp/context.hpp"
+
 
 typedef std::vector<BasePtr> Vect;
 typedef Vect* VectPtr;

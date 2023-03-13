@@ -1,13 +1,11 @@
-#ifndef ast_context_hpp
-#define ast_context_hpp
+#ifndef context_hpp
+#define context_hpp
 #include <math.h>
 
 class context{
     
 public:
 
-struct regfile
-{
     int Regs[32] =
     { 1, //x0 zero address: index = 0 
       1, //x1 ra return address: index = 1
@@ -34,11 +32,13 @@ struct regfile
                 return i;
         }   
       }
-      return -1 ;
+      return -1;
     }
-};
 
-
+    int rounding(int num){
+        int multiplier = ceil((double)num/16);
+        return (multiplier*16) + 16;
+    }
 };
 
 #endif

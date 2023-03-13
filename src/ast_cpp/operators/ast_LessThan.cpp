@@ -24,7 +24,9 @@ void LessThan::print(std::ostream &dst, std::string indent) const
   dst << indent << "]" << std::endl;
 }
 
-void LessThan::RISCOutput(std::ostream &dst, int destReg) const
+void LessThan::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {}
 
-int LessThan::getSize() const{}
+int LessThan::getSize() const{
+  return branchList[0]->getSize() + branchList[1]->getSize();
+}

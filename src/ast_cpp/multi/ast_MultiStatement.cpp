@@ -19,7 +19,9 @@ void MultiStatement::print(std::ostream &dst, std::string indent) const
     branchList[1]->print(dst, indent);
 }
 
-void MultiStatement::RISCOutput(std::ostream &dst, int destReg) const
+void MultiStatement::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {}
 
-int MultiStatement::getSize() const{}
+int MultiStatement::getSize() const{
+  return branchList[0]->getSize() + branchList[1]->getSize();
+}

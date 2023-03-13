@@ -24,7 +24,9 @@ void Modulus::print(std::ostream &dst, std::string indent) const
   dst << indent << "]" << std::endl;
 }
 
-void Modulus::RISCOutput(std::ostream &dst, int destReg) const
+void Modulus::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {}
 
-int Modulus::getSize() const{}
+int Modulus::getSize() const{
+  return branchList[0]->getSize() + branchList[1]->getSize();
+}

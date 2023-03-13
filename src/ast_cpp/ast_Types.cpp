@@ -21,8 +21,19 @@ void Types::print(std::ostream &dst, std::string indent) const
   }
 }
 
-void Types::RISCOutput(std::ostream &dst, int destReg) const
+void Types::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {}
 
-int Types::getSize() const{}
+int Types::getSize() const
+{
+  if (type == "int"){
+    return 4;
+  }
+  if (type == "double"){
+    return 4;
+  }
+  if (type == "float"){
+    return 4;
+  }
+}
 

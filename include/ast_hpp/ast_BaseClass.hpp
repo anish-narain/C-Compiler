@@ -6,8 +6,7 @@
 #include <string>
 #include <map>
 #include <vector>
-
-//#include "context.hpp" //don't need this yet
+#include "context.hpp" //don't need this yet
 
 class Base;
 
@@ -30,7 +29,7 @@ public:
   virtual ~Base();
   
   //Code gen
-  virtual void RISCOutput(std::ostream &dst, int destReg) const;
+  virtual void RISCOutput(std::ostream &dst, context &context, int destReg) const;
 
   //Get size for stack and frame pointer
   virtual int getSize() const;

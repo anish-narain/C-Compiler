@@ -22,9 +22,11 @@ void Return_Statement::print(std::ostream &dst, std::string indent) const
   dst << indent << "]" << std::endl;
 }
 
-void Return_Statement::RISCOutput(std::ostream &dst, int destReg) const
+void Return_Statement::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
-  branchList[0]->RISCOutput(dst, destReg);
+  branchList[0]->RISCOutput(dst, context, destReg);
 }
 
-int Return_Statement::getSize() const{}
+int Return_Statement::getSize() const{
+  return branchList[0]->getSize();
+}

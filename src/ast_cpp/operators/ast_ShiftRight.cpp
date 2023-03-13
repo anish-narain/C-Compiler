@@ -24,7 +24,9 @@ void ShiftRight::print(std::ostream &dst, std::string indent) const
   dst << indent << "]" << std::endl;
 }
 
-void ShiftRight::RISCOutput(std::ostream &dst, int destReg) const
+void ShiftRight::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {}
 
-int ShiftRight::getSize() const{}
+int ShiftRight::getSize() const{
+  return branchList[0]->getSize() + branchList[1]->getSize();
+}

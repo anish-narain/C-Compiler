@@ -20,7 +20,9 @@ void Param_List::print(std::ostream &dst, std::string indent) const
     dst << indent << "]" << std::endl;
 }
 
-void Param_List::RISCOutput(std::ostream &dst, int destReg) const
+void Param_List::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {}
 
-int Param_List::getSize() const{}
+int Param_List::getSize() const{
+  return branchList[0]->getSize();
+}
