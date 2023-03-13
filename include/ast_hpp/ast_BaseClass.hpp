@@ -32,6 +32,9 @@ public:
   //Code gen
   virtual void RISCOutput(std::ostream &dst, int destReg) const;
 
+  //Get size for stack and frame pointer
+  virtual int getSize() const;
+
 };
 
 
