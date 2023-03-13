@@ -334,7 +334,7 @@ init_declarator_list
 
 init_declarator
 	: declarator {$$ = $1;}
-	| declarator '=' initializer 
+	| declarator '=' initializer {$$ = new VariableAssign($1, $3);}
 	;
 
 storage_class_specifier
@@ -448,7 +448,7 @@ direct_abstract_declarator
 	;
 
 initializer
-	: assignment_expression
+	: assignment_expression {$$ = $1;}
 	| '{' initializer_list '}'
 	| '{' initializer_list ',' '}'
 	;

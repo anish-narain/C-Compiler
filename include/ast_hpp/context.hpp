@@ -19,16 +19,16 @@ public:
       0, 0, 0, 0, //t3-t6 Temporary registers: index = 28-31
     };  
     
-    void useReg(int i) {
+    void usedReg(int i) {
         Regs[i] = 1;
     }
-    void freeReg(int i){
+    void freedReg(int i){
         Regs[i] = 0;
     }
     int allocateRegister(){ //searches for the first free register in the range from x5 to x31 and returns its index
         for (int i = 5; i < 31; i++){
             if (Regs[i] == 0 ){
-                useReg(i);
+                usedReg(i);
                 return i;
         }   
       }

@@ -4,6 +4,7 @@
 #include "ast_hpp/declarations/ast_ParamDeclaration.hpp"
 #include "ast_hpp/declarations/ast_ParamListDeclaration.hpp"
 #include "ast_hpp/declarations/ast_ParamList.hpp"
+#include "ast_hpp/declarations/ast_VariableAssign.hpp"
 
 #include "ast_hpp/operators/ast_Add.hpp"
 #include "ast_hpp/operators/ast_BitwiseAnd.hpp"
