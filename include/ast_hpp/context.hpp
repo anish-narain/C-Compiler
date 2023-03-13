@@ -5,6 +5,7 @@
 class context{
     
 public:
+    std::map<std::string, int> variable_bindings;
 
     int Regs[32] =
     { 1, //x0 zero address: index = 0 
@@ -38,6 +39,25 @@ public:
     int rounding(int num){
         int multiplier = ceil((double)num/16);
         return (multiplier*16) + 16;
+    }
+
+    int implement_var_binding(std::string variable_name){
+        int current_stack = -16;
+        current_stack -= 4;
+        variable_bindings[variable_name] = current_stack;
+        return current_stack;
+    }
+
+    std::string reg(int i){
+        if (i > 4 && i < 8) /*From i = 5 to 7*/{
+            return 't' + std::to_string(i-5);
+        }
+        else if (i > 9 && i < 18) /*From i = 10 to 17*/{
+            return 'a' + std::to_string(i-10);
+        }
+        else if (i > 27 && i < 32) /*From i = 28 to 31*/{
+            return 't' + std::to_string(i-25);
+        }
     }
 };
 
