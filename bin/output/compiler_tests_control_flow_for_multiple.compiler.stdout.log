@@ -12,3 +12,51 @@
       RHS
         Integer : 0
       ]
+      For initilisation [
+        Binary Assignment[
+        LHS
+          IDENTIFIER x
+        RHS
+          Integer : 0
+        ]
+        Condition: 
+        LessThan Operation[
+        Left Operator
+          IDENTIFIER x
+        Right Operator
+          Integer : 10
+        ]
+        Increment: 
+        Binary Assignment[
+        LHS
+          IDENTIFIER x
+        RHS
+          Add Operation[
+          Left Operator
+            IDENTIFIER x
+          Right Operator
+            Integer : 1
+          ]
+        ]
+      ] endInitialisation
+      Do scope [
+        Binary Assignment[
+        LHS
+          IDENTIFIER y
+        RHS
+          Subtract Operation[
+          Left Operator
+            IDENTIFIER y
+          Right Operator
+            Integer : 1
+          ]
+        ]
+      ]endDoScope
+      Return: [
+        IDENTIFIER y
+      ]
+    ]
+  ]
+
+Compiling: compiler_tests/control_flow/for_multiple.c
+Compiled to: ./bin/output/compiler_tests_control_flow_for_multiple.s

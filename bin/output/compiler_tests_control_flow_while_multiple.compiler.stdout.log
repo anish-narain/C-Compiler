@@ -10,3 +10,32 @@
       RHS
         Integer : 20
       ]
+      While condition [
+        Greater Than Operation[
+        Left Operator
+          IDENTIFIER x
+        Right Operator
+          Integer : 10
+        ]
+      ] endCondition
+      Do scope [
+        Binary Assignment[
+        LHS
+          IDENTIFIER x
+        RHS
+          Subtract Operation[
+          Left Operator
+            IDENTIFIER x
+          Right Operator
+            Integer : 1
+          ]
+        ]
+      ] endDoScope
+      Return: [
+        IDENTIFIER x
+      ]
+    ]
+  ]
+
+Compiling: compiler_tests/control_flow/while_multiple.c
+Compiled to: ./bin/output/compiler_tests_control_flow_while_multiple.s

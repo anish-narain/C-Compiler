@@ -10,3 +10,22 @@
       RHS
         Integer : 1
       ]
+      While condition [
+        IDENTIFIER x
+      ] endCondition
+      Do scope [
+        Binary Assignment[
+        LHS
+          IDENTIFIER x
+        RHS
+          Integer : 0
+        ]
+      ] endDoScope
+      Return: [
+        Integer : 19937
+      ]
+    ]
+  ]
+
+Compiling: compiler_tests/control_flow/while_once.c
+Compiled to: ./bin/output/compiler_tests_control_flow_while_once.s

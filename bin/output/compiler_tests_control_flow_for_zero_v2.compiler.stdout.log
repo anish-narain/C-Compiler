@@ -4,8 +4,28 @@
     Compound Statements [
       TYPE: int      
       IDENTIFIER x
-      TYPE: int      
-      IDENTIFIER x
+      For initilisation [
+        Binary Assignment[
+        LHS
+          IDENTIFIER x
+        RHS
+          Integer : 0
+        ]
+        Condition: 
+        LessThan Operation[
+        Left Operator
+          IDENTIFIER x
+        Right Operator
+          Integer : 0
+        ]
+        Increment: 
+        IDENTIFIER x
+      ] endInitialisation
+      Do scope [
+        Return: [
+          Integer : 1
+        ]
+      ]endDoScope
       Return: [
         Integer : 19937
       ]

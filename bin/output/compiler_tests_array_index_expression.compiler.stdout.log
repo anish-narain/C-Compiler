@@ -11,11 +11,88 @@
       ]
       TYPE: int      
       IDENTIFIER acc
-      TYPE: int      
-      IDENTIFIER acc
+      For initilisation [
+        Binary Assignment[
+        LHS
+          IDENTIFIER i
+        RHS
+          Integer : 8
+        ]
+        Condition: 
+        LessThan Operation[
+        Left Operator
+          IDENTIFIER i
+        Right Operator
+          Integer : 16
+        ]
+        Increment: 
+        IDENTIFIER i
+      ] endInitialisation
+      Do scope [
+        Binary Assignment[
+        LHS
+          Array [
+            IDENTIFIER x
+            Subtract Operation[
+            Left Operator
+              IDENTIFIER i
+            Right Operator
+              Integer : 8
+            ]
+          ]
+        RHS
+          IDENTIFIER i
+        ]
+      ]endDoScope
       Binary Assignment[
       LHS
         IDENTIFIER acc
       RHS
         Integer : 0
       ]
+      For initilisation [
+        Binary Assignment[
+        LHS
+          IDENTIFIER i
+        RHS
+          Integer : 0
+        ]
+        Condition: 
+        LessThan Operation[
+        Left Operator
+          IDENTIFIER i
+        Right Operator
+          Integer : 8
+        ]
+        Increment: 
+        IDENTIFIER i
+      ] endInitialisation
+      Do scope [
+        Binary Assignment[
+        LHS
+          IDENTIFIER acc
+        RHS
+          Add Operation[
+          Left Operator
+            IDENTIFIER acc
+          Right Operator
+            Array [
+              IDENTIFIER x
+              Add Operation[
+              Left Operator
+                IDENTIFIER i
+              Right Operator
+                Integer : 0
+              ]
+            ]
+          ]
+        ]
+      ]endDoScope
+      Return: [
+        IDENTIFIER acc
+      ]
+    ]
+  ]
+
+Compiling: compiler_tests/array/index_expression.c
+Compiled to: ./bin/output/compiler_tests_array_index_expression.s

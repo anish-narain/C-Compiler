@@ -12,16 +12,16 @@
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/array/index_expression.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_array_index_expression.compiler.stderr.log and ./bin/output/compiler_tests_array_index_expression.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_array_index_expression.compiler.stderr.log and ./bin/output/compiler_tests_array_index_expression.compiler.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/array/index_variable.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_array_index_variable.compiler.stderr.log and ./bin/output/compiler_tests_array_index_variable.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_array_index_variable.compiler.stderr.log and ./bin/output/compiler_tests_array_index_variable.compiler.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/for_multiple.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_control_flow_for_multiple.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_for_multiple.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_control_flow_for_multiple.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_for_multiple.compiler.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/for_one.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_control_flow_for_one.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_for_one.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_control_flow_for_one.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_for_one.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/for_zero_v1.c">
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
@@ -45,13 +45,13 @@
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/while_multiple.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_control_flow_while_multiple.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_while_multiple.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_control_flow_while_multiple.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_while_multiple.compiler.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/while_once.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_control_flow_while_once.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_while_once.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_control_flow_while_once.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_while_once.compiler.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/while_zero.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_control_flow_while_zero.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_while_zero.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_control_flow_while_zero.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_while_zero.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/default/test_ADD0.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_default_test_ADD0.linker.stderr.log and ./bin/output/compiler_tests_default_test_ADD0.linker.stdout.log">Fail: see ./bin/output/compiler_tests_default_test_ADD0.linker.stderr.log and ./bin/output/compiler_tests_default_test_ADD0.linker.stdout.log</error>
@@ -208,9 +208,42 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_programs_multiply.compiler.stderr.log and ./bin/output/compiler_tests_programs_multiply.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_programs_multiply.compiler.stderr.log and ./bin/output/compiler_tests_programs_multiply.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/programs/sqrt.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_programs_sqrt.linker.stderr.log and ./bin/output/compiler_tests_programs_sqrt.linker.stdout.log">Fail: see ./bin/output/compiler_tests_programs_sqrt.linker.stderr.log and ./bin/output/compiler_tests_programs_sqrt.linker.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_programs_sqrt.compiler.stderr.log and ./bin/output/compiler_tests_programs_sqrt.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_programs_sqrt.compiler.stderr.log and ./bin/output/compiler_tests_programs_sqrt.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/strings/escaped.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_strings_escaped.compiler.stderr.log and ./bin/output/compiler_tests_strings_escaped.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_strings_escaped.compiler.stderr.log and ./bin/output/compiler_tests_strings_escaped.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/strings/literal.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_strings_literal.compiler.stderr.log and ./bin/output/compiler_tests_strings_literal.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_strings_literal.compiler.stderr.log and ./bin/output/compiler_tests_strings_literal.compiler.stdout.log</error>
+</testcase>
+<testcase name="compiler_tests/strings/puts.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_strings_puts.compiler.stderr.log and ./bin/output/compiler_tests_strings_puts.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_strings_puts.compiler.stderr.log and ./bin/output/compiler_tests_strings_puts.compiler.stdout.log</error>
+</testcase>
+<testcase name="compiler_tests/strings/search.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_strings_search.compiler.stderr.log and ./bin/output/compiler_tests_strings_search.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_strings_search.compiler.stderr.log and ./bin/output/compiler_tests_strings_search.compiler.stdout.log</error>
+</testcase>
+<testcase name="compiler_tests/struct/sizeof.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_struct_sizeof.compiler.stderr.log and ./bin/output/compiler_tests_struct_sizeof.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_struct_sizeof.compiler.stderr.log and ./bin/output/compiler_tests_struct_sizeof.compiler.stdout.log</error>
+</testcase>
+<testcase name="compiler_tests/struct/struct_inst.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_struct_struct_inst.compiler.stderr.log and ./bin/output/compiler_tests_struct_struct_inst.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_struct_struct_inst.compiler.stderr.log and ./bin/output/compiler_tests_struct_struct_inst.compiler.stdout.log</error>
+</testcase>
+<testcase name="compiler_tests/struct/struct_member_get.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_struct_struct_member_get.compiler.stderr.log and ./bin/output/compiler_tests_struct_struct_member_get.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_struct_struct_member_get.compiler.stderr.log and ./bin/output/compiler_tests_struct_struct_member_get.compiler.stdout.log</error>
+</testcase>
+<testcase name="compiler_tests/struct/struct_member_set.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_struct_struct_member_set.compiler.stderr.log and ./bin/output/compiler_tests_struct_struct_member_set.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_struct_struct_member_set.compiler.stderr.log and ./bin/output/compiler_tests_struct_struct_member_set.compiler.stdout.log</error>
+</testcase>
+<testcase name="compiler_tests/struct/struct_two_members.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_struct_struct_two_members.compiler.stderr.log and ./bin/output/compiler_tests_struct_struct_two_members.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_struct_struct_two_members.compiler.stderr.log and ./bin/output/compiler_tests_struct_struct_two_members.compiler.stdout.log</error>
+</testcase>
+<testcase name="compiler_tests/types/sizeof_char_inst.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_types_sizeof_char_inst.compiler.stderr.log and ./bin/output/compiler_tests_types_sizeof_char_inst.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_types_sizeof_char_inst.compiler.stderr.log and ./bin/output/compiler_tests_types_sizeof_char_inst.compiler.stdout.log</error>
+</testcase>
+<testcase name="compiler_tests/types/sizeof_int_inst.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/types/unsigned.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_types_unsigned.compiler.stderr.log and ./bin/output/compiler_tests_types_unsigned.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_types_unsigned.compiler.stderr.log and ./bin/output/compiler_tests_types_unsigned.compiler.stdout.log</error>
+</testcase>
+</testsuite>

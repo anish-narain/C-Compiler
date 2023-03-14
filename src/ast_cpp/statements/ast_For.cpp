@@ -1,9 +1,9 @@
 #include "ast_hpp/statements/ast_For.hpp"
 
 //Constuctor
-For::For(BasePtr initialize, BasePtr condition, BasePtr increment, BasePtr statement);
+For::For(BasePtr initialize, BasePtr condition, BasePtr increment, BasePtr statement)
 {
-    branchList.insert(branchList.end(), {iniitialize, condition, increment, statement});
+    branchList.insert(branchList.end(), {initialize, condition, increment, statement});
 }
 
 //Destructor

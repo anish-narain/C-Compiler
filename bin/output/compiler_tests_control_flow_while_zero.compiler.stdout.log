@@ -1,11 +1,7 @@
   Function Definition [
     TYPE: int    
     IDENTIFIER f
-    Integer : 0
-    Return: [
-      Integer : 19937
-    ]
-  ]
-
-Compiling: compiler_tests/control_flow/while_zero.c
-Compiled to: ./bin/output/compiler_tests_control_flow_while_zero.s
+    While condition [
+      Integer : 0
+    ] endCondition
+    Do scope [

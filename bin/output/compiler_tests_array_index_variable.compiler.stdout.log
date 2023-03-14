@@ -9,3 +9,42 @@
         IDENTIFIER x
         Integer : 8
       ]
+      For initilisation [
+        Binary Assignment[
+        LHS
+          IDENTIFIER i
+        RHS
+          Integer : 0
+        ]
+        Condition: 
+        LessThan Operation[
+        Left Operator
+          IDENTIFIER i
+        Right Operator
+          Integer : 8
+        ]
+        Increment: 
+        IDENTIFIER i
+      ] endInitialisation
+      Do scope [
+        Binary Assignment[
+        LHS
+          Array [
+            IDENTIFIER x
+            IDENTIFIER i
+          ]
+        RHS
+          IDENTIFIER i
+        ]
+      ]endDoScope
+      Return: [
+        Array [
+          IDENTIFIER x
+          Integer : 4
+        ]
+      ]
+    ]
+  ]
+
+Compiling: compiler_tests/array/index_variable.c
+Compiled to: ./bin/output/compiler_tests_array_index_variable.s
