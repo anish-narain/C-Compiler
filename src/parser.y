@@ -88,7 +88,7 @@ declaration_specifiers
 	: storage_class_specifier
 	| storage_class_specifier declaration_specifiers
 	| type_specifier {$$ = $1;} //relevant
-	| type_specifier declaration_specifiers
+	| type_specifier declaration_specifiers 
 	| type_qualifier
 	| type_qualifier declaration_specifiers
 	;
@@ -137,10 +137,10 @@ statement_list
 
 statement
 	: labeled_statement
-	| compound_statement
+	| compound_statement {$$ = $1;}
 	| expression_statement {$$ = $1;}
-	| selection_statement
-	| iteration_statement
+	| selection_statement {$$ = $1;}
+	| iteration_statement {$$ = $1;}
 	| jump_statement {$$ = $1;}//relevant
 	;
 
@@ -368,7 +368,7 @@ struct_declaration
 
 specifier_qualifier_list
 	: type_specifier specifier_qualifier_list
-	| type_specifier
+	| type_specifier 
 	| type_qualifier specifier_qualifier_list
 	| type_qualifier
 	;
@@ -466,16 +466,16 @@ labeled_statement
 	;
 
 selection_statement
-	: IF '(' expression ')' statement
-	| IF '(' expression ')' statement ELSE statement
+	: IF '(' expression ')' statement  { $$ = new If($3, $5); }
+	| IF '(' expression ')' statement ELSE statement { $$ = new If_Else($3, $5, $7); }
 	| SWITCH '(' expression ')' statement
 	;
 
 iteration_statement
-	: WHILE '(' expression ')' statement
-	| DO statement WHILE '(' expression ')' ';'
-	| FOR '(' expression_statement expression_statement ')' statement
-	| FOR '(' expression_statement expression_statement expression ')' statement
+	: WHILE '(' expression ')' statement { $$ = new While($3, $5); }
+	| DO statement WHILE '(' expression ')' ';' 
+	| FOR '(' expression_statement expression_statement ')' statement 
+	| FOR '(' expression_statement expression_statement expression ')' statement  { $$ = new For($3, $4, $5, $7); }
 	;
 
 

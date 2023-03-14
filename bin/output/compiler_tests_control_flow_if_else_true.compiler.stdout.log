@@ -1,7 +1,19 @@
   Function Definition [
     TYPE: int    
     IDENTIFIER f
-    Integer : 1
+    Condition [
+      Integer : 1
+    ] endCondition
+    If Scope [
+      Return: [
+        Integer : 11
+      ]
+    ] endIfScope
+    Else Scope [
+      Return: [
+        Integer : 10
+      ]
+    ] endElseScope
   ]
 
 Compiling: compiler_tests/control_flow/if_else_true.c

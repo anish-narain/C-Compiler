@@ -33,6 +33,8 @@
 #include "ast_hpp/multi/ast_MultiDec.hpp"
 
 #include "ast_hpp/statements/ast_ReturnStatement.hpp"
+#include "ast_hpp/statements/ast_IfElse.hpp"
+#include "ast_hpp/statements/ast_If.hpp"
 
 #include "ast_hpp/types/ast_Array.hpp"
 
