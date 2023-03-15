@@ -30,8 +30,8 @@ void Add::RISCOutput(std::ostream &dst, context &context, int destReg) const
     int left_reg = context.allocateRegister();
     int right_reg = context.allocateRegister();
 
-    branchList[0]->RISCOutput(dst, context, destReg);
-    branchList[1]->RISCOutput(dst, context, destReg);
+    branchList[0]->RISCOutput(dst, context, left_reg);
+    branchList[1]->RISCOutput(dst, context, right_reg);
 
     std::string right = context.reg(right_reg);
     std::string left = context.reg(left_reg);
