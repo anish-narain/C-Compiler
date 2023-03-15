@@ -119,22 +119,19 @@
 <testcase name="compiler_tests/integer/add.c">
 </testcase>
 <testcase name="compiler_tests/integer/bitwise_and.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/integer/bitwise_or.c">
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/integer/bitwise_xor.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/integer/div.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/integer/equal.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_equal.assembler.stderr.log and ./bin/output/compiler_tests_integer_equal.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_equal.assembler.stderr.log and ./bin/output/compiler_tests_integer_equal.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/less_than.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_less_than.assembler.stderr.log and ./bin/output/compiler_tests_integer_less_than.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_less_than.assembler.stderr.log and ./bin/output/compiler_tests_integer_less_than.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/less_than_equal.c">
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
@@ -146,7 +143,6 @@
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/integer/mul.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/integer/sub.c">
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
