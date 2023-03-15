@@ -20,8 +20,21 @@ void Function_Declarator_With_Param::print(std::ostream &dst, std::string indent
 }
 
 void Function_Declarator_With_Param::RISCOutput(std::ostream &dst, context &context, int destReg) const
-{}
+{
+  branchList[0]->RISCOutput(dst, context ,destReg);
+  branchList[1]->RISCOutput(dst, context ,destReg);
+}
 
 int Function_Declarator_With_Param::getSize() const{
    return branchList[0]->getSize() + branchList[1]->getSize();
 }
+
+BasePtr Function_Declarator_With_Param::returnBranch(int index) const{
+  return branchList[index];
+}
+
+std::string Function_Declarator_With_Param::Returnid() const{
+  return branchList[0]->Returnid();
+}
+
+

@@ -36,7 +36,7 @@ void Add::RISCOutput(std::ostream &dst, context &context, int destReg) const
     std::string right = context.reg(right_reg);
     std::string left = context.reg(left_reg);
 
-    dst << "add" << context.reg(destReg) << ", " << context.reg(left_reg) << ", " << context.reg(right_reg) << std::endl;
+    dst << "add " << context.reg(destReg) << ", " << context.reg(left_reg) << ", " << context.reg(right_reg) << std::endl;
     
 }
 

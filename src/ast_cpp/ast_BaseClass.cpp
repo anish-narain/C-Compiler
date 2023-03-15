@@ -34,3 +34,9 @@ int Base::getSize() const{
   std::cerr << "Base Class Reached. ERROR!!! (getSize)" << std::endl;
   return 0;
 }
+
+BasePtr Base::returnBranch(int index) const{
+  std::cerr << "Base Class Reached. ERROR!!! (returnBranch)" << std::endl;
+  BasePtr fakePointer;
+  return fakePointer;
+}

@@ -1,4 +1,4 @@
-chliteral.c: strings folder
+chliteral.c, escaped.c, literal.c: strings folder
 size of (2): types folder
 index.c, arithmetic.c: pointer folder
 

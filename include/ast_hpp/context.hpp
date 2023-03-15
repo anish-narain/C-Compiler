@@ -52,7 +52,7 @@ public:
     }
 
     int implement_var_binding(std::string variable_name){
-        int current_stack = -16;
+        static int current_stack = -16;
         current_stack -= 4;
         variable_bindings[variable_name] = current_stack;
         return current_stack;

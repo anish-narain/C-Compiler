@@ -17,8 +17,11 @@ void Name_Declarator::print(std::ostream &dst, std::string indent) const
 
 void Name_Declarator::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
-  dst << ".globl "<< id << std::endl; // will need to add parameters 
-  dst << id << ":" << std::endl; // will need to add parameters 
+  
+}
+
+std::string Name_Declarator::Returnid() const{
+  return id;
 }
 
 int Name_Declarator::getSize() const{

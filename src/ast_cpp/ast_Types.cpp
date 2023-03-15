@@ -22,7 +22,8 @@ void Types::print(std::ostream &dst, std::string indent) const
 }
 
 void Types::RISCOutput(std::ostream &dst, context &context, int destReg) const
-{}
+{
+}
 
 int Types::getSize() const
 {

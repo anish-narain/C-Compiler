@@ -17,7 +17,7 @@ void Int::print(std::ostream &dst, std::string indent) const
 
 void Int::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
-  dst << "li a5," << int_value << std::endl;
+  dst << "li "<< context.reg(destReg) << "," << int_value << std::endl;
 }
 
 int Int::getSize() const{

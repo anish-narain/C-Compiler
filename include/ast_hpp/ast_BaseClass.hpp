@@ -36,6 +36,9 @@ public:
 
   virtual std::string Returnid() const;
 
+  virtual BasePtr returnBranch(int index) const;
+
+
 };
 
 

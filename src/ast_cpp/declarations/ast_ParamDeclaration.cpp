@@ -25,7 +25,10 @@ void Param_Declarator::RISCOutput(std::ostream &dst, context &context, int destR
   int var_addr = context.implement_var_binding(var_id);
   int param_reg = context.parameterAllocateRegister();
 
-  dst << "sw" << context.reg(param_reg) << ", " << var_addr << "(s0)" <<std::endl;
+  branchList[0]->RISCOutput(dst, context ,destReg);
+  branchList[1]->RISCOutput(dst, context ,destReg);
+
+  dst << "sw " << context.reg(param_reg) << ", " << var_addr << "(s0)" <<std::endl;
 }
 
 

@@ -17,7 +17,7 @@ void Identifier::print(std::ostream &dst, std::string indent) const
 //Codegen
 void Identifier::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
-  dst << "lw" << context.reg(destReg) <<  ", " << context.get_var_location(id) << "(s0)" <<std::endl;
+  dst << "lw " << context.reg(destReg) <<  ", " << context.get_var_location(id) << "(s0)" <<std::endl;
 }
 
 std::string Identifier::Returnid() const{

@@ -26,6 +26,10 @@ public:
     //Size 
     virtual int getSize() const override;
 
+    virtual BasePtr returnBranch(int index) const override;
+
+    virtual std::string Returnid() const override;
+
 };
 
 #endif

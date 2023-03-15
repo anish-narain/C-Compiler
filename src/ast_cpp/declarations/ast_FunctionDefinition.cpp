@@ -23,23 +23,32 @@ void Function_Definition::print(std::ostream &dst, std::string indent) const
   dst << indent << "]" << std::endl;
 }
 
+BasePtr Function_Definition::returnBranch(int index) const{
+  return branchList[index];
+}
+
 void Function_Definition::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
   int stacksize = context.rounding(getSize()); 
-
-  branchList[1]->RISCOutput(dst, context ,destReg);
+  std::string id = branchList[1]->Returnid();
+  dst << ".globl "<< id << std::endl; // will need to add parameters 
+  dst << id << ":" << std::endl; // will need to add parameters 
   
   dst << "addi sp,sp,-" << stacksize << std::endl;
   dst << "sw s0,"<< stacksize - 4 <<"(sp)" << std::endl;
   dst << "addi s0,sp," << stacksize << std::endl; 
   
-  branchList[2]->RISCOutput(dst, context ,destReg);
+  int newReg = context.allocateRegister();
 
-  dst << "mv a0,a5" << std::endl;
+  branchList[1]->RISCOutput(dst, context ,newReg);
+  branchList[2]->RISCOutput(dst, context ,newReg);
+
+  dst << "mv a0," << context.reg(newReg) << std::endl;
   dst << "lw s0,"<< stacksize - 4 <<"(sp)" << std::endl;
   dst << "addi sp,sp," << stacksize << std::endl;
   dst << "jr ra" << std::endl;
 }
+
 
 int Function_Definition::getSize() const
 {
