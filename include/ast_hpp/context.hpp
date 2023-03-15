@@ -36,6 +36,16 @@ public:
       return -1;
     }
 
+    int parameterAllocateRegister(){ //searches for the first free register in the range from x5 to x31 and returns its index
+        for (int i = 10; i < 17; i++){
+            if (Regs[i] == 0 ){
+                usedReg(i);
+                return i;
+        }   
+      }
+      return -1;
+    }
+
     int rounding(int num){
         int multiplier = ceil((double)num/16);
         return (multiplier*16) + 16;
@@ -47,6 +57,15 @@ public:
         variable_bindings[variable_name] = current_stack;
         return current_stack;
     }
+
+    int get_var_location(std::string variable_name) const {
+        auto it = variable_bindings.find(variable_name);
+        if (it == variable_bindings.end()) {
+            std::cerr << "Variable not found" << std::endl;
+        }
+        return it->second; // return the second item from the map[name
+    }
+
 
     std::string reg(int i){
         if (i > 4 && i < 8) /*From i = 5 to 7*/{

@@ -20,7 +20,14 @@ void Param_Declarator::print(std::ostream &dst, std::string indent) const
 }
 
 void Param_Declarator::RISCOutput(std::ostream &dst, context &context, int destReg) const
-{}
+{
+  std::string var_id = branchList[1]->Returnid();
+  int var_addr = context.implement_var_binding(var_id);
+  int param_reg = context.parameterAllocateRegister();
+
+  dst << "sw" << context.reg(param_reg) << ", " << var_addr << "(s0)" <<std::endl;
+}
+
 
 int Param_Declarator::getSize() const{
   return branchList[0]->getSize() + branchList[1]->getSize();

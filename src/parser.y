@@ -276,7 +276,7 @@ parameter_list
 
 parameter_declaration
 	: declaration_specifiers declarator {$$ = new Param_Declarator($1, $2);}
-	| declaration_specifiers abstract_declarator
+	| declaration_specifiers abstract_declarator 
 	| declaration_specifiers
 	;
 

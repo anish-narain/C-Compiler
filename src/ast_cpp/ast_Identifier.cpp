@@ -17,8 +17,11 @@ void Identifier::print(std::ostream &dst, std::string indent) const
 //Codegen
 void Identifier::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
-  dst << ".globl "<< id << std::endl; // will need to add parameters 
-  dst << id << ":" << std::endl; // will need to add parameters 
+  dst << "lw" << context.reg(destReg) <<  ", " << context.get_var_location(id) << "(s0)" <<std::endl;
+}
+
+std::string Identifier::Returnid() const{
+  return id;
 }
 
 int Identifier::getSize() const{

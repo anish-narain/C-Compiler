@@ -34,6 +34,8 @@ public:
   //Get size for stack and frame pointer
   virtual int getSize() const;
 
+  virtual std::string Returnid() const;
+
 };
 
 

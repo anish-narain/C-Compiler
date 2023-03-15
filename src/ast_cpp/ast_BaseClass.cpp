@@ -26,6 +26,10 @@ void Base::RISCOutput(std::ostream &dst, context &context, int destReg) const
   dst << "Base Class Reached. ERROR!!! (RISCOutput)" << std::endl;
 }
 
+std::string Base::Returnid() const{
+  std::cerr << "Base Class Reached. ERROR!!! (ReturnId)" << std::endl;
+}
+
 int Base::getSize() const{
   std::cerr << "Base Class Reached. ERROR!!! (getSize)" << std::endl;
   return 0;

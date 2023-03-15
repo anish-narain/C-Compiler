@@ -35,8 +35,8 @@
 #include "ast_hpp/statements/ast_ReturnStatement.hpp"
 #include "ast_hpp/statements/ast_IfElse.hpp"
 #include "ast_hpp/statements/ast_If.hpp"
-#include "ast_hpp/statements/ast_For.hpp"
 #include "ast_hpp/statements/ast_While.hpp"
+#include "ast_hpp/statements/ast_For.hpp"
 
 #include "ast_hpp/types/ast_Array.hpp"
 

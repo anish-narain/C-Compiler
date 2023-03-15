@@ -55,7 +55,7 @@ int main(int argc, char **argv)
     // Compile the input
     std::cout << "Compiling: " << sourcePath << std::endl;
    // compile(output);
-    ast->RISCOutput(output, c, 1);
+    ast->RISCOutput(output, c, 10);
     std::cout << "Compiled to: " << outputPath << std::endl;
 
     output.close();
