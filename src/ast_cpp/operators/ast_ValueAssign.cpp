@@ -27,7 +27,6 @@ void ValueAssign::print(std::ostream &dst, std::string indent) const
 void ValueAssign::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
     branchList[1]->RISCOutput(dst, context, destReg);
-
     std::string id = branchList[0]->Returnid();
     int addrOfLHS = context.implement_var_binding(id);
      

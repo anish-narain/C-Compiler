@@ -1,0 +1,2 @@
+./bin/output/compiler_tests_array_index_variable.s: Assembler messages:
+./bin/output/compiler_tests_array_index_variable.s:10: Error: unrecognized opcode `lessthen t0,t1,t2'

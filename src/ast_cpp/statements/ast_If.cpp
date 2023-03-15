@@ -30,6 +30,7 @@ void If::print(std::ostream &dst, std::string indent) const
 void If::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
   branchList[0]->RISCOutput(dst, context, destReg);
+  branchList[1]->RISCOutput(dst, context, destReg);
 }
 
 int If::getSize() const{
