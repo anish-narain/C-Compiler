@@ -71,23 +71,23 @@ translation_unit
 	| translation_unit external_declaration 
 	;
 
-external_declaration //global variables or functions in the code
+external_declaration 
 	: function_definition { $$ = $1; }
 	| declaration { $$ = $1; }
 	;
 
 function_definition
 	: declaration_specifiers declarator declaration_list compound_statement
-	| declaration_specifiers declarator compound_statement {$$ = new Function_Definition($1, $2, $3);}//relevant
+	| declaration_specifiers declarator compound_statement {$$ = new Function_Definition($1, $2, $3);} 
 	| declarator declaration_list compound_statement
-	| declarator compound_statement //relevant later
+	| declarator compound_statement 
 	;
 
 
 declaration_specifiers
 	: storage_class_specifier
 	| storage_class_specifier declaration_specifiers
-	| type_specifier {$$ = $1;} //relevant
+	| type_specifier {$$ = $1;}  
 	| type_specifier declaration_specifiers 
 	| type_qualifier
 	| type_qualifier declaration_specifiers
@@ -95,22 +95,22 @@ declaration_specifiers
 
 declarator
 	: pointer direct_declarator
-	| direct_declarator {$$ = $1;} //relevant
+	| direct_declarator {$$ = $1;}  
 	;
 
 direct_declarator
-	: IDENTIFIER  {$$ = new Name_Declarator(*$1); delete $1;} //relevant
+	: IDENTIFIER  {$$ = new Name_Declarator(*$1); delete $1;}  
 	| '(' declarator ')' {$$ = $2;}
 	| direct_declarator '[' constant_expression ']' {$$ = new Array($1, $3);}
 	| direct_declarator '[' ']'
-	| direct_declarator '(' parameter_type_list ')' {$$ = new Function_Declarator_With_Param($1, $3);}//relevant
+	| direct_declarator '(' parameter_type_list ')' {$$ = new Function_Declarator_With_Param($1, $3);} 
 	| direct_declarator '(' IDENTIFIER_list ')'
 	| direct_declarator '(' ')'{$$ = $1;} 
 	;
 
 compound_statement
 	: '{' '}'
-	| '{' statement_list '}' {$$ = $2;}//relevant
+	| '{' statement_list '}' {$$ = $2;} 
 	| '{' declaration_list '}' {$$ = $2;}
 	| '{' declaration_list statement_list '}' {$$ = new Multiline($2, $3);}
 	;
@@ -131,7 +131,7 @@ type_specifier
 	;
 
 statement_list
-	: statement {$$ = $1;}//relevant
+	: statement {$$ = $1;} 
 	| statement_list statement {$$ = new MultiStatement($1, $2);}
 	;
 
@@ -141,7 +141,7 @@ statement
 	| expression_statement {$$ = $1;}
 	| selection_statement {$$ = $1;}
 	| iteration_statement {$$ = $1;}
-	| jump_statement {$$ = $1;}//relevant
+	| jump_statement {$$ = $1;} 
 	;
 
 expression_statement
@@ -154,7 +154,7 @@ jump_statement
 	| CONTINUE ';'
 	| BREAK ';'
 	| RETURN ';'
-	| RETURN expression ';' {$$ = new Return_Statement($2);}//relevant
+	| RETURN expression ';' {$$ = new Return_Statement($2);} 
 	;
 
 expression
@@ -265,13 +265,12 @@ primary_expression
 	;
 
 parameter_type_list
-	: parameter_list {$$ = new Param_List($1);}//relevant
-	//| parameter_list ',' ELLIPSIS
+	: parameter_list {$$ = new Param_List($1);} 
 	;
 
 parameter_list
 	: parameter_declaration {$$ = $1;}
-	| parameter_list ',' parameter_declaration {$$ = new Param_List_Declarator($1, $3);}//relevant
+	| parameter_list ',' parameter_declaration {$$ = new Param_List_Declarator($1, $3);} 
 	;
 
 parameter_declaration
@@ -284,7 +283,7 @@ declaration_list
 	: declaration {$$ = $1;}
 	| declaration_list declaration {$$ = new MultiDeclaration($1, $2);}
 	;
-//=========================================================================
+
 declaration
 	: declaration_specifiers ';'  {$$ = $1;}
 	| declaration_specifiers init_declarator_list ';' {$$ = new MultiDec($1, $2);}
