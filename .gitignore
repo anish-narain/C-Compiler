@@ -1,6 +1,7 @@
 bin/output/*
 *.linker.stdout.log
 *.compiler.stdout.log
+*.o.icloud
 *.o
 *.tab.cpp
 *.log

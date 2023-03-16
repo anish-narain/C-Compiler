@@ -102,7 +102,7 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_mutual_recursive.linker.stderr.log and ./bin/output/compiler_tests_functions_call_mutual_recursive.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_mutual_recursive.linker.stderr.log and ./bin/output/compiler_tests_functions_call_mutual_recursive.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_recursive_internal.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_recursive_internal.assembler.stderr.log and ./bin/output/compiler_tests_functions_call_recursive_internal.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_recursive_internal.assembler.stderr.log and ./bin/output/compiler_tests_functions_call_recursive_internal.assembler.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_two_args_external.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_two_args_external.linker.stderr.log and ./bin/output/compiler_tests_functions_call_two_args_external.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_two_args_external.linker.stderr.log and ./bin/output/compiler_tests_functions_call_two_args_external.linker.stdout.log</error>
@@ -121,7 +121,6 @@
 <testcase name="compiler_tests/integer/div.c">
 </testcase>
 <testcase name="compiler_tests/integer/equal.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_equal.assembler.stderr.log and ./bin/output/compiler_tests_integer_equal.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_equal.assembler.stderr.log and ./bin/output/compiler_tests_integer_equal.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/less_than.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_integer_less_than.assembler.stderr.log and ./bin/output/compiler_tests_integer_less_than.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_less_than.assembler.stderr.log and ./bin/output/compiler_tests_integer_less_than.assembler.stdout.log</error>
@@ -138,7 +137,6 @@
 <testcase name="compiler_tests/integer/mul.c">
 </testcase>
 <testcase name="compiler_tests/integer/sub.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/local_var/constant_initialiser.c">
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
