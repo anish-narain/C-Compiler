@@ -57,6 +57,9 @@ public:
         int multiplier = ceil((double)num/16);
         return (multiplier*16) + 16;
     }
+      // manages statement within a function like ifElse, while, for
+     void enterStatement();
+     void exitStatement(std::ostream &dst);
 
     int implement_var_binding(std::string variable_name){
         static int current_stack = -16;

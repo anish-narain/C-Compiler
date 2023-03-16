@@ -29,8 +29,26 @@ void While::print(std::ostream &dst, std::string indent) const
 
 void While::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
-  branchList[0]->RISCOutput(dst, context, destReg);
-  branchList[1]->RISCOutput(dst, context, destReg);
+    std::string branch1 = context.allocateJumpBranch();
+    std::string branch2 = context.allocateJumpBranch();
+    int zero_reg = context.allocateRegister();
+    int start_reg = context.allocateRegister();
+    int condition_reg = context.allocateRegister();
+    int end_reg = context.allocateRegister();
+
+    std::string zero = context.reg(zero_reg);
+    std::string start = context.reg(start_reg);
+    dst << "j ." << branch1 << ":" << std::endl;
+    dst << "." << branch2 << ":" << std::endl;
+
+
+    std::string end = context.reg(end_reg);
+    branchList[1]->RISCOutput(dst, context, destReg);
+
+    dst << "." << branch2 << ":" << std::endl;
+    std::string condition = context.reg(condition_reg);
+    branchList[0]->RISCOutput(dst, context, condition_reg);
+ 
 }
 
 int While::getSize() const{

@@ -39,9 +39,10 @@
 <testcase name="compiler_tests/control_flow/sequence.c">
 </testcase>
 <testcase name="compiler_tests/control_flow/while_multiple.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_control_flow_while_multiple.assembler.stderr.log and ./bin/output/compiler_tests_control_flow_while_multiple.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_control_flow_while_multiple.assembler.stderr.log and ./bin/output/compiler_tests_control_flow_while_multiple.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/while_once.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_control_flow_while_once.assembler.stderr.log and ./bin/output/compiler_tests_control_flow_while_once.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_control_flow_while_once.assembler.stderr.log and ./bin/output/compiler_tests_control_flow_while_once.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/while_zero.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_control_flow_while_zero.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_while_zero.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_control_flow_while_zero.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_while_zero.compiler.stdout.log</error>
