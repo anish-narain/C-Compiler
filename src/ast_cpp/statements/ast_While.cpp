@@ -45,10 +45,11 @@ void While::RISCOutput(std::ostream &dst, context &context, int destReg) const
     std::string end = context.reg(end_reg);
     branchList[1]->RISCOutput(dst, context, destReg);
 
-    dst << "." << branch2 << ":" << std::endl;
+    dst << "." << branch1 << ":" << std::endl;
     std::string condition = context.reg(condition_reg);
     branchList[0]->RISCOutput(dst, context, condition_reg);
- 
+    dst << "li " << context.reg(destReg) << ",1" << std::endl;
+    dst << "beq " << context.reg(condition_reg) << ", " << context.reg(destReg) << ", ." << branch2 << std::endl; //if condition_reg = 1 or not equal 0, branch
 }
 
 int While::getSize() const{
