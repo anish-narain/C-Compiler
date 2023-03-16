@@ -29,28 +29,25 @@ void While::print(std::ostream &dst, std::string indent) const
 
 void While::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
-    std::string branch1 = context.allocateJumpBranch();
-    std::string branch2 = context.allocateJumpBranch();
+    std::string start = context.allocateJumpBranch();
+    std::string end = context.allocateJumpBranch();
     int zero_reg = context.allocateRegister();
-    int start_reg = context.allocateRegister();
     int condition_reg = context.allocateRegister();
-    int end_reg = context.allocateRegister();
 
     std::string zero = context.reg(zero_reg);
-    std::string start = context.reg(start_reg);
-    dst << "j ." << branch1 << ":" << std::endl;
-    dst << "." << branch2 << ":" << std::endl;
-
-
-    std::string end = context.reg(end_reg);
-    branchList[1]->RISCOutput(dst, context, destReg);
-
-    dst << "." << branch1 << ":" << std::endl;
-    std::string condition = context.reg(condition_reg);
+    dst << "li " << zero << " ," << " 0" <<std::endl;
+    dst << "." << start << ":" << std::endl;
     branchList[0]->RISCOutput(dst, context, condition_reg);
-    dst << "li " << context.reg(destReg) << ",1" << std::endl;
-    dst << "beq " << context.reg(condition_reg) << ", " << context.reg(destReg) << ", ." << branch2 << std::endl; //if condition_reg = 1 or not equal 0, branch
+    dst << "beq " << context.reg(condition_reg) << ", " << zero << ", ." << end << std::endl;
+    branchList[1]->RISCOutput(dst, context, destReg);
+    dst << "beq " << zero << ", " << zero << ", ." << start << std::endl;
+    dst << "." << end << ":" << std::endl;
+    dst << "lw " << context.reg(destReg) << ", " << context.reg(condition_reg) << ", " << zero << std::endl;
 }
+
+        
+
+
 
 int While::getSize() const{
   return branchList[0]->getSize();

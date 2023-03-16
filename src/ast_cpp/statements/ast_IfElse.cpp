@@ -34,6 +34,7 @@ void If_Else::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
   branchList[0]->RISCOutput(dst, context, destReg);
   branchList[1]->RISCOutput(dst, context, destReg);
+  
 }
 
 int If_Else::getSize() const{
