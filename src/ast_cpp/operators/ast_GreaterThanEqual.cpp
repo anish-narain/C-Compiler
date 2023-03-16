@@ -35,7 +35,9 @@ void GreaterThanEqual::RISCOutput(std::ostream &dst, context &context, int destR
     std::string right = context.reg(right_reg);
     std::string left = context.reg(left_reg);
 
-    dst << "GreaterThanEqual " << context.reg(destReg) << ", " << context.reg(left_reg) << ", " << context.reg(right_reg) << std::endl;
+    dst << "slt " << context.reg(right_reg) << ", " << context.reg(left_reg) << ", " << context.reg(right_reg) << std::endl;
+    dst << "xori " << context.reg(right_reg) << ", " << context.reg(right_reg) << ",1" << std::endl;
+    dst << "andi " << context.reg(destReg) << ", " << context.reg(right_reg) << ", " << "0xff" << std::endl;
 }
 
 int GreaterThanEqual::getSize() const{

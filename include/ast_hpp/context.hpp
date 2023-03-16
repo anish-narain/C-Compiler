@@ -36,7 +36,7 @@ public:
       return -1;
     }
 
-    int parameterAllocateRegister(){ //searches for the first free register in the range from x5 to x31 and returns its index
+    int parameterAllocateRegister(){ //searches for the first free register in the range from x10 to x17 and returns its index
         for (int i = 10; i < 17; i++){
             if (Regs[i] == 0 ){
                 usedReg(i);
@@ -44,6 +44,13 @@ public:
         }   
       }
       return -1;
+    }
+
+    
+    std::string allocateJumpBranch() {
+        static int branch_num = 0;
+        branch_num = branch_num+1;
+        return "L"+std::to_string(branch_num);
     }
 
     int rounding(int num){

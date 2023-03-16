@@ -35,7 +35,8 @@ void LessThan::RISCOutput(std::ostream &dst, context &context, int destReg) cons
     std::string right = context.reg(right_reg);
     std::string left = context.reg(left_reg);
 
-    dst << "LessThen " << context.reg(destReg) << ", " << context.reg(left_reg) << ", " << context.reg(right_reg) << std::endl;
+    dst << "slt " << context.reg(right_reg) << ", " << context.reg(left_reg) << ", " << context.reg(right_reg) << std::endl;
+    dst << "andi " << context.reg(destReg) << ", " << context.reg(right_reg) << ", " << "0xff" << std::endl;
 }
 
 int LessThan::getSize() const{

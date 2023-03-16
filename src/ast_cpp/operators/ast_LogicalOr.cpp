@@ -35,7 +35,26 @@ void LogicalOr::RISCOutput(std::ostream &dst, context &context, int destReg) con
     std::string right = context.reg(right_reg);
     std::string left = context.reg(left_reg);
 
-    dst << "or " << context.reg(destReg) << ", " << context.reg(left_reg) << ", " << context.reg(right_reg) << std::endl;
+    std::string leftNode = branchList[0]->Returnid();
+    int stackOfLHS = context.get_var_location(leftNode);
+    std::string rightNode = branchList[1]->Returnid();
+    int stackOfRHS = context.get_var_location(rightNode);
+
+    std::string branch1 = context.allocateJumpBranch();
+    std::string branch2 = context.allocateJumpBranch();
+    std::string branch3 = context.allocateJumpBranch();
+
+    dst << "lw " << context.reg(destReg) << ", " << stackOfLHS << "(s0)" << std::endl;
+    dst << "bne " << context.reg(destReg) << ", " << "zero, ." << branch1 << std::endl;
+    dst << "lw " << context.reg(destReg) << ", " << stackOfRHS << "(s0)" << std::endl;
+    dst << "beq " << context.reg(destReg) << ", " << "zero, ." << branch2 << std::endl;
+    dst << "." << branch1 << ":" << std::endl;
+    dst << "li " << context.reg(destReg) << ", 1" << std::endl;
+    dst << "j ." << branch3 << std::endl;
+    dst << "." << branch2 << ":" << std::endl;
+    dst << "li " << context.reg(destReg) << ", 0" << std::endl;
+    dst << "." << branch3 << ":" << std::endl;
+
 }
 
 int LogicalOr::getSize() const{
