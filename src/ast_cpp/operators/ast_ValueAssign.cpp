@@ -28,9 +28,16 @@ void ValueAssign::RISCOutput(std::ostream &dst, context &context, int destReg) c
 {
     branchList[1]->RISCOutput(dst, context, destReg);
     std::string id = branchList[0]->Returnid();
-    int addrOfLHS = context.implement_var_binding(id);
+    if (context.get_var_location(id)== -1){
+      int variableallocate = context.implement_var_binding(id);
+      dst << "sw " << context.reg(destReg) <<  ", " << variableallocate << "(s0)" <<std::endl;
+    }
+
+    else {
+      int variableallocate = context.get_var_location(id);
+      dst << "sw " << context.reg(destReg) <<  ", " << variableallocate << "(s0)" <<std::endl;
+    }
      
-    dst << "sw " << context.reg(destReg) <<  ", " << addrOfLHS << "(s0)" <<std::endl;
 }
 
 int ValueAssign::getSize() const{

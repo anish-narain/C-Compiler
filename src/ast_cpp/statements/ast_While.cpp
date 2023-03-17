@@ -36,13 +36,13 @@ void While::RISCOutput(std::ostream &dst, context &context, int destReg) const
 
     std::string zero = context.reg(zero_reg);
     dst << "li " << zero << " ," << " 0" <<std::endl;
-    dst << "." << start << ":" << std::endl;
+    dst << "." << start << std::endl;
     branchList[0]->RISCOutput(dst, context, condition_reg);
     dst << "beq " << context.reg(condition_reg) << ", " << zero << ", ." << end << std::endl;
     branchList[1]->RISCOutput(dst, context, destReg);
     dst << "beq " << zero << ", " << zero << ", ." << start << std::endl;
-    dst << "." << end << ":" << std::endl;
-    dst << "lw " << context.reg(destReg) << ", " << context.reg(condition_reg) << ", " << zero << std::endl;
+    dst << "." << end << std::endl;
+    
 }
 
         
