@@ -109,7 +109,7 @@ direct_declarator
 	;
 
 compound_statement
-	: '{' '}'
+	: '{' '}' {$$ = new EmptyNode();} 
 	| '{' statement_list '}' {$$ = $2;} 
 	| '{' declaration_list '}' {$$ = $2;}
 	| '{' declaration_list statement_list '}' {$$ = new Multiline($2, $3);}

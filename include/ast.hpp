@@ -6,6 +6,8 @@
 #include "ast_hpp/declarations/ast_ParamList.hpp"
 #include "ast_hpp/declarations/ast_VariableAssign.hpp"
 
+#include "ast_hpp/ast_EmptyNode.hpp"
+
 #include "ast_hpp/operators/ast_Add.hpp"
 #include "ast_hpp/operators/ast_BitwiseAnd.hpp"
 #include "ast_hpp/operators/ast_BitwiseOr.hpp"

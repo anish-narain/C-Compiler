@@ -20,7 +20,6 @@
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/for_one.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_control_flow_for_one.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_for_one.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_control_flow_for_one.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_for_one.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/for_zero_v1.c">
 </testcase>
@@ -43,7 +42,6 @@
 <testcase name="compiler_tests/control_flow/while_once.c">
 </testcase>
 <testcase name="compiler_tests/control_flow/while_zero.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_control_flow_while_zero.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_while_zero.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_control_flow_while_zero.compiler.stderr.log and ./bin/output/compiler_tests_control_flow_while_zero.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/default/test_ADD0.c">
 </testcase>
