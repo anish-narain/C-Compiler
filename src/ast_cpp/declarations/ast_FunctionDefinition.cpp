@@ -30,6 +30,7 @@ BasePtr Function_Definition::returnBranch(int index) const{
 void Function_Definition::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
   int stacksize = context.rounding(getSize()); 
+  std::string endFunctionLabel = context.createLabel();
   std::string id = branchList[1]->Returnid();
   dst << ".globl "<< id << std::endl; // will need to add parameters 
   dst << id << ":" << std::endl; // will need to add parameters 
@@ -43,10 +44,12 @@ void Function_Definition::RISCOutput(std::ostream &dst, context &context, int de
   branchList[1]->RISCOutput(dst, context ,newReg);
   branchList[2]->RISCOutput(dst, context ,newReg);
 
+  dst << "." << endFunctionLabel << ":" << std::endl;
   dst << "mv a0," << context.reg(newReg) << std::endl;
   dst << "lw s0,"<< stacksize - 4 <<"(sp)" << std::endl;
   dst << "addi sp,sp," << stacksize << std::endl;
   dst << "jr ra" << std::endl;
+  
 }
 
 

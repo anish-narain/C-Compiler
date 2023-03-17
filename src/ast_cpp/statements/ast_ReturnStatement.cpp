@@ -25,6 +25,7 @@ void Return_Statement::print(std::ostream &dst, std::string indent) const
 void Return_Statement::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
   branchList[0]->RISCOutput(dst, context, destReg);
+  dst << "j ." << context.getLabel() << std::endl;
 }
 
 int Return_Statement::getSize() const{

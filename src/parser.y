@@ -116,15 +116,15 @@ compound_statement
 	;
 
 type_specifier
-	: VOID
-	| CHAR
-	| SHORT
+	: VOID { $$ = new Types("void");}
+	| CHAR { $$ = new Types("char");}
+	| SHORT { $$ = new Types("short");}
 	| INT { $$ = new Types("int");}
-	| LONG 
+	| LONG { $$ = new Types("long");}
 	| FLOAT { $$ = new Types("float");}
 	| DOUBLE { $$ = new Types("double");}
-	| SIGNED
-	| UNSIGNED
+	| SIGNED { $$ = new Types("signed");}
+	| UNSIGNED { $$ = new Types("unsigned");}
 	| struct_or_union_specifier
 	| enum_specifier
 	| type_name

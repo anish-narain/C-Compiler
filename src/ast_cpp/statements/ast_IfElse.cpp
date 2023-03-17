@@ -33,19 +33,17 @@ void If_Else::print(std::ostream &dst, std::string indent) const
 void If_Else::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
     int condition_reg = context.allocateRegister();
-    std::string branch1 = context.allocateJumpBranch();
     std::string branch2 = context.allocateJumpBranch();
     std::string end = context.allocateJumpBranch();
     std::string condition = context.reg(condition_reg);
 
     branchList[0]->RISCOutput(dst, context, condition_reg);
     dst << "beq " << condition << ", zero , ." << branch2 << std::endl;
-    dst << "." << branch1 << ":" << std::endl;
     branchList[1]->RISCOutput(dst, context, destReg);
     dst << "beq " << " zero , zero , ." << end << std::endl;
 
     dst << "." << branch2 << ":" << std::endl;
-    branchList[2]->RISCOutput(dst, context, condition_reg);
+    branchList[2]->RISCOutput(dst, context, destReg);
     dst << "." << end << ":" << std::endl;
 
   

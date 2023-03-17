@@ -6,6 +6,7 @@ class context{
     
 public:
     std::map<std::string, int> variable_bindings;
+    std::vector<std::string> labels;
 
     int Regs[32] =
     { 1, //x0 zero address: index = 0 
@@ -46,11 +47,22 @@ public:
       return -1;
     }
 
-    
     std::string allocateJumpBranch() {
         static int branch_num = 0;
         branch_num = branch_num+1;
         return "L"+std::to_string(branch_num);
+    }
+
+    std::string createLabel() {
+        static int label_num = 0;
+        label_num = label_num+1;
+        std::string labelName = "end"+std::to_string(label_num);
+        labels.push_back(labelName);
+        return labelName;
+    }
+
+    std::string getLabel(){
+       return labels.back();
     }
 
     int rounding(int num){

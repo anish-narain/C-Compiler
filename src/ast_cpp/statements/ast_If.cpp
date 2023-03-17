@@ -29,8 +29,15 @@ void If::print(std::ostream &dst, std::string indent) const
 
 void If::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
-  branchList[0]->RISCOutput(dst, context, destReg);
-  branchList[1]->RISCOutput(dst, context, destReg);
+    int condition_reg = context.allocateRegister();
+    std::string end = context.allocateJumpBranch();
+    std::string condition = context.reg(condition_reg);
+
+    branchList[0]->RISCOutput(dst, context, condition_reg);
+    dst << "beq " << condition << ", zero , ." << end << std::endl;
+    branchList[1]->RISCOutput(dst, context, destReg);
+    dst << "." << end << ":" << std::endl;
+  
 }
 
 int If::getSize() const{

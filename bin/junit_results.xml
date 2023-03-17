@@ -25,14 +25,12 @@
 <testcase name="compiler_tests/control_flow/for_zero_v2.c">
 </testcase>
 <testcase name="compiler_tests/control_flow/if_else_false.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/if_else_true.c">
 </testcase>
 <testcase name="compiler_tests/control_flow/if_false.c">
 </testcase>
 <testcase name="compiler_tests/control_flow/if_true.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/sequence.c">
 </testcase>
@@ -203,12 +201,11 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_struct_struct_two_members.compiler.stderr.log and ./bin/output/compiler_tests_struct_struct_two_members.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_struct_struct_two_members.compiler.stderr.log and ./bin/output/compiler_tests_struct_struct_two_members.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/types/sizeof_char_inst.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_types_sizeof_char_inst.compiler.stderr.log and ./bin/output/compiler_tests_types_sizeof_char_inst.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_types_sizeof_char_inst.compiler.stderr.log and ./bin/output/compiler_tests_types_sizeof_char_inst.compiler.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/types/sizeof_int_inst.c">
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/types/unsigned.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_types_unsigned.compiler.stderr.log and ./bin/output/compiler_tests_types_unsigned.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_types_unsigned.compiler.stderr.log and ./bin/output/compiler_tests_types_unsigned.compiler.stdout.log</error>
 </testcase>
 </testsuite>
