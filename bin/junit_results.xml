@@ -11,13 +11,12 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_array_index_constant.compiler.stderr.log and ./bin/output/compiler_tests_array_index_constant.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_array_index_constant.compiler.stderr.log and ./bin/output/compiler_tests_array_index_constant.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/array/index_expression.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_array_index_expression.compiler.stderr.log and ./bin/output/compiler_tests_array_index_expression.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_array_index_expression.compiler.stderr.log and ./bin/output/compiler_tests_array_index_expression.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/array/index_variable.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_array_index_variable.compiler.stderr.log and ./bin/output/compiler_tests_array_index_variable.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_array_index_variable.compiler.stderr.log and ./bin/output/compiler_tests_array_index_variable.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/for_multiple.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/for_one.c">
 </testcase>

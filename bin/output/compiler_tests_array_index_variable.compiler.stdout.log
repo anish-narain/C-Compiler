@@ -47,4 +47,3 @@
   ]
 
 Compiling: compiler_tests/array/index_variable.c
-Compiled to: ./bin/output/compiler_tests_array_index_variable.s

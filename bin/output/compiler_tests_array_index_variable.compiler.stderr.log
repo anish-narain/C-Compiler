@@ -1,3 +1,4 @@
 Variable not found
 Base Class Reached. ERROR!!! (ReturnId)
-Variable not found
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc

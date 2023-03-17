@@ -31,10 +31,22 @@ void For::print(std::ostream &dst, std::string indent) const
 
 void For::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
+  int condition_reg = context.allocateRegister();
+  std::string branch1 = context.allocateJumpBranch();
+  std::string branch2 = context.allocateJumpBranch();
+  std::string condition = context.reg(condition_reg);
+  
   branchList[0]->RISCOutput(dst, context, destReg);
-  branchList[1]->RISCOutput(dst, context, destReg);
-  branchList[2]->RISCOutput(dst, context, destReg);
+  
+  dst << "j ." << branch1 << std::endl;
+  dst << "." << branch2 << ":" << std::endl;
+  
   branchList[3]->RISCOutput(dst, context, destReg);
+  branchList[2]->RISCOutput(dst, context, destReg);
+
+  dst << "." << branch1 << ":" << std::endl;
+  branchList[1]->RISCOutput(dst, context, condition_reg);
+  dst << "bne " << condition << ", zero , ." << branch2 << std::endl;
 }
 
 int For::getSize() const{
