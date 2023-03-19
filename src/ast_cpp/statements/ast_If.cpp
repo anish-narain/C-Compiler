@@ -17,11 +17,13 @@ If::~If()
 //Print
 void If::print(std::ostream &dst, std::string indent) const
 {
+  dst << indent << "If Scope [" << std::endl;
   dst << indent << "Condition [" << std::endl;
   branchList[0]->print(dst, indent+"  ");
   dst << indent << "] endCondition" << std::endl;
-  dst << indent << "If Scope [" << std::endl;
+  dst << indent << "If Statement  [" << std::endl;
   branchList[1]->print(dst, indent+"  ");
+   dst << indent << "] end If Statement" << std::endl;
   dst << indent << "] endIfScope" << std::endl;
 }
 

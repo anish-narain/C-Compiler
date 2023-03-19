@@ -524,7 +524,7 @@ Nonterminals, with rules where they appear
     argument_expression_list <base> (122)
         on left: 121 122
         on right: 101 122
-    unary_operator (123)
+    unary_operator <base> (123)
         on left: 123 124 125 126 127 128
         on right: 95
     constant_expression <base> (124)

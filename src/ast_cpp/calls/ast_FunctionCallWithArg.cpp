@@ -18,7 +18,7 @@ void Function_Call_With_Arguments::print(std::ostream &dst, std::string indent) 
     dst << indent << "Function Call With Arguments [" << std::endl;
     dst << indent << "Function Name = ";
     branchList[0]->print(dst, indent+"  ");
-    dst << indent << "Arguments = "
+    dst << indent << "Arguments = ";
     branchList[1]->print(dst, indent+"  ");
     dst << indent << "]" << std::endl;
 }
