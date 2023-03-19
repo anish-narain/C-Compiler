@@ -19,8 +19,8 @@
           Integer : 0
         ]
         Increment: 
-        IDENTIFIER x
-      ] endInitialisation
+          IDENTIFIER x
+INCREMENT      ] endInitialisation
       Do scope [
         Return: [
           Integer : 1

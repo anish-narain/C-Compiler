@@ -9,5 +9,6 @@ int multiply(int x, int y)
         acc += y;
         x--;
     }
+    
     return acc;
 }

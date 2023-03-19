@@ -1,13 +1,15 @@
   Function Definition [
     TYPE: int    
     IDENTIFIER f
+    If Scope [
     Condition [
       Integer : 1
     ] endCondition
-    If Scope [
+    If Statement  [
       Return: [
         Integer : 11
       ]
+    ] end If Statement
     ] endIfScope
     Return: [
       Integer : 10

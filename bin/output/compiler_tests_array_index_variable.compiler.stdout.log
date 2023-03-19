@@ -24,8 +24,8 @@
           Integer : 8
         ]
         Increment: 
-        IDENTIFIER i
-      ] endInitialisation
+          IDENTIFIER i
+INCREMENT      ] endInitialisation
       Do scope [
         Binary Assignment[
         LHS
