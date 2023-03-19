@@ -1,3 +1,6 @@
+#include "ast_hpp/calls/ast_ArgListDeclaration.hpp"
+#include "ast_hpp/calls/ast_FunctionCallWithArg.hpp"
+
 #include "ast_hpp/declarations/ast_FunctionDeclaratorWithParam.hpp"
 #include "ast_hpp/declarations/ast_FunctionDefinition.hpp" 
 #include "ast_hpp/declarations/ast_NameDeclarator.hpp"
@@ -8,6 +11,8 @@
 
 #include "ast_hpp/ast_EmptyNode.hpp"
 
+#include "ast_hpp/operators/unary/ast_Unary.hpp"
+#include "ast_hpp/operators/unary/ast_UnaryOp.hpp"
 #include "ast_hpp/operators/ast_Add.hpp"
 #include "ast_hpp/operators/ast_BitwiseAnd.hpp"
 #include "ast_hpp/operators/ast_BitwiseOr.hpp"

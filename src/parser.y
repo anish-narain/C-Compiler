@@ -57,7 +57,7 @@
 %type <base> translation_unit declaration_list specifier_qualifier_list
 %type <base> struct_declaration_list struct_declarator_list enumerator_list
 %type <base> argument_expression_list IDENTIFIER_list initializer_list
-%type <base> statement_list parameter_type_list parameter_list init_declarator_list
+%type <base> statement_list parameter_type_list parameter_list init_declarator_list unary_operator
 
 %type <int_num> T_INT
 %type <string> IDENTIFIER
@@ -240,7 +240,7 @@ unary_expression
 	: postfix_expression {$$ = $1;}
 	| INC_OP unary_expression
 	| DEC_OP unary_expression
-	| unary_operator cast_expression
+	| unary_operator cast_expression {$$ = new Unary($1, $2); }
 	| SIZEOF unary_expression
 	| SIZEOF '(' type_name ')'
 	;
@@ -249,7 +249,7 @@ postfix_expression
 	: primary_expression {$$ = $1;}
 	| postfix_expression '[' expression ']'  {$$ = new Array($1, $3);}
 	| postfix_expression '(' ')'
-	| postfix_expression '(' argument_expression_list ')'
+	| postfix_expression '(' argument_expression_list ')' {$$ = new }
 	| postfix_expression '.' IDENTIFIER
 	| postfix_expression PTR_OP IDENTIFIER
 	| postfix_expression INC_OP
@@ -297,12 +297,12 @@ argument_expression_list
 
 
 unary_operator
-	: '&'
-	| '*'
-	| '+'
-	| '-'
-	| '~'
-	| '!'
+	: '&' {$$ = new UnaryOp("&");}
+	| '*' {$$ = new UnaryOp("*");}
+	| '+' {$$ = new UnaryOp("+");}
+	| '-' {$$ = new UnaryOp("-");}
+	| '~' {$$ = new UnaryOp("~");}
+	| '!' {$$ = new UnaryOp("!");}
 	;
 
 

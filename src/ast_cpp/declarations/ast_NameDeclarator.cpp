@@ -16,8 +16,7 @@ void Name_Declarator::print(std::ostream &dst, std::string indent) const
 }
 
 void Name_Declarator::RISCOutput(std::ostream &dst, context &context, int destReg) const
-{
-  
+{//leaf node
 }
 
 std::string Name_Declarator::Returnid() const{
