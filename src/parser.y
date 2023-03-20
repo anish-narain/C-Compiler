@@ -250,8 +250,8 @@ unary_expression
 	| INC_OP unary_expression
 	| DEC_OP unary_expression
 	| unary_operator cast_expression {$$ = new Unary($1, $2); }
-	| SIZEOF unary_expression {$$ = $2;}
-	| SIZEOF '(' type_name ')' {$$ = $3;}
+	| SIZEOF unary_expression {$$ = new SizeOf($2); }
+	| SIZEOF '(' type_name ')' {$$ = new SizeOf($3); }
 	;
 
 postfix_expression

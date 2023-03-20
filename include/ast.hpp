@@ -14,6 +14,7 @@
 #include "ast_hpp/operators/unary/ast_Unary.hpp"
 #include "ast_hpp/operators/unary/ast_UnaryOp.hpp"
 #include "ast_hpp/operators/unary/ast_UnaryPostOp.hpp"
+#include "ast_hpp/operators/unary/ast_SizeOf.hpp"
 #include "ast_hpp/operators/ast_Add.hpp"
 #include "ast_hpp/operators/ast_BitwiseAnd.hpp"
 #include "ast_hpp/operators/ast_BitwiseOr.hpp"
