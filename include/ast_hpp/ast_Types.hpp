@@ -28,6 +28,8 @@ public:
     //size
     virtual int getSize() const override;
 
+    virtual std::string getType() const override;
+
 };
 
 #endif

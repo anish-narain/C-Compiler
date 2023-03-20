@@ -22,6 +22,11 @@ void Param_Declarator::print(std::ostream &dst, std::string indent) const
 void Param_Declarator::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
   std::string var_id = branchList[1]->Returnid();
+  std::string var_type = branchList[0]->getType();
+
+  context.addParameterName(var_id);
+  context.addParameterType(var_type);
+
   int var_addr = context.implement_var_binding(var_id);
   int param_reg = context.parameterAllocateRegister();
 

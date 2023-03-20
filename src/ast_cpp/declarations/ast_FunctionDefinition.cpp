@@ -32,8 +32,10 @@ void Function_Definition::RISCOutput(std::ostream &dst, context &context, int de
   int stacksize = context.rounding(getSize()); 
   std::string endFunctionLabel = context.createLabel();
   std::string id = branchList[1]->Returnid();
-  dst << ".globl "<< id << std::endl; // will need to add parameters 
-  dst << id << ":" << std::endl; // will need to add parameters 
+  context.set_function_type(id, branchList[0]->getType());//new
+
+  dst << ".globl "<< id << std::endl; 
+  dst << id << ":" << std::endl; 
   
   dst << "addi sp,sp,-" << stacksize << std::endl;
   dst << "sw s0,"<< stacksize - 4 <<"(sp)" << std::endl;
@@ -42,6 +44,13 @@ void Function_Definition::RISCOutput(std::ostream &dst, context &context, int de
   int newReg = context.allocateRegister();
 
   branchList[1]->RISCOutput(dst, context ,newReg);
+
+  context.addToFunctionParameters(id); //new
+  context.clearParameterVectors();//new
+
+  // Iterate over each key-value pair in the outer map
+  //context.printfunction_parameters(dst);
+
   branchList[2]->RISCOutput(dst, context ,newReg);
 
   dst << "." << endFunctionLabel << ":" << std::endl;
@@ -52,8 +61,8 @@ void Function_Definition::RISCOutput(std::ostream &dst, context &context, int de
   
 }
 
-
 int Function_Definition::getSize() const
 {
   return branchList[1]->getSize() + branchList[2]->getSize();
 }
+

@@ -35,3 +35,8 @@ int Types::getSize() const
   }
 }
 
+std::string Types::getType() const
+{
+  return type;
+}
+

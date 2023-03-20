@@ -5,8 +5,14 @@
 class context{
     
 public:
-    std::map<std::string, int> variable_bindings;
+    std::map<std::string, int> variable_bindings; //<variable_name, reg>
     std::vector<std::string> labels;
+    
+    std::map<std::string, std::string> function_types; //<function_name, datatype>
+    std::map<std::string, std::map<std::string, std::string>> function_parameters; //<function_name, <parameter_name, datatype>>
+    
+    std::vector<std::string> parameter_names;
+    std::vector<std::string> parameter_types;
 
     int Regs[32] =
     { 1, //x0 zero address: index = 0 
@@ -69,9 +75,10 @@ public:
         int multiplier = ceil((double)num/16);
         return (multiplier*16) + 16;
     }
-      // manages statement within a function like ifElse, while, for
-     void enterStatement();
-     void exitStatement(std::ostream &dst);
+
+    // manages statement within a function like ifElse, while, for
+    void enterStatement();
+    void exitStatement(std::ostream &dst);
 
     int implement_var_binding(std::string variable_name){
         static int current_stack = -16;
@@ -101,6 +108,52 @@ public:
             return 't' + std::to_string(i-25);
         }
     }
+
+    void set_function_type(std::string id, std::string type){
+        function_types[id] = type;
+    }
+
+    void set_function_parameters(std::string functionId, std::string parameterName, std::string type){
+        function_parameters[functionId][parameterName] = type;
+    }
+
+    void addParameterName(std::string name){
+        parameter_names.push_back(name);
+    }
+
+    void addParameterType(std::string type){
+        parameter_types.push_back(type);
+    }
+
+    void addToFunctionParameters(std::string functionId){
+        for (std::size_t i = 0; i < parameter_names.size(); i++) {
+            set_function_parameters(functionId, parameter_names[i], parameter_types[i]);
+        }
+    }
+
+    void clearParameterVectors(){
+        parameter_names.clear();
+        parameter_types.clear();
+    }
+
+    void printfunction_parameters(std::ostream &dst){
+        for (const auto& outer_pair : function_parameters) {
+            const std::string& outer_key = outer_pair.first;
+            const std::map<std::string, std::string>& inner_map = outer_pair.second;
+
+            dst << "Function: " << outer_key << std::endl;
+
+            // Iterate over each key-value pair in the inner map
+            for (const auto& inner_pair : inner_map) {
+                const std::string& inner_key = inner_pair.first;
+                const std::string& inner_value = inner_pair.second;
+
+                dst << "    " << inner_key << ": " << inner_value << std::endl;
+            }
+            dst << std::endl;
+        }
+    }
+
 };
 
 #endif

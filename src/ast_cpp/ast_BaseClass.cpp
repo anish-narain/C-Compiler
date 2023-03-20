@@ -30,6 +30,10 @@ std::string Base::Returnid() const{
   std::cerr << "Base Class Reached. ERROR!!! (ReturnId)" << std::endl;
 }
 
+std::string Base::getType() const{
+  std::cerr << "Base Class Reached. ERROR!!! (ReturnId)" << std::endl;
+}
+
 int Base::getSize() const{
   std::cerr << "Base Class Reached. ERROR!!! (getSize)" << std::endl;
   return 0;
