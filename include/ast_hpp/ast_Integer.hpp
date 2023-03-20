@@ -15,6 +15,7 @@ private:
 public:
     //Constructor
     Int(int val);
+    Int();
 
     //Destructor
     ~Int();

@@ -354,8 +354,8 @@ Terminals, with rules where they appear
     T_INT <int_num> (258) 118
     T_FLOAT (259)
     IDENTIFIER <string> (260) 18 51 112 113 116 149 151 167 168 171 172 181 182 202
-    CONSTANT (261) 117
-    STRING_LITERAL (262) 119
+    CONSTANT <int_num> (261) 117
+    STRING_LITERAL <int_num> (262) 119
     SIZEOF (263) 106 107
     PTR_OP (264) 113
     INC_OP (265) 103 114

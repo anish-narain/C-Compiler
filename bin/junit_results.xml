@@ -163,11 +163,17 @@
 </testcase>
 <testcase name="compiler_tests/pointer/addressof.c">
 </testcase>
+<testcase name="compiler_tests/pointer/arithmetic.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_pointer_arithmetic.compiler.stderr.log and ./bin/output/compiler_tests_pointer_arithmetic.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_pointer_arithmetic.compiler.stderr.log and ./bin/output/compiler_tests_pointer_arithmetic.compiler.stdout.log</error>
+</testcase>
 <testcase name="compiler_tests/pointer/assign.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_pointer_assign.compiler.stderr.log and ./bin/output/compiler_tests_pointer_assign.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_pointer_assign.compiler.stderr.log and ./bin/output/compiler_tests_pointer_assign.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/pointer/dereference.c">
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/pointer/index.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_pointer_index.compiler.stderr.log and ./bin/output/compiler_tests_pointer_index.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_pointer_index.compiler.stderr.log and ./bin/output/compiler_tests_pointer_index.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/programs/fibonacci.c">
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
@@ -177,6 +183,15 @@
 </testcase>
 <testcase name="compiler_tests/programs/sqrt.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_programs_sqrt.compiler.stderr.log and ./bin/output/compiler_tests_programs_sqrt.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_programs_sqrt.compiler.stderr.log and ./bin/output/compiler_tests_programs_sqrt.compiler.stdout.log</error>
+</testcase>
+<testcase name="compiler_tests/strings/chliteral.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/strings/escaped.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/strings/literal.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/strings/puts.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_strings_puts.compiler.stderr.log and ./bin/output/compiler_tests_strings_puts.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_strings_puts.compiler.stderr.log and ./bin/output/compiler_tests_strings_puts.compiler.stdout.log</error>
@@ -202,7 +217,13 @@
 <testcase name="compiler_tests/types/sizeof_char_inst.c">
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
+<testcase name="compiler_tests/types/sizeof_char_type.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
 <testcase name="compiler_tests/types/sizeof_int_inst.c">
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+</testcase>
+<testcase name="compiler_tests/types/sizeof_int_type.c">
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/types/unsigned.c">

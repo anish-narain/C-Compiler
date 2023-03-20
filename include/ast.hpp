@@ -47,6 +47,7 @@
 #include "ast_hpp/statements/ast_For.hpp"
 
 #include "ast_hpp/types/ast_Array.hpp"
+#include "ast_hpp/types/ast_PointerDeclarator.hpp"
 
 #include "ast_hpp/ast_BaseClass.hpp"
 #include "ast_hpp/ast_Identifier.hpp"

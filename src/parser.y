@@ -59,7 +59,7 @@
 %type <base> argument_expression_list IDENTIFIER_list initializer_list
 %type <base> statement_list parameter_type_list parameter_list init_declarator_list unary_operator
 
-%type <int_num> T_INT
+%type <int_num> T_INT STRING_LITERAL CONSTANT
 %type <string> IDENTIFIER
 
 %start StartTree
@@ -94,7 +94,7 @@ declaration_specifiers
 	;
 
 declarator
-	: pointer direct_declarator
+	: pointer direct_declarator  {$$ = new PointerDeclarator($2);}
 	| direct_declarator {$$ = $1;}  
 	;
 
@@ -153,7 +153,7 @@ jump_statement
 	: GOTO IDENTIFIER ';'
 	| CONTINUE ';'
 	| BREAK ';'
-	| RETURN ';'
+	| RETURN ';' {$$ = new Return_Statement(new Int());}
 	| RETURN expression ';' {$$ = new Return_Statement($2);} 
 	;
 
@@ -245,14 +245,13 @@ cast_expression
 	| '(' type_name ')' cast_expression
 	;
 
-
 unary_expression
 	: postfix_expression {$$ = $1;}
 	| INC_OP unary_expression
 	| DEC_OP unary_expression
 	| unary_operator cast_expression {$$ = new Unary($1, $2); }
-	| SIZEOF unary_expression
-	| SIZEOF '(' type_name ')'
+	| SIZEOF unary_expression {$$ = $2;}
+	| SIZEOF '(' type_name ')' {$$ = $3;}
 	;
 
 postfix_expression
@@ -268,9 +267,9 @@ postfix_expression
 
 primary_expression
 	: IDENTIFIER {$$ = new Identifier(*$1);}
-	| CONSTANT  
+	| CONSTANT  {$$ = new Int($1);}
 	| T_INT { $$ = new Int($1);}
-	| STRING_LITERAL
+	| STRING_LITERAL { $$ = new Int($1);}
 	| '(' expression ')' {$$ = $2;}
 	;
 

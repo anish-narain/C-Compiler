@@ -5,6 +5,10 @@ Int::Int(int val)
   : int_value(val)
 {}
 
+Int::Int() // Default initializer
+  : Int(0)
+{}
+
 //Destructor
 Int::~Int()
 {}
