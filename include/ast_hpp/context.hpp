@@ -10,9 +10,15 @@ public:
     
     std::map<std::string, std::string> function_types; //<function_name, datatype>
     std::map<std::string, std::map<std::string, std::string>> function_parameters; //<function_name, <parameter_name, datatype>>
+    std::map<std::string, std::map<std::string, std::string>> function_variables; //<function_name, <variable_name, datatype>>
     
+    //Parameter vectors
     std::vector<std::string> parameter_names;
     std::vector<std::string> parameter_types;
+
+    //Variable vectors
+    std::vector<std::string> variable_names;
+    std::vector<std::string> variable_types;
 
     int Regs[32] =
     { 1, //x0 zero address: index = 0 
@@ -113,31 +119,79 @@ public:
         function_types[id] = type;
     }
 
+    //Parameters
     void set_function_parameters(std::string functionId, std::string parameterName, std::string type){
         function_parameters[functionId][parameterName] = type;
+        function_variables[functionId][parameterName] = type;//all parameters are also variables
     }
 
+    //Variables
+    void set_function_variables(std::string functionId, std::string parameterName, std::string type){
+        function_variables[functionId][parameterName] = type;
+    }
+
+    //Parameters
     void addParameterName(std::string name){
         parameter_names.push_back(name);
     }
-
     void addParameterType(std::string type){
         parameter_types.push_back(type);
     }
 
+    //Variables
+    void addVariableName(std::string name){
+        variable_names.push_back(name);
+    }
+    void addVariableType(std::string type){
+        variable_types.push_back(type);
+    }
+
+    //Parameters
     void addToFunctionParameters(std::string functionId){
         for (std::size_t i = 0; i < parameter_names.size(); i++) {
             set_function_parameters(functionId, parameter_names[i], parameter_types[i]);
         }
     }
 
+    //Variables
+    void addToFunctionVariables(std::string functionId){
+        for (std::size_t i = 0; i < variable_names.size(); i++) {
+            set_function_variables(functionId, variable_names[i], variable_types[i]);
+        }
+    }
+
+    //Parameters
     void clearParameterVectors(){
         parameter_names.clear();
         parameter_types.clear();
     }
 
+    //Variables
+    void clearVariableVectors(){
+        variable_names.clear();
+        variable_types.clear();
+    }
+
     void printfunction_parameters(std::ostream &dst){
         for (const auto& outer_pair : function_parameters) {
+            const std::string& outer_key = outer_pair.first;
+            const std::map<std::string, std::string>& inner_map = outer_pair.second;
+
+            dst << "Function: " << outer_key << std::endl;
+
+            // Iterate over each key-value pair in the inner map
+            for (const auto& inner_pair : inner_map) {
+                const std::string& inner_key = inner_pair.first;
+                const std::string& inner_value = inner_pair.second;
+
+                dst << "    " << inner_key << ": " << inner_value << std::endl;
+            }
+            dst << std::endl;
+        }
+    }
+
+    void printfunction_variables(std::ostream &dst){
+        for (const auto& outer_pair : function_variables) {
             const std::string& outer_key = outer_pair.first;
             const std::map<std::string, std::string>& inner_map = outer_pair.second;
 
