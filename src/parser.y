@@ -352,7 +352,7 @@ storage_class_specifier
 	| AUTO
 	| REGISTER
 	;
-&I
+
 
 struct_or_union_specifier
 	: struct_or_union IDENTIFIER '{' struct_declaration_list '}'
