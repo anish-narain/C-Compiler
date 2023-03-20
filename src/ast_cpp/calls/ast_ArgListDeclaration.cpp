@@ -29,3 +29,8 @@ int Arg_List_Declarator::getSize() const
 {
   return branchList[0]->getSize() + branchList[1]->getSize();
 }
+
+void Arg_List_Declarator::createVariableMap(context &context) const{
+  branchList[0]->createVariableMap(context);
+  branchList[1]->createVariableMap(context);
+}

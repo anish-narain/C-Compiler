@@ -126,8 +126,8 @@ public:
     }
 
     //Variables
-    void set_function_variables(std::string functionId, std::string parameterName, std::string type){
-        function_variables[functionId][parameterName] = type;
+    void set_function_variables(std::string functionId, std::string variableName, std::string type){
+        function_variables[functionId][variableName] = type;
     }
 
     //Parameters
@@ -140,9 +140,11 @@ public:
 
     //Variables
     void addVariableName(std::string name){
+        std::cerr << "Added names" << std::endl; 
         variable_names.push_back(name);
     }
     void addVariableType(std::string type){
+        std::cerr << "Added types" << std::endl;
         variable_types.push_back(type);
     }
 

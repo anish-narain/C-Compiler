@@ -29,3 +29,8 @@ void PointerDeclarator::RISCOutput(std::ostream &dst, context &context, int dest
 int PointerDeclarator::getSize() const{
   return branchList[0]->getSize();
 }
+
+void PointerDeclarator::createVariableMap(context &context) const{
+  branchList[0]->createVariableMap(context);
+  branchList[1]->createVariableMap(context);
+}

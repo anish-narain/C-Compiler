@@ -41,3 +41,8 @@ void Modulus::RISCOutput(std::ostream &dst, context &context, int destReg) const
 int Modulus::getSize() const{
   return branchList[0]->getSize() + branchList[1]->getSize();
 }
+
+void Modulus::createVariableMap(context &context) const{
+  branchList[0]->createVariableMap(context);
+  branchList[1]->createVariableMap(context);
+}

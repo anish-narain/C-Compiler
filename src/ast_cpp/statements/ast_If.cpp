@@ -45,3 +45,8 @@ void If::RISCOutput(std::ostream &dst, context &context, int destReg) const
 int If::getSize() const{
   return branchList[0]->getSize();
 }
+
+void If::createVariableMap(context &context) const{
+  branchList[0]->createVariableMap(context);
+  branchList[1]->createVariableMap(context);
+}

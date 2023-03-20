@@ -34,3 +34,8 @@ void UnaryPostOp::RISCOutput(std::ostream &dst, context &context, int destReg) c
 int UnaryPostOp::getSize() const{
   return branchList[0]->getSize();
 }
+
+void UnaryPostOp::createVariableMap(context &context) const{
+  branchList[0]->createVariableMap(context);
+  branchList[1]->createVariableMap(context);
+}

@@ -28,3 +28,8 @@ void Array::RISCOutput(std::ostream &dst, context &context, int destReg) const
 int Array::getSize() const{
   return branchList[0]->getSize() + branchList[1]->getSize();
 }
+
+void Array::createVariableMap(context &context) const{
+  branchList[0]->createVariableMap(context);
+  branchList[1]->createVariableMap(context);
+}

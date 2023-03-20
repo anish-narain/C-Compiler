@@ -43,3 +43,8 @@ void NotEqual::RISCOutput(std::ostream &dst, context &context, int destReg) cons
 int NotEqual::getSize() const{
   return branchList[0]->getSize() + branchList[1]->getSize();
 }
+
+void NotEqual::createVariableMap(context &context) const{
+  branchList[0]->createVariableMap(context);
+  branchList[1]->createVariableMap(context);
+}

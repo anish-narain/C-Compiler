@@ -41,3 +41,8 @@ void BitwiseOr::RISCOutput(std::ostream &dst, context &context, int destReg) con
 int BitwiseOr::getSize() const{
   return branchList[0]->getSize() + branchList[1]->getSize();
 }
+
+void BitwiseOr::createVariableMap(context &context) const{
+  branchList[0]->createVariableMap(context);
+  branchList[1]->createVariableMap(context);
+}

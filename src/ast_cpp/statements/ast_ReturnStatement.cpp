@@ -37,3 +37,7 @@ void Return_Statement::createParameterMap(context &context) const{
 int Return_Statement::getSize() const{
   return branchList[0]->getSize();
 }
+
+void Return_Statement::createVariableMap(context &context) const{
+  branchList[0]->createVariableMap(context);
+}

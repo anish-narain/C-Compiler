@@ -6,6 +6,7 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_array_declare_global.linker.stderr.log and ./bin/output/compiler_tests_array_declare_global.linker.stdout.log">Fail: see ./bin/output/compiler_tests_array_declare_global.linker.stderr.log and ./bin/output/compiler_tests_array_declare_global.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/array/declare_local.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_array_declare_local.assembler.stderr.log and ./bin/output/compiler_tests_array_declare_local.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_array_declare_local.assembler.stderr.log and ./bin/output/compiler_tests_array_declare_local.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/array/index_constant.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_array_index_constant.compiler.stderr.log and ./bin/output/compiler_tests_array_index_constant.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_array_index_constant.compiler.stderr.log and ./bin/output/compiler_tests_array_index_constant.compiler.stdout.log</error>
@@ -17,12 +18,16 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_array_index_variable.compiler.stderr.log and ./bin/output/compiler_tests_array_index_variable.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_array_index_variable.compiler.stderr.log and ./bin/output/compiler_tests_array_index_variable.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/for_multiple.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_control_flow_for_multiple.assembler.stderr.log and ./bin/output/compiler_tests_control_flow_for_multiple.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_control_flow_for_multiple.assembler.stderr.log and ./bin/output/compiler_tests_control_flow_for_multiple.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/for_one.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_control_flow_for_one.assembler.stderr.log and ./bin/output/compiler_tests_control_flow_for_one.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_control_flow_for_one.assembler.stderr.log and ./bin/output/compiler_tests_control_flow_for_one.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/for_zero_v1.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_control_flow_for_zero_v1.assembler.stderr.log and ./bin/output/compiler_tests_control_flow_for_zero_v1.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_control_flow_for_zero_v1.assembler.stderr.log and ./bin/output/compiler_tests_control_flow_for_zero_v1.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/for_zero_v2.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_control_flow_for_zero_v2.assembler.stderr.log and ./bin/output/compiler_tests_control_flow_for_zero_v2.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_control_flow_for_zero_v2.assembler.stderr.log and ./bin/output/compiler_tests_control_flow_for_zero_v2.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/if_else_false.c">
 </testcase>
@@ -33,41 +38,47 @@
 <testcase name="compiler_tests/control_flow/if_true.c">
 </testcase>
 <testcase name="compiler_tests/control_flow/sequence.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_control_flow_sequence.assembler.stderr.log and ./bin/output/compiler_tests_control_flow_sequence.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_control_flow_sequence.assembler.stderr.log and ./bin/output/compiler_tests_control_flow_sequence.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/while_multiple.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_control_flow_while_multiple.assembler.stderr.log and ./bin/output/compiler_tests_control_flow_while_multiple.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_control_flow_while_multiple.assembler.stderr.log and ./bin/output/compiler_tests_control_flow_while_multiple.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/while_once.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_control_flow_while_once.assembler.stderr.log and ./bin/output/compiler_tests_control_flow_while_once.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_control_flow_while_once.assembler.stderr.log and ./bin/output/compiler_tests_control_flow_while_once.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/control_flow/while_zero.c">
 </testcase>
 <testcase name="compiler_tests/default/test_ADD0.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_default_test_ADD0.assembler.stderr.log and ./bin/output/compiler_tests_default_test_ADD0.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_default_test_ADD0.assembler.stderr.log and ./bin/output/compiler_tests_default_test_ADD0.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/default/test_ADD1.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_default_test_ADD1.assembler.stderr.log and ./bin/output/compiler_tests_default_test_ADD1.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_default_test_ADD1.assembler.stderr.log and ./bin/output/compiler_tests_default_test_ADD1.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/default/test_CALL.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_default_test_CALL.linker.stderr.log and ./bin/output/compiler_tests_default_test_CALL.linker.stdout.log">Fail: see ./bin/output/compiler_tests_default_test_CALL.linker.stderr.log and ./bin/output/compiler_tests_default_test_CALL.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/default/test_LOCAL.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_default_test_LOCAL.assembler.stderr.log and ./bin/output/compiler_tests_default_test_LOCAL.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_default_test_LOCAL.assembler.stderr.log and ./bin/output/compiler_tests_default_test_LOCAL.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/default/test_RETURN.c">
 </testcase>
 <testcase name="compiler_tests/float/add_double.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_float_add_double.assembler.stderr.log and ./bin/output/compiler_tests_float_add_double.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_float_add_double.assembler.stderr.log and ./bin/output/compiler_tests_float_add_double.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/float/add.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_float_add.assembler.stderr.log and ./bin/output/compiler_tests_float_add.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_float_add.assembler.stderr.log and ./bin/output/compiler_tests_float_add.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/float/add_mul.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_float_add_mul.assembler.stderr.log and ./bin/output/compiler_tests_float_add_mul.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_float_add_mul.assembler.stderr.log and ./bin/output/compiler_tests_float_add_mul.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/float/mul_add.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_float_mul_add.assembler.stderr.log and ./bin/output/compiler_tests_float_mul_add.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_float_mul_add.assembler.stderr.log and ./bin/output/compiler_tests_float_mul_add.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/float/mul_double.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_float_mul_double.assembler.stderr.log and ./bin/output/compiler_tests_float_mul_double.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_float_mul_double.assembler.stderr.log and ./bin/output/compiler_tests_float_mul_double.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/float/mul.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_float_mul.assembler.stderr.log and ./bin/output/compiler_tests_float_mul.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_float_mul.assembler.stderr.log and ./bin/output/compiler_tests_float_mul.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/float/pow.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_float_pow.compiler.stderr.log and ./bin/output/compiler_tests_float_pow.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_float_pow.compiler.stderr.log and ./bin/output/compiler_tests_float_pow.compiler.stdout.log</error>
@@ -82,64 +93,81 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_five_args_external.linker.stderr.log and ./bin/output/compiler_tests_functions_call_five_args_external.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_five_args_external.linker.stderr.log and ./bin/output/compiler_tests_functions_call_five_args_external.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_five_args_internal.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_five_args_internal.linker.stderr.log and ./bin/output/compiler_tests_functions_call_five_args_internal.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_five_args_internal.linker.stderr.log and ./bin/output/compiler_tests_functions_call_five_args_internal.linker.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_five_args_internal.assembler.stderr.log and ./bin/output/compiler_tests_functions_call_five_args_internal.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_five_args_internal.assembler.stderr.log and ./bin/output/compiler_tests_functions_call_five_args_internal.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_identity_external.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_identity_external.linker.stderr.log and ./bin/output/compiler_tests_functions_call_identity_external.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_identity_external.linker.stderr.log and ./bin/output/compiler_tests_functions_call_identity_external.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_identity_internal.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_identity_internal.linker.stderr.log and ./bin/output/compiler_tests_functions_call_identity_internal.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_identity_internal.linker.stderr.log and ./bin/output/compiler_tests_functions_call_identity_internal.linker.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_identity_internal.assembler.stderr.log and ./bin/output/compiler_tests_functions_call_identity_internal.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_identity_internal.assembler.stderr.log and ./bin/output/compiler_tests_functions_call_identity_internal.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_mutual_recursive.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_mutual_recursive.linker.stderr.log and ./bin/output/compiler_tests_functions_call_mutual_recursive.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_mutual_recursive.linker.stderr.log and ./bin/output/compiler_tests_functions_call_mutual_recursive.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_recursive_internal.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_recursive_internal.assembler.stderr.log and ./bin/output/compiler_tests_functions_call_recursive_internal.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_recursive_internal.assembler.stderr.log and ./bin/output/compiler_tests_functions_call_recursive_internal.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_two_args_external.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_two_args_external.linker.stderr.log and ./bin/output/compiler_tests_functions_call_two_args_external.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_two_args_external.linker.stderr.log and ./bin/output/compiler_tests_functions_call_two_args_external.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_two_args_internal.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_two_args_internal.linker.stderr.log and ./bin/output/compiler_tests_functions_call_two_args_internal.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_two_args_internal.linker.stderr.log and ./bin/output/compiler_tests_functions_call_two_args_internal.linker.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_two_args_internal.assembler.stderr.log and ./bin/output/compiler_tests_functions_call_two_args_internal.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_two_args_internal.assembler.stderr.log and ./bin/output/compiler_tests_functions_call_two_args_internal.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/add.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_add.assembler.stderr.log and ./bin/output/compiler_tests_integer_add.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_add.assembler.stderr.log and ./bin/output/compiler_tests_integer_add.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/bitwise_and.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_bitwise_and.assembler.stderr.log and ./bin/output/compiler_tests_integer_bitwise_and.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_bitwise_and.assembler.stderr.log and ./bin/output/compiler_tests_integer_bitwise_and.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/bitwise_or.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_bitwise_or.assembler.stderr.log and ./bin/output/compiler_tests_integer_bitwise_or.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_bitwise_or.assembler.stderr.log and ./bin/output/compiler_tests_integer_bitwise_or.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/bitwise_xor.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_bitwise_xor.assembler.stderr.log and ./bin/output/compiler_tests_integer_bitwise_xor.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_bitwise_xor.assembler.stderr.log and ./bin/output/compiler_tests_integer_bitwise_xor.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/div.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_div.assembler.stderr.log and ./bin/output/compiler_tests_integer_div.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_div.assembler.stderr.log and ./bin/output/compiler_tests_integer_div.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/equal.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_equal.assembler.stderr.log and ./bin/output/compiler_tests_integer_equal.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_equal.assembler.stderr.log and ./bin/output/compiler_tests_integer_equal.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/less_than.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_less_than.assembler.stderr.log and ./bin/output/compiler_tests_integer_less_than.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_less_than.assembler.stderr.log and ./bin/output/compiler_tests_integer_less_than.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/less_than_equal.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_less_than_equal.assembler.stderr.log and ./bin/output/compiler_tests_integer_less_than_equal.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_less_than_equal.assembler.stderr.log and ./bin/output/compiler_tests_integer_less_than_equal.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/logical_and.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_logical_and.assembler.stderr.log and ./bin/output/compiler_tests_integer_logical_and.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_logical_and.assembler.stderr.log and ./bin/output/compiler_tests_integer_logical_and.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/logical_or.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_logical_or.assembler.stderr.log and ./bin/output/compiler_tests_integer_logical_or.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_logical_or.assembler.stderr.log and ./bin/output/compiler_tests_integer_logical_or.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/mul.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_mul.assembler.stderr.log and ./bin/output/compiler_tests_integer_mul.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_mul.assembler.stderr.log and ./bin/output/compiler_tests_integer_mul.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/integer/sub.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_integer_sub.assembler.stderr.log and ./bin/output/compiler_tests_integer_sub.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_integer_sub.assembler.stderr.log and ./bin/output/compiler_tests_integer_sub.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/local_var/constant_initialiser.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_local_var_constant_initialiser.assembler.stderr.log and ./bin/output/compiler_tests_local_var_constant_initialiser.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_local_var_constant_initialiser.assembler.stderr.log and ./bin/output/compiler_tests_local_var_constant_initialiser.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/local_var/dual_var.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_local_var_dual_var.assembler.stderr.log and ./bin/output/compiler_tests_local_var_dual_var.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_local_var_dual_var.assembler.stderr.log and ./bin/output/compiler_tests_local_var_dual_var.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/local_var/expression_initialiser.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_local_var_expression_initialiser.assembler.stderr.log and ./bin/output/compiler_tests_local_var_expression_initialiser.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_local_var_expression_initialiser.assembler.stderr.log and ./bin/output/compiler_tests_local_var_expression_initialiser.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/local_var/identity.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_local_var_identity.assembler.stderr.log and ./bin/output/compiler_tests_local_var_identity.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_local_var_identity.assembler.stderr.log and ./bin/output/compiler_tests_local_var_identity.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/local_var/return_constant.c">
 </testcase>
 <testcase name="compiler_tests/local_var/scoped_var.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_local_var_scoped_var.assembler.stderr.log and ./bin/output/compiler_tests_local_var_scoped_var.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_local_var_scoped_var.assembler.stderr.log and ./bin/output/compiler_tests_local_var_scoped_var.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/local_var/single_var.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_local_var_single_var.assembler.stderr.log and ./bin/output/compiler_tests_local_var_single_var.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_local_var_single_var.assembler.stderr.log and ./bin/output/compiler_tests_local_var_single_var.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/misc/enum1.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_misc_enum1.compiler.stderr.log and ./bin/output/compiler_tests_misc_enum1.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_misc_enum1.compiler.stderr.log and ./bin/output/compiler_tests_misc_enum1.compiler.stdout.log</error>
@@ -148,7 +176,7 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_misc_enum2.compiler.stderr.log and ./bin/output/compiler_tests_misc_enum2.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_misc_enum2.compiler.stderr.log and ./bin/output/compiler_tests_misc_enum2.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/misc/switch1.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_misc_switch1.assembler.stderr.log and ./bin/output/compiler_tests_misc_switch1.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_misc_switch1.assembler.stderr.log and ./bin/output/compiler_tests_misc_switch1.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/misc/switch2.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_misc_switch2.compiler.stderr.log and ./bin/output/compiler_tests_misc_switch2.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_misc_switch2.compiler.stderr.log and ./bin/output/compiler_tests_misc_switch2.compiler.stdout.log</error>
@@ -175,10 +203,10 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_pointer_index.compiler.stderr.log and ./bin/output/compiler_tests_pointer_index.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_pointer_index.compiler.stderr.log and ./bin/output/compiler_tests_pointer_index.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/programs/fibonacci.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_programs_fibonacci.assembler.stderr.log and ./bin/output/compiler_tests_programs_fibonacci.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_programs_fibonacci.assembler.stderr.log and ./bin/output/compiler_tests_programs_fibonacci.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/programs/multiply.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_programs_multiply.compiler.stderr.log and ./bin/output/compiler_tests_programs_multiply.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_programs_multiply.compiler.stderr.log and ./bin/output/compiler_tests_programs_multiply.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/programs/sqrt.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_programs_sqrt.compiler.stderr.log and ./bin/output/compiler_tests_programs_sqrt.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_programs_sqrt.compiler.stderr.log and ./bin/output/compiler_tests_programs_sqrt.compiler.stdout.log</error>
@@ -214,12 +242,12 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_struct_struct_two_members.compiler.stderr.log and ./bin/output/compiler_tests_struct_struct_two_members.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_struct_struct_two_members.compiler.stderr.log and ./bin/output/compiler_tests_struct_struct_two_members.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/types/sizeof_char_inst.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_types_sizeof_char_inst.assembler.stderr.log and ./bin/output/compiler_tests_types_sizeof_char_inst.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_types_sizeof_char_inst.assembler.stderr.log and ./bin/output/compiler_tests_types_sizeof_char_inst.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/types/sizeof_char_type.c">
 </testcase>
 <testcase name="compiler_tests/types/sizeof_int_inst.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_types_sizeof_int_inst.assembler.stderr.log and ./bin/output/compiler_tests_types_sizeof_int_inst.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_types_sizeof_int_inst.assembler.stderr.log and ./bin/output/compiler_tests_types_sizeof_int_inst.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/types/sizeof_int_type.c">
 </testcase>

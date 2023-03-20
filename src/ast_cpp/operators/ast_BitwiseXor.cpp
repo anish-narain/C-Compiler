@@ -41,3 +41,8 @@ void BitwiseXor::RISCOutput(std::ostream &dst, context &context, int destReg) co
 int BitwiseXor::getSize() const{
   return branchList[0]->getSize() + branchList[1]->getSize();
 }
+
+void BitwiseXor::createVariableMap(context &context) const{
+  branchList[0]->createVariableMap(context);
+  branchList[1]->createVariableMap(context);
+}

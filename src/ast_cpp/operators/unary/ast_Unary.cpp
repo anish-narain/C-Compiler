@@ -29,3 +29,8 @@ void Unary::RISCOutput(std::ostream &dst, context &context, int destReg) const
 int Unary::getSize() const{
   return branchList[0]->getSize() + branchList[1]->getSize();
 }
+
+void Unary::createVariableMap(context &context) const{
+  branchList[0]->createVariableMap(context);
+  branchList[1]->createVariableMap(context);
+}

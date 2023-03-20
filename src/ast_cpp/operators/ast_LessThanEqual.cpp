@@ -43,3 +43,8 @@ void LessThanEqual::RISCOutput(std::ostream &dst, context &context, int destReg)
 int LessThanEqual::getSize() const{
   return branchList[0]->getSize() + branchList[1]->getSize();
 }
+
+void LessThanEqual::createVariableMap(context &context) const{
+  branchList[0]->createVariableMap(context);
+  branchList[1]->createVariableMap(context);
+}

@@ -60,3 +60,8 @@ void LogicalOr::RISCOutput(std::ostream &dst, context &context, int destReg) con
 int LogicalOr::getSize() const{
   return branchList[0]->getSize() + branchList[1]->getSize();
 }
+
+void LogicalOr::createVariableMap(context &context) const{
+  branchList[0]->createVariableMap(context);
+  branchList[1]->createVariableMap(context);
+}

@@ -41,3 +41,8 @@ void ShiftRight::RISCOutput(std::ostream &dst, context &context, int destReg) co
 int ShiftRight::getSize() const{
   return branchList[0]->getSize() + branchList[1]->getSize();
 }
+
+void ShiftRight::createVariableMap(context &context) const{
+  branchList[0]->createVariableMap(context);
+  branchList[1]->createVariableMap(context);
+}

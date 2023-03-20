@@ -1,3 +1,3 @@
-/opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/12.2.0/../../../../riscv64-unknown-elf/bin/ld: /tmp/cczIpOiZ.o: in function `main':
+/opt/riscv/bin/../lib/gcc/riscv64-unknown-elf/12.2.0/../../../../riscv64-unknown-elf/bin/ld: /tmp/cc19Ui1q.o: in function `main':
 call_constant_internal_driver.c:(.text+0x10): undefined reference to `f'
 collect2: error: ld returned 1 exit status

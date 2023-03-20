@@ -32,11 +32,17 @@ void Function_Definition::RISCOutput(std::ostream &dst, context &context, int de
   int stacksize = context.rounding(getSize()); 
   std::string endFunctionLabel = context.createLabel();
   std::string id = branchList[1]->Returnid();
-  context.set_function_type(id, branchList[0]->getType());//new
-  branchList[1]->createParameterMap(context); //new
-  context.addToFunctionParameters(id); //new
-  context.clearParameterVectors(); //new
+  context.set_function_type(id, branchList[0]->getType());
 
+  branchList[1]->createParameterMap(context); 
+  context.addToFunctionParameters(id); 
+  context.clearParameterVectors(); 
+
+  //breaks
+  branchList[2]->createVariableMap(context);
+  context.addToFunctionVariables(id);
+  context.clearVariableVectors();
+  
   dst << ".globl "<< id << std::endl; 
   dst << id << ":" << std::endl;
   

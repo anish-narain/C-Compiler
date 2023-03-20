@@ -49,3 +49,8 @@ void While::RISCOutput(std::ostream &dst, context &context, int destReg) const
 int While::getSize() const{
   return branchList[0]->getSize();
 }
+
+void While::createVariableMap(context &context) const{
+  branchList[0]->createVariableMap(context);
+  branchList[1]->createVariableMap(context);
+}

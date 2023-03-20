@@ -33,3 +33,8 @@ int Function_Call_With_Arguments::getSize() const{
    return branchList[0]->getSize() + branchList[1]->getSize();
 }
 
+void Function_Call_With_Arguments::createVariableMap(context &context) const{
+  branchList[0]->createVariableMap(context);
+  branchList[1]->createVariableMap(context);
+}
+

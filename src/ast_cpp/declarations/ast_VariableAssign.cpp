@@ -40,3 +40,13 @@ void VariableAssign::createParameterMap(context &context) const{
   branchList[1]->createParameterMap(context);
 }
 */
+
+/*
+void VariableAssign::createVariableMap(context &context) const{
+  branchList[0]->createVariableMap(context);
+}
+*/
+
+std::string VariableAssign::Returnid() const{
+  return branchList[0]->Returnid();
+}

@@ -1,4 +1,8 @@
 Base Class Reached. ERROR!!! (createParameterMap)
+A
+int
 Base Class Reached. ERROR!!! (ReturnId)
-terminate called after throwing an instance of 'std::bad_alloc'
-  what():  std::bad_alloc
+
+Added names
+Added types
+double free or corruption (out)

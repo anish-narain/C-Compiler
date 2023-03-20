@@ -26,3 +26,6 @@ std::string Name_Declarator::Returnid() const{
 int Name_Declarator::getSize() const{
   return 0;
 }
+
+void Name_Declarator::createVariableMap(context &context) const{
+}

@@ -50,3 +50,8 @@ void ValueAssign::createParameterMap(context &context) const{
   branchList[1]->createParameterMap(context);
 }
 */
+
+void ValueAssign::createVariableMap(context &context) const{
+  branchList[0]->createVariableMap(context);
+  branchList[1]->createVariableMap(context);
+}

@@ -53,3 +53,7 @@ int If_Else::getSize() const{
   return branchList[0]->getSize();
 }
 
+void If_Else::createVariableMap(context &context) const{
+  branchList[0]->createVariableMap(context);
+  branchList[1]->createVariableMap(context);
+}
