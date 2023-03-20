@@ -27,6 +27,8 @@ public:
 
     /*virtual void createParameterMap(context &context) const override;*/
 
+    virtual void createVariableMap(context &context) const override;
+
 };
 
 #endif
