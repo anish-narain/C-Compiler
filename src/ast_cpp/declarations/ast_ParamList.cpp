@@ -28,3 +28,7 @@ void Param_List::RISCOutput(std::ostream &dst, context &context, int destReg) co
 int Param_List::getSize() const{
   return branchList[0]->getSize();
 }
+
+void Param_List::createParameterMap(context &context) const{
+  branchList[0]->createParameterMap(context);
+}

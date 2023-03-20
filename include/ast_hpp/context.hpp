@@ -154,6 +154,29 @@ public:
         }
     }
 
+    std::string returnParameterTypesFormat(std::string id){ //would return (int, int) for f(int x, inty)
+        std::string inner_values_str = "(";
+
+    // Find the inner map corresponding to the given outer key
+        auto inner_map_it = function_parameters.find(id);
+        if (inner_map_it != function_parameters.end()) {
+            // Iterate over each value in the inner map and append it to the result string
+            const std::map<std::string, std::string>& inner_map = inner_map_it->second;
+            for (const auto& inner_pair : inner_map) {
+                const std::string& inner_value = inner_pair.second;
+                inner_values_str += inner_value + ", ";
+            }
+
+            // Remove the trailing ", " from the result string
+            inner_values_str.erase(inner_values_str.size() - 2);
+        }
+
+        inner_values_str += ")";
+
+        return inner_values_str;
+    }
+
+
 };
 
 #endif

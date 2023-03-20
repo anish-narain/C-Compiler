@@ -33,14 +33,13 @@ void Function_Definition::RISCOutput(std::ostream &dst, context &context, int de
   std::string endFunctionLabel = context.createLabel();
   std::string id = branchList[1]->Returnid();
   context.set_function_type(id, branchList[0]->getType());//new
-  branchList[1]->createParameterMap(context);
-  context.addToFunctionParameters(id);
-  context.clearParameterVectors();
-  context.printfunction_parameters(dst);
-
+  branchList[1]->createParameterMap(context); //new
+  context.addToFunctionParameters(id); //new
+  context.clearParameterVectors(); //new
 
   dst << ".globl "<< id << std::endl; 
-  dst << id << ":" << std::endl; 
+  dst << id << ":" << std::endl;
+  //dst << id << context.returnParameterTypesFormat(id) << ":" << std::endl; 
   
   dst << "addi sp,sp,-" << stacksize << std::endl;
   dst << "sw s0,"<< stacksize - 4 <<"(sp)" << std::endl;
