@@ -30,3 +30,8 @@ void VariableAssign::RISCOutput(std::ostream &dst, context &context, int destReg
 int VariableAssign::getSize() const{
   return branchList[0]->getSize() + branchList[1]->getSize();
 }
+
+void VariableAssign::createParameterMap(context &context) const{
+  branchList[0]->createParameterMap(context);
+  branchList[1]->createParameterMap(context);
+}
