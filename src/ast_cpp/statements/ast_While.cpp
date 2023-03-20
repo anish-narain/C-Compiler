@@ -46,10 +46,6 @@ void While::RISCOutput(std::ostream &dst, context &context, int destReg) const
     
 }
 
-        
-
-
-
 int While::getSize() const{
   return branchList[0]->getSize();
 }

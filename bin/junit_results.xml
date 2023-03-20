@@ -52,22 +52,22 @@
 <testcase name="compiler_tests/default/test_RETURN.c">
 </testcase>
 <testcase name="compiler_tests/float/add_double.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_float_add_double.assembler.stderr.log and ./bin/output/compiler_tests_float_add_double.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_float_add_double.assembler.stderr.log and ./bin/output/compiler_tests_float_add_double.assembler.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/float/add.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_float_add.assembler.stderr.log and ./bin/output/compiler_tests_float_add.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_float_add.assembler.stderr.log and ./bin/output/compiler_tests_float_add.assembler.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/float/add_mul.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_float_add_mul.assembler.stderr.log and ./bin/output/compiler_tests_float_add_mul.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_float_add_mul.assembler.stderr.log and ./bin/output/compiler_tests_float_add_mul.assembler.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/float/mul_add.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_float_mul_add.assembler.stderr.log and ./bin/output/compiler_tests_float_mul_add.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_float_mul_add.assembler.stderr.log and ./bin/output/compiler_tests_float_mul_add.assembler.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/float/mul_double.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_float_mul_double.assembler.stderr.log and ./bin/output/compiler_tests_float_mul_double.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_float_mul_double.assembler.stderr.log and ./bin/output/compiler_tests_float_mul_double.assembler.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/float/mul.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_float_mul.assembler.stderr.log and ./bin/output/compiler_tests_float_mul.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_float_mul.assembler.stderr.log and ./bin/output/compiler_tests_float_mul.assembler.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/float/pow.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_float_pow.compiler.stderr.log and ./bin/output/compiler_tests_float_pow.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_float_pow.compiler.stderr.log and ./bin/output/compiler_tests_float_pow.compiler.stdout.log</error>
@@ -188,10 +188,10 @@
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/strings/escaped.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_strings_escaped.assembler.stderr.log and ./bin/output/compiler_tests_strings_escaped.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_strings_escaped.assembler.stderr.log and ./bin/output/compiler_tests_strings_escaped.assembler.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/strings/literal.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_strings_literal.assembler.stderr.log and ./bin/output/compiler_tests_strings_literal.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_strings_literal.assembler.stderr.log and ./bin/output/compiler_tests_strings_literal.assembler.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/strings/puts.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_strings_puts.compiler.stderr.log and ./bin/output/compiler_tests_strings_puts.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_strings_puts.compiler.stderr.log and ./bin/output/compiler_tests_strings_puts.compiler.stdout.log</error>
@@ -215,16 +215,14 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_struct_struct_two_members.compiler.stderr.log and ./bin/output/compiler_tests_struct_struct_two_members.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_struct_struct_two_members.compiler.stderr.log and ./bin/output/compiler_tests_struct_struct_two_members.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/types/sizeof_char_inst.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_types_sizeof_char_inst.assembler.stderr.log and ./bin/output/compiler_tests_types_sizeof_char_inst.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_types_sizeof_char_inst.assembler.stderr.log and ./bin/output/compiler_tests_types_sizeof_char_inst.assembler.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/types/sizeof_char_type.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_types_sizeof_char_type.assembler.stderr.log and ./bin/output/compiler_tests_types_sizeof_char_type.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_types_sizeof_char_type.assembler.stderr.log and ./bin/output/compiler_tests_types_sizeof_char_type.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/types/sizeof_int_inst.c">
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/types/sizeof_int_type.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/types/unsigned.c">
 </testcase>

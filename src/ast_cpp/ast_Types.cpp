@@ -33,6 +33,9 @@ int Types::getSize() const
   if (type == "int"){
     return 4;
   }
+  else if (type == "char"){
+    return 1;
+  }
 }
 
 std::string Types::getType() const

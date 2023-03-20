@@ -25,6 +25,7 @@ public:
 
     virtual int getSize() const override;
 
+    virtual void createParameterMap(context &context) const override;
 
 };
 
