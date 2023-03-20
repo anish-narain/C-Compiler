@@ -44,7 +44,9 @@ int ValueAssign::getSize() const{
   return branchList[0]->getSize() + branchList[1]->getSize();
 }
 
+/*
 void ValueAssign::createParameterMap(context &context) const{
   branchList[0]->createParameterMap(context);
   branchList[1]->createParameterMap(context);
 }
+*/

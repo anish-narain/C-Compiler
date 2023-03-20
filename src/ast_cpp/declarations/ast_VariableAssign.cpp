@@ -25,13 +25,18 @@ void VariableAssign::RISCOutput(std::ostream &dst, context &context, int destReg
 {
   branchList[0]->RISCOutput(dst, context ,destReg);
   branchList[1]->RISCOutput(dst, context ,destReg);
+  std::string var_name = branchList[0]->Returnid();
+  int variableallocate = context.implement_var_binding(var_name);
+  dst << "sw " << context.reg(destReg) <<  ", " << variableallocate << "(s0)" <<std::endl;
 }
 
 int VariableAssign::getSize() const{
   return branchList[0]->getSize() + branchList[1]->getSize();
 }
 
+/*
 void VariableAssign::createParameterMap(context &context) const{
   branchList[0]->createParameterMap(context);
   branchList[1]->createParameterMap(context);
 }
+*/

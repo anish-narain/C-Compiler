@@ -28,9 +28,11 @@ void Return_Statement::RISCOutput(std::ostream &dst, context &context, int destR
   dst << "j ." << context.getLabel() << std::endl;
 }
 
+/*
 void Return_Statement::createParameterMap(context &context) const{
   branchList[0]->createParameterMap(context);
 }
+*/
 
 int Return_Statement::getSize() const{
   return branchList[0]->getSize();

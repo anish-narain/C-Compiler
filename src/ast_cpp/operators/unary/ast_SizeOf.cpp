@@ -28,9 +28,11 @@ void SizeOf::RISCOutput(std::ostream &dst, context &context, int destReg) const
     dst << "li " << context.reg(destReg) << "," << size << std::endl;
 }
 
+/*
 void SizeOf::createParameterMap(context &context) const{
   branchList[0]->createParameterMap(context);
 }
+*/
 
 int SizeOf::getSize() const{
   return branchList[0]->getSize();
