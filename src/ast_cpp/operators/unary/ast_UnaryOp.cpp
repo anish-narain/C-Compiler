@@ -17,7 +17,11 @@ void UnaryOp::print(std::ostream &dst, std::string indent) const
 }
 
 void UnaryOp::RISCOutput(std::ostream &dst, context &context, int destReg) const
-{}
+{
+    if (op == "-"){
+        dst << "neg " << context.reg(destReg) << "," << context.reg(destReg) << std::endl;
+    }
+}
 
 int UnaryOp::getSize() const{
   return 0;
