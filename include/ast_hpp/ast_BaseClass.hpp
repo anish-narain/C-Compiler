@@ -42,6 +42,8 @@ public:
 
   virtual void createParameterMap(context &context) const;
 
+  virtual void createVariableMap(context &context) const;
+
 
 };
 

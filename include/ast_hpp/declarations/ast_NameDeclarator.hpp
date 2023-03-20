@@ -28,7 +28,6 @@ public:
     //Size 
     virtual int getSize() const override;
 
-
     virtual std::string Returnid() const override;
 
 

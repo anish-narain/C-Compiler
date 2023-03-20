@@ -48,3 +48,7 @@ BasePtr Base::returnBranch(int index) const{
 void Base::createParameterMap(context &context) const{
   std::cerr << "Base Class Reached. ERROR!!! (createParameterMap)" << std::endl;
 }
+
+void Base::createVariableMap(context &context) const{
+  std::cerr << "Base Class Reached. ERROR!!! (createVariableMap)" << std::endl;
+}
