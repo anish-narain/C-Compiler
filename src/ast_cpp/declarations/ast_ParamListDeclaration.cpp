@@ -29,7 +29,7 @@ int Param_List_Declarator::getSize() const{
   return branchList[0]->getSize() + branchList[1]->getSize();
 }
 
-void Param_List_Declarator::createParameterMap(context &context, std::string &id) const{
-  branchList[0]->createParameterMap(context, id);
-  branchList[1]->createParameterMap(context, id);
+void Param_List_Declarator::createParameterMap(context &context) const{
+  branchList[0]->createParameterMap(context);
+  branchList[1]->createParameterMap(context);
 }

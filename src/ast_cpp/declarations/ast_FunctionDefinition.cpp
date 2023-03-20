@@ -33,7 +33,9 @@ void Function_Definition::RISCOutput(std::ostream &dst, context &context, int de
   std::string endFunctionLabel = context.createLabel();
   std::string id = branchList[1]->Returnid();
   context.set_function_type(id, branchList[0]->getType());//new
-  branchList[1]->createParameterMap(context, id);
+  branchList[1]->createParameterMap(context);
+  context.addToFunctionParameters(id);
+  context.clearParameterVectors();
   context.printfunction_parameters(dst);
 
 

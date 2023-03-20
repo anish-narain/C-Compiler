@@ -37,10 +37,8 @@ std::string Function_Declarator_With_Param::Returnid() const{
   return branchList[0]->Returnid();
 }
 
-void Function_Declarator_With_Param::createParameterMap(context &context, std::string &id) const{
-  branchList[1]->createParameterMap(context, id);
-  context.addToFunctionParameters(id);
-  context.clearParameterVectors();
+void Function_Declarator_With_Param::createParameterMap(context &context) const{
+  branchList[1]->createParameterMap(context);
 }
 
 
