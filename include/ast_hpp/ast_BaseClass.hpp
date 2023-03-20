@@ -40,6 +40,8 @@ public:
 
   virtual BasePtr returnBranch(int index) const;
 
+  virtual void createParameterMap(context &context, std::string &id) const;
+
 
 };
 

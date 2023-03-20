@@ -33,6 +33,9 @@ void Function_Definition::RISCOutput(std::ostream &dst, context &context, int de
   std::string endFunctionLabel = context.createLabel();
   std::string id = branchList[1]->Returnid();
   context.set_function_type(id, branchList[0]->getType());//new
+  branchList[1]->createParameterMap(context, id);
+  context.printfunction_parameters(dst);
+
 
   dst << ".globl "<< id << std::endl; 
   dst << id << ":" << std::endl; 
@@ -45,8 +48,8 @@ void Function_Definition::RISCOutput(std::ostream &dst, context &context, int de
 
   branchList[1]->RISCOutput(dst, context ,newReg);
 
-  context.addToFunctionParameters(id); //new
-  context.clearParameterVectors();//new
+  //context.addToFunctionParameters(id); //new
+  //context.clearParameterVectors();//new
 
   // Iterate over each key-value pair in the outer map
   //context.printfunction_parameters(dst);

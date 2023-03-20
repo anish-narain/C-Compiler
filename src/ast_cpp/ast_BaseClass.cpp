@@ -44,3 +44,7 @@ BasePtr Base::returnBranch(int index) const{
   BasePtr fakePointer;
   return fakePointer;
 }
+
+void Base::createParameterMap(context &context, std::string &id) const{
+  std::cerr << "Base Class Reached. ERROR!!! (ReturnId)" << std::endl;
+}

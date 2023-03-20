@@ -24,8 +24,8 @@ void Param_Declarator::RISCOutput(std::ostream &dst, context &context, int destR
   std::string var_id = branchList[1]->Returnid();
   std::string var_type = branchList[0]->getType();
 
-  context.addParameterName(var_id);
-  context.addParameterType(var_type);
+  //context.addParameterName(var_id);
+  //context.addParameterType(var_type);
 
   int var_addr = context.implement_var_binding(var_id);
   int param_reg = context.parameterAllocateRegister();
@@ -36,7 +36,14 @@ void Param_Declarator::RISCOutput(std::ostream &dst, context &context, int destR
   dst << "sw " << context.reg(param_reg) << ", " << var_addr << "(s0)" <<std::endl;
 }
 
-
 int Param_Declarator::getSize() const{
   return branchList[0]->getSize() + branchList[1]->getSize();
+}
+
+void Param_Declarator::createParameterMap(context& context, std::string &id) const{
+    std::string var_id = branchList[1]->Returnid();
+    std::string var_type = branchList[0]->getType();
+
+    context.addParameterName(var_id);
+    context.addParameterType(var_type);
 }
