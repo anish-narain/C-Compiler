@@ -34,8 +34,28 @@ void Divide::RISCOutput(std::ostream &dst, context &context, int destReg) const
 
     std::string right = context.reg(right_reg);
     std::string left = context.reg(left_reg);
+    std::string id = branchList[0]->Returnid();
+    std::string type;
+    
+    if (id == "int") { //if left branch is a constant int instead of a variable int
+      type = "int";
+    }
+    else{
+      type = context.returnVarType(id); 
+    } 
 
-    dst << "div " << context.reg(destReg) << ", " << context.reg(left_reg) << ", " << context.reg(right_reg) << std::endl;
+    std::cerr << type << std::endl; //check if it works
+
+    if (type == "int"){
+       dst << "div " << context.reg(destReg) << ", " << context.reg(left_reg) << ", " << context.reg(right_reg) << std::endl;
+    }
+    else if (type == "double"){
+      dst << "fdiv.d f" << context.reg(destReg) << ", f" << context.reg(left_reg) << ", f" << context.reg(right_reg) << std::endl;
+    }
+    else if (type == "float"){
+      dst << "fdiv.s f" << context.reg(destReg) << ", f" << context.reg(left_reg) << ", f" << context.reg(right_reg) << std::endl;
+    }
+
 }
 
 int Divide::getSize() const{

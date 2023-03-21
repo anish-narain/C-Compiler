@@ -35,8 +35,25 @@ void Subtract::RISCOutput(std::ostream &dst, context &context, int destReg) cons
     std::string right = context.reg(right_reg);
     std::string left = context.reg(left_reg);
 
-    dst << "sub " << context.reg(destReg) << ", " << context.reg(left_reg) << ", " << context.reg(right_reg) << std::endl;
+    std::string id = branchList[0]->Returnid();
+    std::string type;
     
+    if (id == "int") { //if left branch is a constant int instead of a variable int
+      type = "int";
+    }
+    else{
+      type = context.returnVarType(id); 
+    } 
+    
+    if (type == "int"){
+      dst << "sub " << context.reg(destReg) << ", " << context.reg(left_reg) << ", " << context.reg(right_reg) << std::endl;
+    }
+    else if (type == "double"){
+      dst << "fsub.d f" << context.reg(destReg) << ", f" << context.reg(left_reg) << ", f" << context.reg(right_reg) << std::endl;
+    }
+    else if (type == "float"){
+      dst << "fsub.s f" << context.reg(destReg) << ", f" << context.reg(left_reg) << ", f" << context.reg(right_reg) << std::endl;
+    }
 }
 
 int Subtract::getSize() const{
