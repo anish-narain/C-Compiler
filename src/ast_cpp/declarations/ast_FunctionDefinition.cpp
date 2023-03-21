@@ -72,6 +72,10 @@ void Function_Definition::RISCOutput(std::ostream &dst, context &context, int de
     dst << "fmv.d fa0, f" << context.reg(newReg) << std::endl;
     dst << "lw s0,"<< stacksize - 8 <<"(sp)" << std::endl;
   }
+  else if (function_type == "float"){
+    dst << "fmv.s fa0, f" << context.reg(newReg) << std::endl;
+    dst << "lw s0,"<< stacksize - 8 <<"(sp)" << std::endl;
+  }
   else{
     dst << "mv a0," << context.reg(newReg) << std::endl;
     dst << "lw s0,"<< stacksize - 4 <<"(sp)" << std::endl;

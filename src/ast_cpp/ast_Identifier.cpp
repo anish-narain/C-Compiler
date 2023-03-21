@@ -21,6 +21,9 @@ void Identifier::RISCOutput(std::ostream &dst, context &context, int destReg) co
   if (type == "double"){
     dst << "fld f" << context.reg(destReg) <<  ", " << context.get_var_location(id) << "(s0)" <<std::endl;
   }
+  else if (type == "float"){
+    dst << "flw f" << context.reg(destReg) <<  ", " << context.get_var_location(id) << "(s0)" <<std::endl;
+  }
   else{
     dst << "lw " << context.reg(destReg) <<  ", " << context.get_var_location(id) << "(s0)" <<std::endl;
   }

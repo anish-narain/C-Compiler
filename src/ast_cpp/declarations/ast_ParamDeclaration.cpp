@@ -35,7 +35,7 @@ void Param_Declarator::RISCOutput(std::ostream &dst, context &context, int destR
 
   
   if (var_type == "float"){
-    dst << "fsd f" << context.reg(param_reg) << ", " << var_addr << "(s0)" <<std::endl;
+    dst << "fsw f" << context.reg(param_reg) << ", " << var_addr << "(s0)" <<std::endl;
   }
   else if (var_type == "double"){
     dst << "fsd f" << context.reg(param_reg) << ", " << var_addr << "(s0)" <<std::endl;
