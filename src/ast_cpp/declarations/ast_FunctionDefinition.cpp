@@ -32,23 +32,33 @@ void Function_Definition::RISCOutput(std::ostream &dst, context &context, int de
   int stacksize = context.rounding(getSize()); 
   
   std::string endFunctionLabel = context.createLabel();
-  std::string id = branchList[1]->Returnid();
-  context.set_function_type(id, branchList[0]->getType());
+  std::string function_id = branchList[1]->Returnid();
+  context.set_function_type(function_id, branchList[0]->getType());
+  std::string function_type = context.returnFunctionType(function_id);
 
   branchList[1]->createParameterMap(context); 
-  context.addToFunctionParameters(id); 
+  context.addToFunctionParameters(function_id); 
   context.clearParameterVectors(); 
 
   //breaks
   branchList[2]->createVariableMap(context);
-  context.addToFunctionVariables(id);
+  context.addToFunctionVariables(function_id);
   context.clearVariableVectors();
   
-  dst << ".globl "<< id << std::endl; 
-  dst << id << ":" << std::endl;
+  dst << ".globl "<< function_id << std::endl; 
+  dst << function_id << ":" << std::endl;
   
   dst << "addi sp,sp,-" << stacksize << std::endl;
-  dst << "sw s0,"<< stacksize - 4 <<"(sp)" << std::endl;
+
+  
+  if (function_type == "double"){
+    dst << "sw s0,"<< stacksize - 8 <<"(sp)" << std::endl;
+  }
+  else{
+    dst << "sw s0,"<< stacksize - 4 <<"(sp)" << std::endl;
+  }
+
+  
   dst << "addi s0,sp," << stacksize << std::endl; 
   
   int newReg = context.allocateRegister();
@@ -57,8 +67,16 @@ void Function_Definition::RISCOutput(std::ostream &dst, context &context, int de
   branchList[2]->RISCOutput(dst, context ,newReg);
 
   dst << "." << endFunctionLabel << ":" << std::endl;
-  dst << "mv a0," << context.reg(newReg) << std::endl;
-  dst << "lw s0,"<< stacksize - 4 <<"(sp)" << std::endl;
+
+  if (function_type == "double"){
+    dst << "fmv.d fa0, f" << context.reg(newReg) << std::endl;
+    dst << "lw s0,"<< stacksize - 8 <<"(sp)" << std::endl;
+  }
+  else{
+    dst << "mv a0," << context.reg(newReg) << std::endl;
+    dst << "lw s0,"<< stacksize - 4 <<"(sp)" << std::endl;
+  }
+  
   dst << "addi sp,sp," << stacksize << std::endl;
   dst << "jr ra" << std::endl;
   

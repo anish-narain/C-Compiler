@@ -18,12 +18,11 @@ void Identifier::print(std::ostream &dst, std::string indent) const
 void Identifier::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
   std::string type = context.returnVarType(id); 
-
-  if (type == "int"){
-    dst << "lw " << context.reg(destReg) <<  ", " << context.get_var_location(id) << "(s0)" <<std::endl;
-  }
-  else if (type == "double"){
+  if (type == "double"){
     dst << "fld f" << context.reg(destReg) <<  ", " << context.get_var_location(id) << "(s0)" <<std::endl;
+  }
+  else{
+    dst << "lw " << context.reg(destReg) <<  ", " << context.get_var_location(id) << "(s0)" <<std::endl;
   }
   
 }

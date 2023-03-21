@@ -53,7 +53,6 @@ void Add::RISCOutput(std::ostream &dst, context &context, int destReg) const
     }
     else if (type == "double"){
       dst << "fadd.d f" << context.reg(destReg) << ", f" << context.reg(left_reg) << ", f" << context.reg(right_reg) << std::endl;
-      dst << "lw " << context.reg(destReg) << ", f" << context.reg(destReg) << std::endl;
     }
  
 }

@@ -8,5 +8,6 @@ Base Class Reached. ERROR!!! (createVariableMap)
 Base Class Reached. ERROR!!! (createVariableMap)
 Variable not found
 Base Class Reached. ERROR!!! (ReturnId)
+Error: Inner key not found.
 terminate called after throwing an instance of 'std::bad_alloc'
   what():  std::bad_alloc

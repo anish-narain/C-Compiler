@@ -27,13 +27,23 @@ void Param_Declarator::RISCOutput(std::ostream &dst, context &context, int destR
   //context.addParameterName(var_id);
   //context.addParameterType(var_type);
 
-  int var_addr = context.implement_var_binding(var_id);
+  int var_addr = context.implement_var_binding(var_id, var_type);
   int param_reg = context.parameterAllocateRegister();
 
   branchList[0]->RISCOutput(dst, context ,destReg);
   branchList[1]->RISCOutput(dst, context ,destReg);
 
-  dst << "sw " << context.reg(param_reg) << ", " << var_addr << "(s0)" <<std::endl;
+  
+  if (var_type == "float"){
+    dst << "fsd f" << context.reg(param_reg) << ", " << var_addr << "(s0)" <<std::endl;
+  }
+  else if (var_type == "double"){
+    dst << "fsd f" << context.reg(param_reg) << ", " << var_addr << "(s0)" <<std::endl;
+  }
+  else{
+    dst << "sw " << context.reg(param_reg) << ", " << var_addr << "(s0)" <<std::endl;
+  }
+  
 }
 
 int Param_Declarator::getSize() const{

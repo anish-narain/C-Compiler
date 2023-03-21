@@ -26,7 +26,8 @@ void VariableAssign::RISCOutput(std::ostream &dst, context &context, int destReg
   branchList[0]->RISCOutput(dst, context ,destReg);
   branchList[1]->RISCOutput(dst, context ,destReg);
   std::string var_name = branchList[0]->Returnid();
-  int variableallocate = context.implement_var_binding(var_name);
+  std::string var_type = context.returnVarType(var_name);
+  int variableallocate = context.implement_var_binding(var_name, var_type);
   dst << "sw " << context.reg(destReg) <<  ", " << variableallocate << "(s0)" <<std::endl;
 }
 

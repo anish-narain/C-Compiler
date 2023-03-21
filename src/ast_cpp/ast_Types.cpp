@@ -30,11 +30,18 @@ void Types::RISCOutput(std::ostream &dst, context &context, int destReg) const
 
 int Types::getSize() const
 {
-  if (type == "int"){
-    return 4;
-  }
-  else if (type == "char"){
+  
+  if (type == "char"){
     return 1;
+  }
+  else if (type == "double"){
+    return 8;
+  }
+  else if (type == "float"){
+    return 8;
+  }
+  else{
+    return 4;
   }
 }
 

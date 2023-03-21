@@ -86,9 +86,17 @@ public:
     void enterStatement();
     void exitStatement(std::ostream &dst);
 
-    int implement_var_binding(std::string variable_name){
+    int implement_var_binding(std::string variable_name, std::string variable_type){
         static int current_stack = -16;
-        current_stack -= 4;
+        if (variable_type == "int"){
+            current_stack -= 4;
+        }
+        else if(variable_type == "double"){
+            current_stack -= 8;
+        }
+        else if(variable_type == "float"){
+            current_stack -= 8;
+        }
         variable_bindings[variable_name] = current_stack;
         return current_stack;
     }
@@ -189,6 +197,10 @@ public:
         // If the inner key is not found in any of the inner maps, print an error message and return an empty string
         std::cerr << "Error: Inner key not found." << std::endl;
         return "";
+    }
+
+    std::string returnFunctionType(std::string function_name){
+        return function_types[function_name];
     }
 
     void printfunction_parameters(std::ostream &dst){
