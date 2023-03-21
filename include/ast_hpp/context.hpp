@@ -102,7 +102,6 @@ public:
         return it->second; // return the second item from the map[name
     }
 
-
     std::string reg(int i){
         if (i > 4 && i < 8) /*From i = 5 to 7*/{
             return 't' + std::to_string(i-5);
@@ -140,11 +139,11 @@ public:
 
     //Variables
     void addVariableName(std::string name){
-        std::cerr << "Added names" << std::endl; 
+        //std::cerr << "Added names" << std::endl; 
         variable_names.push_back(name);
     }
     void addVariableType(std::string type){
-        std::cerr << "Added types" << std::endl;
+        //std::cerr << "Added types" << std::endl;
         variable_types.push_back(type);
     }
 
@@ -172,6 +171,24 @@ public:
     void clearVariableVectors(){
         variable_names.clear();
         variable_types.clear();
+    }
+
+    std::string returnVarType(const std::string& var_id) {
+    // Check if the inner key exists in the global map of maps
+            auto outer_it = function_variables.begin();
+            while (outer_it != function_variables.end()) {
+                const auto& inner_map = outer_it->second;
+                auto inner_it = inner_map.find(var_id);
+                if (inner_it != inner_map.end()) {
+                    // Return the inner value if the inner key is found
+                    return inner_it->second;
+                }
+                ++outer_it;
+        }
+    
+        // If the inner key is not found in any of the inner maps, print an error message and return an empty string
+        std::cerr << "Error: Inner key not found." << std::endl;
+        return "";
     }
 
     void printfunction_parameters(std::ostream &dst){

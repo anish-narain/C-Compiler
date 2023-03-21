@@ -36,7 +36,25 @@ void Add::RISCOutput(std::ostream &dst, context &context, int destReg) const
     std::string right = context.reg(right_reg);
     std::string left = context.reg(left_reg);
 
-    dst << "add " << context.reg(destReg) << ", " << context.reg(left_reg) << ", " << context.reg(right_reg) << std::endl;
+    std::string id = branchList[0]->Returnid();
+    std::string type;
+    
+    if (id == "int") { //if left branch is a constant int instead of a variable int
+      type = "int";
+    }
+    else{
+      type = context.returnVarType(id); 
+    } 
+
+    std::cerr << type << std::endl; //check if it works
+
+    if (type == "int"){
+      dst << "add " << context.reg(destReg) << ", " << context.reg(left_reg) << ", " << context.reg(right_reg) << std::endl;
+    }
+    else if (type == "double"){
+      dst << "fadd.d f" << context.reg(destReg) << ", f" << context.reg(left_reg) << ", f" << context.reg(right_reg) << std::endl;
+      dst << "lw " << context.reg(destReg) << ", f" << context.reg(destReg) << std::endl;
+    }
  
 }
 

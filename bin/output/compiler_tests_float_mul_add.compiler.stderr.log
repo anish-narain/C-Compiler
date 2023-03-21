@@ -1,3 +1,7 @@
 Base Class Reached. ERROR!!! (createVariableMap)
 Base Class Reached. ERROR!!! (createVariableMap)
 Base Class Reached. ERROR!!! (createVariableMap)
+Base Class Reached. ERROR!!! (ReturnId)
+Error: Inner key not found.
+
+free(): invalid pointer

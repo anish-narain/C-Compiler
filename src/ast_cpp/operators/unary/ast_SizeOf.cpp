@@ -24,6 +24,18 @@ void SizeOf::print(std::ostream &dst, std::string indent) const
 void SizeOf::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
     int size = branchList[0]->getSize();
+
+    if (size==0){ //reached an Id
+      std::string var_name = branchList[0]->Returnid();
+      std::string type = context.returnVarType(var_name);
+      if(type == "int"){
+        size = 4;
+      }
+      else if(type == "char"){
+        size = 1;
+      }
+    }
+
     branchList[0]->RISCOutput(dst, context, destReg);
     dst << "li " << context.reg(destReg) << "," << size << std::endl;
 }

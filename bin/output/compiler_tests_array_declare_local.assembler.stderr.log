@@ -1,3 +1,0 @@
-./bin/output/compiler_tests_array_declare_local.s: Assembler messages:
-./bin/output/compiler_tests_array_declare_local.s:1: Error: unrecognized opcode `f'
-./bin/output/compiler_tests_array_declare_local.s:2: Error: unrecognized opcode `int'

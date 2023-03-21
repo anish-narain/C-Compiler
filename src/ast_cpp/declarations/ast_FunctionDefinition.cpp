@@ -30,6 +30,7 @@ BasePtr Function_Definition::returnBranch(int index) const{
 void Function_Definition::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
   int stacksize = context.rounding(getSize()); 
+  
   std::string endFunctionLabel = context.createLabel();
   std::string id = branchList[1]->Returnid();
   context.set_function_type(id, branchList[0]->getType());

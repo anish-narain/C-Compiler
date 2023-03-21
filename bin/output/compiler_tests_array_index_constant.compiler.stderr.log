@@ -1,8 +1,3 @@
 Base Class Reached. ERROR!!! (createParameterMap)
-A
-int
 Base Class Reached. ERROR!!! (ReturnId)
-
-Added names
-Added types
-double free or corruption (out)
+free(): invalid pointer

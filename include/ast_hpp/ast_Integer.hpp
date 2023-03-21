@@ -26,6 +26,8 @@ public:
     //Code gen
     void RISCOutput(std::ostream &dst, context &context, int destReg) const override;
 
+    virtual std::string Returnid() const override; 
+
     virtual int getSize() const override;
 
 

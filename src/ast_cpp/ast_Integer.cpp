@@ -24,6 +24,10 @@ void Int::RISCOutput(std::ostream &dst, context &context, int destReg) const
   dst << "li "<< context.reg(destReg) << "," << int_value << std::endl;
 }
 
+std::string Int::Returnid() const{ //hacky solution
+  return "int";
+}
+
 int Int::getSize() const{
   return 0;
 }
