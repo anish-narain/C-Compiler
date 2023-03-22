@@ -30,6 +30,8 @@ public:
 
     virtual std::string getType() const override;
 
+    virtual int isFunctionCall() const override;
+
 };
 
 #endif

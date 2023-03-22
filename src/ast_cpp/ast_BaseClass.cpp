@@ -52,3 +52,7 @@ void Base::createParameterMap(context &context) const{
 void Base::createVariableMap(context &context) const{
   std::cerr << "Base Class Reached. ERROR!!! (createVariableMap)" << std::endl;
 }
+
+int Base::isFunctionCall() const{
+  std::cerr << "Base Class Reached. ERROR!!! (createVariableMap)" << std::endl;
+}

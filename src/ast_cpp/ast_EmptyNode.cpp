@@ -21,3 +21,6 @@ int EmptyNode::getSize() const{
   return 0;
 }
 
+int EmptyNode::isFunctionCall() const{
+  return 0;
+}

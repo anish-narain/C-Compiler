@@ -27,6 +27,7 @@ void Function_Call_With_Arguments::RISCOutput(std::ostream &dst, context &contex
 {
   branchList[1]->RISCOutput(dst, context ,destReg);
   dst << "call " << branchList[0]->Returnid() << std::endl;
+  dst << "mv " <<  context.reg(destReg) << ", a0" << std::endl;
 }
 
 int Function_Call_With_Arguments::getSize() const{
@@ -36,5 +37,10 @@ int Function_Call_With_Arguments::getSize() const{
 void Function_Call_With_Arguments::createVariableMap(context &context) const{
   branchList[0]->createVariableMap(context);
   branchList[1]->createVariableMap(context);
+}
+
+int Function_Call_With_Arguments::isFunctionCall() const{
+  std::cerr << "REACHED Function_Call_With_Arguments" << std::endl; 
+  return 1;
 }
 

@@ -33,3 +33,7 @@ int MultiFunction::getSize() const{
   return branchList[0]->getSize() + branchList[1]->getSize();
 }
 
+int MultiFunction::isFunctionCall() const{
+  branchList[0]->isFunctionCall();
+  branchList[1]->isFunctionCall();
+}

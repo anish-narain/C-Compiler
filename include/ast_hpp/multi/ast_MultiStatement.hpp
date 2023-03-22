@@ -27,6 +27,7 @@ public:
 
     virtual void createVariableMap(context &context) const override;
 
+    virtual int isFunctionCall() const override;
 };
 
 #endif

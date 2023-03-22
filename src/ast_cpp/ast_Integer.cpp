@@ -32,3 +32,7 @@ int Int::getSize() const{
   return 0;
 }
 
+int Int::isFunctionCall() const{
+  return 0;
+}
+

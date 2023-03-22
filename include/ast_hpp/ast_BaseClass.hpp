@@ -44,6 +44,8 @@ public:
 
   virtual void createVariableMap(context &context) const;
 
+  virtual int isFunctionCall() const;
+
 
 };
 

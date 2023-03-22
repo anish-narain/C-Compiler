@@ -41,3 +41,7 @@ int Return_Statement::getSize() const{
 void Return_Statement::createVariableMap(context &context) const{
   branchList[0]->createVariableMap(context);
 }
+
+int Return_Statement::isFunctionCall() const{
+  branchList[0]->isFunctionCall();
+}

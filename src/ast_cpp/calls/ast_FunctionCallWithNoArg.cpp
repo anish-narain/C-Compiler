@@ -23,8 +23,8 @@ void Function_Call_With_NoArguments::print(std::ostream &dst, std::string indent
 
 void Function_Call_With_NoArguments::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
-  branchList[0]->RISCOutput(dst, context ,destReg);
   dst << "call " << branchList[0]->Returnid() << std::endl;
+  dst << "mv " <<  context.reg(destReg) << ", a0" << std::endl;
 }
 
 int Function_Call_With_NoArguments::getSize() const{
@@ -33,4 +33,9 @@ int Function_Call_With_NoArguments::getSize() const{
 
 void Function_Call_With_NoArguments::createVariableMap(context &context) const{
   branchList[0]->createVariableMap(context);
+}
+
+int Function_Call_With_NoArguments::isFunctionCall() const{
+  std::cerr << "REACHED Function_Call_With_NoArguments" << std::endl; 
+  return 1;
 }

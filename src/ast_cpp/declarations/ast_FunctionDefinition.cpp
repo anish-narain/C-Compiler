@@ -40,18 +40,29 @@ void Function_Definition::RISCOutput(std::ostream &dst, context &context, int de
   context.addToFunctionParameters(function_id); 
   context.clearParameterVectors(); 
 
-  //breaks
+  
   branchList[2]->createVariableMap(context);
   context.addToFunctionVariables(function_id);
   context.clearVariableVectors();
+
+  //check for function calls:
+  int functionCall = 0;
+  functionCall = branchList[2]->isFunctionCall();
+
   
   dst << ".globl "<< function_id << std::endl; 
   dst << function_id << ":" << std::endl;
   
   dst << "addi sp,sp,-" << stacksize << std::endl;
 
+  if(functionCall == 1){
+    dst << "sw ra," << stacksize - 4 <<"(sp)" << std::endl;
+  }
   
   if (function_type == "double"){
+    dst << "sw s0,"<< stacksize - 8 <<"(sp)" << std::endl;
+  }
+  else if (function_type == "float"){
     dst << "sw s0,"<< stacksize - 8 <<"(sp)" << std::endl;
   }
   else{
@@ -67,6 +78,10 @@ void Function_Definition::RISCOutput(std::ostream &dst, context &context, int de
   branchList[2]->RISCOutput(dst, context ,newReg);
 
   dst << "." << endFunctionLabel << ":" << std::endl;
+
+  if(functionCall == 1){
+    dst << "lw ra," << stacksize - 4 <<"(sp)" << std::endl;
+  }
 
   if (function_type == "double"){
     dst << "fmv.d fa0, f" << context.reg(newReg) << std::endl;
