@@ -68,7 +68,7 @@ StartTree: translation_unit {g_root = $1; }
 
 translation_unit
 	: external_declaration { $$ = $1; }
-	| translation_unit external_declaration 
+	| translation_unit external_declaration { $$ = new MultiFunction($1, $2);}
 	;
 
 external_declaration 

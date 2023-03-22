@@ -39,6 +39,7 @@
 #include "ast_hpp/multi/ast_Multiline.hpp"
 #include "ast_hpp/multi/ast_MultiStatement.hpp"
 #include "ast_hpp/multi/ast_MultiDeclaration.hpp"
+#include "ast_hpp/multi/ast_MultiFunction.hpp"
 #include "ast_hpp/multi/ast_MultiDec.hpp"
 
 #include "ast_hpp/statements/ast_ReturnStatement.hpp"

@@ -1,5 +1,5 @@
-#ifndef ast_MultiDeclaration_hpp
-#define ast_MultiDeclaration_hpp
+#ifndef ast_MultiFunction_hpp
+#define ast_MultiFunction_hpp
 #include <vector>
 #include <string>
 #include <iostream>
@@ -7,15 +7,15 @@
 #include <memory>
 #include "ast_hpp/ast_BaseClass.hpp"
 
-class MultiDeclaration
+class MultiFunction
  : public Base
 {
 public:
     //Constructor
-    MultiDeclaration(BasePtr translation_unit, BasePtr external_declaration);
+    MultiFunction(BasePtr declaration_list, BasePtr declaration);
 
     //Destructor
-    virtual ~MultiDeclaration();
+    virtual ~MultiFunction();
 
     //Printing
     virtual void print(std::ostream &dst, std::string indent) const override;
@@ -25,7 +25,6 @@ public:
 
     virtual int getSize() const override;
 
-    virtual void createVariableMap(context &context) const override;
 
 };
 
