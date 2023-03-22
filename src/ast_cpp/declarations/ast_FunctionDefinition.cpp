@@ -58,15 +58,18 @@ void Function_Definition::RISCOutput(std::ostream &dst, context &context, int de
   if(functionCall == 1){
     dst << "sw ra," << stacksize - 4 <<"(sp)" << std::endl;
   }
+  else{
+    functionCall = 0;
+  }
   
   if (function_type == "double"){
-    dst << "sw s0,"<< stacksize - 8 <<"(sp)" << std::endl;
+    dst << "sw s0,"<< stacksize - (functionCall*4) - 8 <<"(sp)" << std::endl;
   }
   else if (function_type == "float"){
-    dst << "sw s0,"<< stacksize - 8 <<"(sp)" << std::endl;
+    dst << "sw s0,"<< stacksize - (functionCall*4)- 8 <<"(sp)" << std::endl;
   }
   else{
-    dst << "sw s0,"<< stacksize - 4 <<"(sp)" << std::endl;
+    dst << "sw s0,"<< stacksize - (functionCall*4) - 4 <<"(sp)" << std::endl;
   }
 
   
@@ -85,15 +88,15 @@ void Function_Definition::RISCOutput(std::ostream &dst, context &context, int de
 
   if (function_type == "double"){
     dst << "fmv.d fa0, f" << context.reg(newReg) << std::endl;
-    dst << "lw s0,"<< stacksize - 8 <<"(sp)" << std::endl;
+    dst << "lw s0,"<< stacksize - (functionCall*4) - 8 <<"(sp)" << std::endl;
   }
   else if (function_type == "float"){
     dst << "fmv.s fa0, f" << context.reg(newReg) << std::endl;
-    dst << "lw s0,"<< stacksize - 8 <<"(sp)" << std::endl;
+    dst << "lw s0,"<< stacksize - (functionCall*4) - 8 <<"(sp)" << std::endl;
   }
   else{
     dst << "mv a0," << context.reg(newReg) << std::endl;
-    dst << "lw s0,"<< stacksize - 4 <<"(sp)" << std::endl;
+    dst << "lw s0,"<< stacksize - (functionCall*4) - 4 <<"(sp)" << std::endl;
   }
   
   dst << "addi sp,sp," << stacksize << std::endl;
