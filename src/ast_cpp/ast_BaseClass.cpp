@@ -54,5 +54,9 @@ void Base::createVariableMap(context &context) const{
 }
 
 int Base::isFunctionCall() const{
-  std::cerr << "Base Class Reached. ERROR!!! (createVariableMap)" << std::endl;
+  std::cerr << "Base Class Reached. ERROR!!! (isFunctionCall)" << std::endl;
+}
+
+int Base::GetArgLocation() const{
+  std::cerr << "Base Class Reached. ERROR!!! (GetArgLocation)" << std::endl;
 }

@@ -300,7 +300,7 @@ declaration
 
 
 argument_expression_list
-	: assignment_expression {$$ = $1;}
+	: assignment_expression {$$ = new Arg_Declarator($1);}
 	| argument_expression_list ',' assignment_expression {$$ = new Arg_List_Declarator($1, $3);}
 	;
 

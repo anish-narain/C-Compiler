@@ -22,7 +22,7 @@ void Arg_List_Declarator::print(std::ostream &dst, std::string indent) const
 void Arg_List_Declarator::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
   branchList[0]->RISCOutput(dst, context ,destReg);
-  branchList[1]->RISCOutput(dst, context ,destReg);
+  branchList[1]->RISCOutput(dst, context , GetArgLocation());
 }
 
 int Arg_List_Declarator::getSize() const
@@ -33,4 +33,8 @@ int Arg_List_Declarator::getSize() const
 void Arg_List_Declarator::createVariableMap(context &context) const{
   branchList[0]->createVariableMap(context);
   branchList[1]->createVariableMap(context);
+}
+
+int Arg_List_Declarator::GetArgLocation() const{
+  return branchList[0]->GetArgLocation()+1;
 }

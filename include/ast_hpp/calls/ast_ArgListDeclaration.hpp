@@ -28,6 +28,8 @@ public:
 
     virtual void createVariableMap(context &context) const override;
 
+    virtual int GetArgLocation() const override;
+
 };
 
 #endif

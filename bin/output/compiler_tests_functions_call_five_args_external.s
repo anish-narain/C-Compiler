@@ -9,11 +9,11 @@ addi sp,sp,-16
 sw ra,12(sp)
 sw s0,8(sp)
 addi s0,sp,16
-li t0,1
-li t0,2
-li t0,3
-li t0,4
-li t0,5
+li a0,1
+li a1,2
+li a2,3
+li a3,4
+li a4,5
 call g
 mv t0, a0
 j .end1

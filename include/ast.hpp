@@ -1,4 +1,5 @@
 #include "ast_hpp/calls/ast_ArgListDeclaration.hpp"
+#include "ast_hpp/calls/ast_ArgDeclaration.hpp"
 #include "ast_hpp/calls/ast_FunctionCallWithArg.hpp"
 #include "ast_hpp/calls/ast_FunctionCallWithNoArg.hpp"
 

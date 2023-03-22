@@ -46,6 +46,8 @@ public:
 
   virtual int isFunctionCall() const;
 
+  virtual int GetArgLocation() const;
+
 
 };
 
