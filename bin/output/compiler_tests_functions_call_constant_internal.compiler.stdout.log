@@ -1,8 +1,21 @@
-  Function Definition [
-    TYPE: int    
-    IDENTIFIER g
-    Return: [
-      Integer : 20
+  New Function [
+    Function Definition [
+      TYPE: int      
+      IDENTIFIER g
+      Return: [
+        Integer : 20
+      ]
+    ]
+  ]
+  New Function [
+    Function Definition [
+      TYPE: int      
+      IDENTIFIER f
+      Return: [
+        Function Call With NoArguments [
+        Function Name =           IDENTIFIER g
+        ]
+      ]
     ]
   ]
 

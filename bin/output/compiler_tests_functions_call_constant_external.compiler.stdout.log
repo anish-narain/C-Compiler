@@ -1,5 +1,18 @@
-  TYPE: int  
-  IDENTIFIER g
+  New Function [
+    TYPE: int    
+    IDENTIFIER g
+  ]
+  New Function [
+    Function Definition [
+      TYPE: int      
+      IDENTIFIER f
+      Return: [
+        Function Call With NoArguments [
+        Function Name =           IDENTIFIER g
+        ]
+      ]
+    ]
+  ]
 
 Compiling: compiler_tests/functions/call_constant_external.c
 Compiled to: ./bin/output/compiler_tests_functions_call_constant_external.s

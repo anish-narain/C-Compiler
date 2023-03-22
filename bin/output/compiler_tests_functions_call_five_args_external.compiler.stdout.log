@@ -1,17 +1,35 @@
-  TYPE: int  
-    IDENTIFIER g
-    Function Parameters [
+  New Function [
+    TYPE: int    
+      IDENTIFIER g
+      Function Parameters [
+        TYPE: int        
+        IDENTIFIER a
+        TYPE: int        
+        IDENTIFIER b
+        TYPE: int        
+        IDENTIFIER c
+        TYPE: int        
+        IDENTIFIER d
+        TYPE: int        
+        IDENTIFIER e
+      ]
+  ]
+  New Function [
+    Function Definition [
       TYPE: int      
-      IDENTIFIER a
-      TYPE: int      
-      IDENTIFIER b
-      TYPE: int      
-      IDENTIFIER c
-      TYPE: int      
-      IDENTIFIER d
-      TYPE: int      
-      IDENTIFIER e
+      IDENTIFIER f
+      Return: [
+        Function Call With Arguments [
+        Function Name =           IDENTIFIER g
+        Arguments =           Integer : 1
+          Integer : 2
+          Integer : 3
+          Integer : 4
+          Integer : 5
+        ]
+      ]
     ]
+  ]
 
 Compiling: compiler_tests/functions/call_five_args_external.c
 Compiled to: ./bin/output/compiler_tests_functions_call_five_args_external.s

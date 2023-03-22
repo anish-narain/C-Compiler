@@ -3,7 +3,7 @@
 //Constructor 
 MultiFunction::MultiFunction(BasePtr translation_unit, BasePtr external_declaration)
 {
-    branchList.insert(branchList.end(), {declaration_list, statement_list});
+    branchList.insert(branchList.end(), {translation_unit, external_declaration});
 }
 //Destructor
 MultiFunction::~MultiFunction()
@@ -17,6 +17,8 @@ void MultiFunction::print(std::ostream &dst, std::string indent) const
 {
     dst << indent << "New Function [" << std::endl;
     branchList[0]->print(dst, indent+"  ");
+    dst << indent << "]" << std::endl;
+    dst << indent << "New Function [" << std::endl;
     branchList[1]->print(dst, indent+"  ");
     dst << indent << "]" << std::endl;
 }

@@ -3,7 +3,6 @@
 <testcase name="compiler_tests/_example/example.c">
 </testcase>
 <testcase name="compiler_tests/array/declare_global.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_array_declare_global.linker.stderr.log and ./bin/output/compiler_tests_array_declare_global.linker.stdout.log">Fail: see ./bin/output/compiler_tests_array_declare_global.linker.stderr.log and ./bin/output/compiler_tests_array_declare_global.linker.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/array/declare_local.c">
 </testcase>
@@ -45,7 +44,7 @@
 <testcase name="compiler_tests/default/test_ADD1.c">
 </testcase>
 <testcase name="compiler_tests/default/test_CALL.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_default_test_CALL.linker.stderr.log and ./bin/output/compiler_tests_default_test_CALL.linker.stdout.log">Fail: see ./bin/output/compiler_tests_default_test_CALL.linker.stderr.log and ./bin/output/compiler_tests_default_test_CALL.linker.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/default/test_LOCAL.c">
 </testcase>
@@ -67,34 +66,34 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_float_pow.compiler.stderr.log and ./bin/output/compiler_tests_float_pow.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_float_pow.compiler.stderr.log and ./bin/output/compiler_tests_float_pow.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_constant_external.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_constant_external.linker.stderr.log and ./bin/output/compiler_tests_functions_call_constant_external.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_constant_external.linker.stderr.log and ./bin/output/compiler_tests_functions_call_constant_external.linker.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_constant_internal.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_constant_internal.linker.stderr.log and ./bin/output/compiler_tests_functions_call_constant_internal.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_constant_internal.linker.stderr.log and ./bin/output/compiler_tests_functions_call_constant_internal.linker.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_five_args_external.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_five_args_external.linker.stderr.log and ./bin/output/compiler_tests_functions_call_five_args_external.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_five_args_external.linker.stderr.log and ./bin/output/compiler_tests_functions_call_five_args_external.linker.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_five_args_internal.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_five_args_internal.compiler.stderr.log and ./bin/output/compiler_tests_functions_call_five_args_internal.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_five_args_internal.compiler.stderr.log and ./bin/output/compiler_tests_functions_call_five_args_internal.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_identity_external.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_identity_external.linker.stderr.log and ./bin/output/compiler_tests_functions_call_identity_external.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_identity_external.linker.stderr.log and ./bin/output/compiler_tests_functions_call_identity_external.linker.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_identity_internal.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_identity_internal.linker.stderr.log and ./bin/output/compiler_tests_functions_call_identity_internal.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_identity_internal.linker.stderr.log and ./bin/output/compiler_tests_functions_call_identity_internal.linker.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_mutual_recursive.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_mutual_recursive.linker.stderr.log and ./bin/output/compiler_tests_functions_call_mutual_recursive.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_mutual_recursive.linker.stderr.log and ./bin/output/compiler_tests_functions_call_mutual_recursive.linker.stdout.log</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_mutual_recursive.compiler.stderr.log and ./bin/output/compiler_tests_functions_call_mutual_recursive.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_mutual_recursive.compiler.stderr.log and ./bin/output/compiler_tests_functions_call_mutual_recursive.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_recursive_internal.c">
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_two_args_external.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_two_args_external.linker.stderr.log and ./bin/output/compiler_tests_functions_call_two_args_external.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_two_args_external.linker.stderr.log and ./bin/output/compiler_tests_functions_call_two_args_external.linker.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_two_args_internal.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_two_args_internal.linker.stderr.log and ./bin/output/compiler_tests_functions_call_two_args_internal.linker.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_two_args_internal.linker.stderr.log and ./bin/output/compiler_tests_functions_call_two_args_internal.linker.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/integer/add.c">
 </testcase>
@@ -187,7 +186,7 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_strings_literal.compiler.stderr.log and ./bin/output/compiler_tests_strings_literal.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_strings_literal.compiler.stderr.log and ./bin/output/compiler_tests_strings_literal.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/strings/puts.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_strings_puts.compiler.stderr.log and ./bin/output/compiler_tests_strings_puts.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_strings_puts.compiler.stderr.log and ./bin/output/compiler_tests_strings_puts.compiler.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/strings/search.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_strings_search.compiler.stderr.log and ./bin/output/compiler_tests_strings_search.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_strings_search.compiler.stderr.log and ./bin/output/compiler_tests_strings_search.compiler.stdout.log</error>

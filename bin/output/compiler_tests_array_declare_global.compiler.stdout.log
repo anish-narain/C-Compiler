@@ -1,7 +1,18 @@
-  TYPE: int  
-  Array [
-    IDENTIFIER x
-    Integer : 8
+  New Function [
+    TYPE: int    
+    Array [
+      IDENTIFIER x
+      Integer : 8
+    ]
+  ]
+  New Function [
+    Function Definition [
+      TYPE: int      
+      IDENTIFIER f
+      Return: [
+        Integer : 11
+      ]
+    ]
   ]
 
 Compiling: compiler_tests/array/declare_global.c
