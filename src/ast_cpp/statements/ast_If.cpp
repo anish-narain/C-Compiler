@@ -50,3 +50,8 @@ void If::createVariableMap(context &context) const{
   branchList[0]->createVariableMap(context);
   branchList[1]->createVariableMap(context);
 }
+
+int If::isFunctionCall() const{
+  return branchList[0]->isFunctionCall() + branchList[1]->isFunctionCall();
+ 
+}

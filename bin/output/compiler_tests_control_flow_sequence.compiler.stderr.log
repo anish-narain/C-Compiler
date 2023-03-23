@@ -8,5 +8,7 @@ Base Class Reached. ERROR!!! (createVariableMap)
 Base Class Reached. ERROR!!! (isFunctionCall)
 Base Class Reached. ERROR!!! (isFunctionCall)
 Base Class Reached. ERROR!!! (isFunctionCall)
+ReturnFunctionCallReached
+Variable not found
 Variable not found
 int

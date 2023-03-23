@@ -76,6 +76,7 @@ void ValueAssign::createVariableMap(context &context) const{
 
 void ValueAssign::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
+    branchList[0]->RISCOutput(dst, context, destReg);
     branchList[1]->RISCOutput(dst, context, destReg);
     std::string id = branchList[0]->Returnid();
     std::string type = context.returnVarType(id);
@@ -83,9 +84,7 @@ void ValueAssign::RISCOutput(std::ostream &dst, context &context, int destReg) c
     if (context.get_var_location(id)== -1){
       int variableallocate = context.implement_var_binding(id, type);
       dst << "sw " << context.reg(destReg) <<  ", " << variableallocate << "(s0)" <<std::endl;
-
-          }
-
+    }
     else {
       int variableallocate = context.get_var_location(id);
       dst << "sw " << context.reg(destReg) <<  ", " << variableallocate << "(s0)" <<std::endl;

@@ -35,6 +35,6 @@ void MultiDeclaration::createVariableMap(context &context) const{
 }
 
 int MultiDeclaration::isFunctionCall() const{
-  branchList[0]->isFunctionCall();
-  branchList[1]->isFunctionCall();
+  return branchList[0]->isFunctionCall() + branchList[1]->isFunctionCall();
+  
 }

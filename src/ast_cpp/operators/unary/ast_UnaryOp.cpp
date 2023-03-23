@@ -27,7 +27,9 @@ int UnaryOp::getSize() const{
   return 0;
 }
 
-void UnaryOp::createVariableMap(context &context) const{
-  branchList[0]->createVariableMap(context);
-  branchList[1]->createVariableMap(context);
+int UnaryOp::isFunctionCall() const{
+     std::cerr << "UnaryOpFunctionCallReached" << std::endl;
+    return 0;
 }
+
+void UnaryOp::createVariableMap(context &context) const{}

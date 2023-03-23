@@ -162,7 +162,7 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_programs_fibonacci.compiler.stderr.log and ./bin/output/compiler_tests_programs_fibonacci.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_programs_fibonacci.compiler.stderr.log and ./bin/output/compiler_tests_programs_fibonacci.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/programs/multiply.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_programs_multiply.compiler.stderr.log and ./bin/output/compiler_tests_programs_multiply.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_programs_multiply.compiler.stderr.log and ./bin/output/compiler_tests_programs_multiply.compiler.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/programs/sqrt.c">
 </testcase>

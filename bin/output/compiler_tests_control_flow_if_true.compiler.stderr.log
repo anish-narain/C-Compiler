@@ -2,4 +2,5 @@ Base Class Reached. ERROR!!! (createParameterMap)
 Base Class Reached. ERROR!!! (createVariableMap)
 Base Class Reached. ERROR!!! (createVariableMap)
 Base Class Reached. ERROR!!! (createVariableMap)
-Base Class Reached. ERROR!!! (isFunctionCall)
+ReturnFunctionCallReached
+ReturnFunctionCallReached

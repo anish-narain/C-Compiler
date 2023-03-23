@@ -35,6 +35,5 @@ void MultiStatement::createVariableMap(context &context) const{
 }
 
 int MultiStatement::isFunctionCall() const{
-  branchList[0]->isFunctionCall();
-  branchList[1]->isFunctionCall();
+  return branchList[0]->isFunctionCall() + branchList[1]->isFunctionCall();
 }

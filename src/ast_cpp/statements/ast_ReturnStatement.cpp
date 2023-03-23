@@ -43,5 +43,6 @@ void Return_Statement::createVariableMap(context &context) const{
 }
 
 int Return_Statement::isFunctionCall() const{
-  branchList[0]->isFunctionCall();
+  std::cerr << "ReturnFunctionCallReached" << std::endl;
+  return branchList[0]->isFunctionCall();
 }
