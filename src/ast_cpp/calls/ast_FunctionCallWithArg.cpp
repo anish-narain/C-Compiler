@@ -40,8 +40,8 @@ void Function_Call_With_Arguments::createVariableMap(context &context) const{
   branchList[1]->createVariableMap(context);
 }
 
-int Function_Call_With_Arguments::isFunctionCall() const{
+void Function_Call_With_Arguments::isFunctionCall(context &context) const{
   std::cerr << "REACHED Function_Call_With_Arguments" << std::endl; 
-  return 1;
+  context.FunctionCallOccurs();
 }
 

@@ -27,9 +27,8 @@ int UnaryOp::getSize() const{
   return 0;
 }
 
-int UnaryOp::isFunctionCall() const{
+void UnaryOp::isFunctionCall(context &context) const{
      std::cerr << "UnaryOpFunctionCallReached" << std::endl;
-    return 0;
 }
 
 void UnaryOp::createVariableMap(context &context) const{}

@@ -2,8 +2,13 @@ Base Class Reached. ERROR!!! (createParameterMap)
 Base Class Reached. ERROR!!! (createVariableMap)
 Base Class Reached. ERROR!!! (createVariableMap)
 Base Class Reached. ERROR!!! (createVariableMap)
+BFunctionCall
+MultiDecFunctionCall
+TypesFunctionCall
 Base Class Reached. ERROR!!! (isFunctionCall)
+CFunctionCall
 Base Class Reached. ERROR!!! (isFunctionCall)
 ReturnFunctionCallReached
+IdentifierFunctionCall
 Variable not found
 Variable not found

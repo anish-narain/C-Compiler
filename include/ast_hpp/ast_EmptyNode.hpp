@@ -26,7 +26,7 @@ public:
     //Size 
     virtual int getSize() const override;
 
-    virtual int isFunctionCall() const override;
+    virtual void isFunctionCall(context &context) const override;
 
 };
 

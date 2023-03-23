@@ -30,7 +30,7 @@ public:
 
     virtual void createVariableMap(context &context) const override;
 
-    virtual int isFunctionCall() const override;
+    virtual void isFunctionCall(context &context) const override;
 };
 
 #endif

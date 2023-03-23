@@ -44,7 +44,7 @@ public:
 
   virtual void createVariableMap(context &context) const;
 
-  virtual int isFunctionCall() const;
+  virtual void isFunctionCall(context &context) const;
 
   virtual int GetArgLocation() const;
 

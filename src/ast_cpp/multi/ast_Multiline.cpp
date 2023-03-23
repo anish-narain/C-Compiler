@@ -36,7 +36,9 @@ void Multiline::createVariableMap(context &context) const{
   branchList[1]->createVariableMap(context);
 }
 
-int Multiline::isFunctionCall() const{
-  return branchList[0]->isFunctionCall() + branchList[1]->isFunctionCall();
+void Multiline::isFunctionCall(context &context) const{
+  std::cerr << "BFunctionCall" << std::endl;
+  branchList[0]->isFunctionCall(context);
+  branchList[1]->isFunctionCall(context);
  
 }

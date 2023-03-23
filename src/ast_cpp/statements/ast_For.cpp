@@ -58,7 +58,8 @@ void For::createVariableMap(context &context) const{
   branchList[1]->createVariableMap(context);
 }
 
-int For::isFunctionCall() const{
-  return branchList[0]->isFunctionCall() + branchList[1]->isFunctionCall();
+void For::isFunctionCall(context &context) const{
+  branchList[0]->isFunctionCall(context);
+  branchList[1]->isFunctionCall(context);
  
 }

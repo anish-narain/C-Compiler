@@ -6,8 +6,15 @@ Base Class Reached. ERROR!!! (createVariableMap)
 Base Class Reached. ERROR!!! (createVariableMap)
 Base Class Reached. ERROR!!! (createVariableMap)
 Base Class Reached. ERROR!!! (createVariableMap)
+BFunctionCall
+DFunctionCall
+MultiDecFunctionCall
+TypesFunctionCall
 Base Class Reached. ERROR!!! (isFunctionCall)
+MultiDecFunctionCall
+TypesFunctionCall
 Base Class Reached. ERROR!!! (isFunctionCall)
+CFunctionCall
 Base Class Reached. ERROR!!! (isFunctionCall)
 Base Class Reached. ERROR!!! (isFunctionCall)
 ReturnFunctionCallReached

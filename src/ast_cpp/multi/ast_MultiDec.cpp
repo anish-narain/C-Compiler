@@ -40,6 +40,8 @@ void MultiDec::createVariableMap(context &context) const{
     context.addVariableType(var_type);
 }
 
-int MultiDec::isFunctionCall() const{
-  return branchList[0]->isFunctionCall() + branchList[1]->isFunctionCall();
+void MultiDec::isFunctionCall(context &context) const{
+  std::cerr << "MultiDecFunctionCall" << std::endl;
+  branchList[0]->isFunctionCall(context);
+  branchList[1]->isFunctionCall(context);
 }

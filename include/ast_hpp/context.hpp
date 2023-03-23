@@ -5,6 +5,7 @@
 class context{
     
 public:
+    int isFunction = 0;
     std::map<std::string, int> variable_bindings; //<variable_name, reg>
     std::vector<std::string> labels;
     
@@ -33,6 +34,14 @@ public:
       0, 0, 0, 0, //t3-t6 Temporary registers: index = 28-31
     };  
     
+    void FunctionCallOccurs(){
+        isFunction = 1;
+    }
+
+    int ReturnFunctionCallValue(){
+        return isFunction;
+    }
+
     void usedReg(int i) {
         Regs[i] = 1;
     }

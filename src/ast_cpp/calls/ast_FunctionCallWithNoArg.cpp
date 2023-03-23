@@ -35,7 +35,7 @@ void Function_Call_With_NoArguments::createVariableMap(context &context) const{
   branchList[0]->createVariableMap(context);
 }
 
-int Function_Call_With_NoArguments::isFunctionCall() const{
+void Function_Call_With_NoArguments::isFunctionCall(context &context) const{
   std::cerr << "REACHED Function_Call_With_NoArguments" << std::endl; 
-  return 1;
+  context.FunctionCallOccurs();
 }

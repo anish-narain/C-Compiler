@@ -47,7 +47,8 @@ void Function_Definition::RISCOutput(std::ostream &dst, context &context, int de
 
   //check for function calls:
   int functionCall = 0;
-  functionCall = branchList[2]->isFunctionCall();
+  branchList[2]->isFunctionCall(context);
+  functionCall = context.ReturnFunctionCallValue();
   //dst << functionCall << std::endl;
 
   

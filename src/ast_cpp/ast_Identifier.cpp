@@ -39,8 +39,8 @@ int Identifier::getSize() const{
   return 0;
 }
 
-int Identifier::isFunctionCall() const{
-  return 0;
+void Identifier::isFunctionCall(context &context) const{
+  std::cerr << "IdentifierFunctionCall" << std::endl;
 }
 
 

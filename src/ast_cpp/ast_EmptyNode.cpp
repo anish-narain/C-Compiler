@@ -21,6 +21,6 @@ int EmptyNode::getSize() const{
   return 0;
 }
 
-int EmptyNode::isFunctionCall() const{
-  return 0;
+void EmptyNode::isFunctionCall(context &context) const{
+  std::cerr << "EmptyNodeFunctionCall" << std::endl;
 }

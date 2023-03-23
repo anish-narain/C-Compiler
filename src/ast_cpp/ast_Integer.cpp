@@ -32,7 +32,7 @@ int Int::getSize() const{
   return 0;
 }
 
-int Int::isFunctionCall() const{
-  return 0;
+void Int::isFunctionCall(context &context) const{
+  std::cerr << "IntFunctionCall" << std::endl;
 }
 

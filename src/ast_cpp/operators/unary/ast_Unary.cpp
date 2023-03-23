@@ -35,7 +35,8 @@ void Unary::createVariableMap(context &context) const{
   branchList[1]->createVariableMap(context);
 }
 
-int Unary::isFunctionCall() const{
+void Unary::isFunctionCall(context &context) const{
   std::cerr << "UnaryFunctionCallReached" << std::endl;
-  return branchList[0]->isFunctionCall() + branchList[1]->isFunctionCall();
+  branchList[0]->isFunctionCall(context);
+  branchList[1]->isFunctionCall(context);
 }

@@ -50,7 +50,7 @@ std::string Types::getType() const
   return type;
 }
 
-int Types::isFunctionCall() const{
-  return 0;
+void Types::isFunctionCall(context &context) const{
+  std::cerr << "TypesFunctionCall" << std::endl;
 }
 

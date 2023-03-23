@@ -35,8 +35,7 @@ int UnaryPostOp::getSize() const{
   return branchList[0]->getSize();
 }
 
-int UnaryPostOp::isFunctionCall() const{
-    return 0;
+void UnaryPostOp::isFunctionCall(context &context) const{
 }
 
 void UnaryPostOp::createVariableMap(context &context) const{
