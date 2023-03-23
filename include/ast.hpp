@@ -38,6 +38,9 @@
 #include "ast_hpp/operators/ast_Subtract.hpp"
 #include "ast_hpp/operators/ast_ValueAssign.hpp"
 
+#include "ast_hpp/operators/pointer/ast_Pointer.hpp"
+#include "ast_hpp/operators/pointer/ast_PointerDeclarator.hpp"
+
 
 #include "ast_hpp/multi/ast_Multiline.hpp"
 #include "ast_hpp/multi/ast_MultiStatement.hpp"
@@ -53,7 +56,7 @@
 #include "ast_hpp/statements/ast_Switch.hpp"
 
 #include "ast_hpp/types/ast_Array.hpp"
-#include "ast_hpp/types/ast_PointerDeclarator.hpp"
+
 
 #include "ast_hpp/ast_BaseClass.hpp"
 #include "ast_hpp/ast_Identifier.hpp"

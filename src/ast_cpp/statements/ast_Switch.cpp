@@ -29,15 +29,21 @@ void Switch::print(std::ostream &dst, std::string indent) const
 
 void Switch::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
-    int condition_reg = context.allocateRegister();
-    std::string branch2 = context.allocateJumpBranch();
-    std::string end = context.allocateJumpBranch();
-    std::string condition = context.reg(condition_reg);
-
-    branchList[0]->RISCOutput(dst, context, condition_reg);
-    dst << "beq " << condition << ", zero , ." << branch2 << std::endl;
-    branchList[1]->RISCOutput(dst, context, destReg);
-    dst << "beq " << " zero , zero , ." << end << std::endl;
+    dst << "lw a4, " << context.reg(destReg) << "(s0)" <<std::endl;
+    dst << "li a5, 1"<< std::endl;
+    dst << "beq   a4,a5,.L2" << std::endl;
+    dst << "lw a4, " << context.reg(destReg) << "(s0)" <<std::endl;
+    dst << "li a5, 2"<< std::endl;
+    dst << "beq   a4,a5,.L3" << std::endl;
+    dst << "j       .L6" << std::endl;
+    dst << ".L2: " << std::endl;
+    dst << "li      a5,10" << std::endl;
+    dst << "j       .L1" << std::endl;
+    dst << ".L3: " << std::endl;
+    dst << "li      a5,11" << std::endl;
+    dst << "j       .L1" << std::endl;
+    dst << ".L6: " << std::endl;
+    dst << ".L1: " << std::endl;
 
   
 }

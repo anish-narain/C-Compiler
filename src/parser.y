@@ -94,7 +94,7 @@ declaration_specifiers
 	;
 
 declarator
-	: pointer direct_declarator  {$$ = new PointerDeclarator($2);}
+	: pointer direct_declarator  {$$ = new PointerDeclarator($1, $2);}
 	| direct_declarator {$$ = $1;}  
 	;
 
@@ -415,7 +415,7 @@ type_qualifier
 
 
 pointer
-	: '*'
+	: '*' {$$ = new Pointer();}
 	| '*' type_qualifier_list
 	| '*' pointer
 	| '*' type_qualifier_list pointer

@@ -12,7 +12,7 @@ class PointerDeclarator
 {
 public:
     //Constructor
-    PointerDeclarator(BasePtr direct_declarator);
+    PointerDeclarator(BasePtr pointer, BasePtr direct_declarator);
 
     //Destructor
     virtual ~PointerDeclarator();
@@ -23,9 +23,12 @@ public:
     //Code gen
     void RISCOutput(std::ostream &dst, context &context, int destReg) const override;
 
+    //Size 
     virtual int getSize() const override;
 
     virtual void createVariableMap(context &context) const override;
+
+    virtual void isFunctionCall(context &context) const override;
 
 };
 
