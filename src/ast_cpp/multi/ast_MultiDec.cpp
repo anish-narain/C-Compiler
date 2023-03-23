@@ -33,11 +33,8 @@ int MultiDec::getSize() const{
 }
 
 void MultiDec::createVariableMap(context &context) const{
-    //std::cerr << "A" << std::endl;
     std::string var_type = branchList[0]->getType();
-    //std::cerr << var_type << std::endl;
     std::string var_id = branchList[1]->Returnid();
-    //std::cerr << var_id << std::endl;
     
     context.addVariableName(var_id);
     context.addVariableType(var_type);

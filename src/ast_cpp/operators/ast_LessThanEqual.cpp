@@ -38,6 +38,9 @@ void LessThanEqual::RISCOutput(std::ostream &dst, context &context, int destReg)
     dst << "sgt " << context.reg(right_reg) << ", " << context.reg(left_reg) << ", " << context.reg(right_reg) << std::endl;
     dst << "xori " << context.reg(right_reg) << ", " << context.reg(right_reg) << ",1" << std::endl;
     dst << "andi " << context.reg(destReg) << ", " << context.reg(right_reg) << ", " << "0xff" << std::endl;
+
+    context.freedReg(left_reg);
+    context.freedReg(right_reg);
 }
 
 int LessThanEqual::getSize() const{

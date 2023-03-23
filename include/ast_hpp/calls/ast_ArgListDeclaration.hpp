@@ -30,6 +30,8 @@ public:
 
     virtual int GetArgLocation() const override;
 
+    virtual std::string Returnid() const override; 
+
 };
 
 #endif

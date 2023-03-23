@@ -37,6 +37,9 @@ void GreaterThan::RISCOutput(std::ostream &dst, context &context, int destReg) c
 
     dst << "sgt " << context.reg(right_reg) << ", " << context.reg(left_reg) << ", " << context.reg(right_reg) << std::endl;
     dst << "andi " << context.reg(destReg) << ", " << context.reg(right_reg) << ", " << "0xff" << std::endl;
+
+    context.freedReg(left_reg);
+    context.freedReg(right_reg);
 }
 
 int GreaterThan::getSize() const{

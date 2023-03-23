@@ -36,6 +36,9 @@ void Modulus::RISCOutput(std::ostream &dst, context &context, int destReg) const
     std::string left = context.reg(left_reg);
 
     dst << "rem " << context.reg(destReg) << ", " << context.reg(left_reg) << ", " << context.reg(right_reg) << std::endl;
+
+    context.freedReg(left_reg);
+    context.freedReg(right_reg);
 }
 
 int Modulus::getSize() const{

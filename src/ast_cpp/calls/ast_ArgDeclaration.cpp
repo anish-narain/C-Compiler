@@ -35,3 +35,7 @@ void Arg_Declarator::createVariableMap(context &context) const{
 int Arg_Declarator::GetArgLocation() const{
   return 10;
 }
+
+std::string Arg_Declarator::Returnid() const{
+  return branchList[0]->Returnid();
+}

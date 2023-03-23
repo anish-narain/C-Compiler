@@ -90,4 +90,5 @@ void ValueAssign::RISCOutput(std::ostream &dst, context &context, int destReg) c
       int variableallocate = context.get_var_location(id);
       dst << "sw " << context.reg(destReg) <<  ", " << variableallocate << "(s0)" <<std::endl;
     }
+
 }

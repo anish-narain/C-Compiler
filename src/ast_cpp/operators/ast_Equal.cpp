@@ -39,8 +39,8 @@ void Equal::RISCOutput(std::ostream &dst, context &context, int destReg) const
        dst << "seqz " << context.reg(right_reg) << ", " << context.reg(right_reg) << std::endl;
        dst << "andi " << context.reg(destReg) << ", " << context.reg(right_reg) << ", " << "0xff" << std::endl;
   
-
-
+    context.freedReg(left_reg);
+    context.freedReg(right_reg);
 }
 
 int Equal::getSize() const{

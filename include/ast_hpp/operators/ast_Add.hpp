@@ -28,6 +28,8 @@ public:
 
     virtual void createVariableMap(context &context) const override;
 
+    virtual std::string Returnid() const override; 
+
 };
 
 #endif

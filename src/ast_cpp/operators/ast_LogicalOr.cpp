@@ -55,6 +55,9 @@ void LogicalOr::RISCOutput(std::ostream &dst, context &context, int destReg) con
     dst << "li " << context.reg(destReg) << ", 0" << std::endl;
     dst << "." << branch3 << ":" << std::endl;
 
+    context.freedReg(left_reg);
+    context.freedReg(right_reg);
+
 }
 
 int LogicalOr::getSize() const{

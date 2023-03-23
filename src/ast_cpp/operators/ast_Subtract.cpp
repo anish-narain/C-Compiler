@@ -54,6 +54,9 @@ void Subtract::RISCOutput(std::ostream &dst, context &context, int destReg) cons
     else if (type == "float"){
       dst << "fsub.s f" << context.reg(destReg) << ", f" << context.reg(left_reg) << ", f" << context.reg(right_reg) << std::endl;
     }
+
+    context.freedReg(left_reg);
+    context.freedReg(right_reg);
 }
 
 int Subtract::getSize() const{

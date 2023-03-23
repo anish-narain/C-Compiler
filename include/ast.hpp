@@ -10,6 +10,7 @@
 #include "ast_hpp/declarations/ast_ParamListDeclaration.hpp"
 #include "ast_hpp/declarations/ast_ParamList.hpp"
 #include "ast_hpp/declarations/ast_VariableAssign.hpp"
+#include "ast_hpp/declarations/ast_VariableDeclarator.hpp"
 
 #include "ast_hpp/ast_EmptyNode.hpp"
 

@@ -26,6 +26,7 @@ void Identifier::RISCOutput(std::ostream &dst, context &context, int destReg) co
   }
   else{
     dst << "lw " << context.reg(destReg) <<  ", " << context.get_var_location(id) << "(s0)" <<std::endl;
+    //dst << id << std::endl;
   }
   
 }

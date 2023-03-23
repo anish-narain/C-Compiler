@@ -36,6 +36,9 @@ void BitwiseAnd::RISCOutput(std::ostream &dst, context &context, int destReg) co
     std::string left = context.reg(left_reg);
 
     dst << "and " << context.reg(destReg) << ", " << context.reg(left_reg) << ", " << context.reg(right_reg) << std::endl;
+
+    context.freedReg(left_reg);
+    context.freedReg(right_reg);
 }
 
 int BitwiseAnd::getSize() const{

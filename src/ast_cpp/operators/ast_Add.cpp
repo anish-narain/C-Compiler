@@ -57,6 +57,9 @@ void Add::RISCOutput(std::ostream &dst, context &context, int destReg) const
     else if (type == "float"){
       dst << "fadd.s f" << context.reg(destReg) << ", f" << context.reg(left_reg) << ", f" << context.reg(right_reg) << std::endl;
     }
+
+    context.freedReg(left_reg);
+    context.freedReg(right_reg);
  
 }
 
@@ -67,4 +70,8 @@ int Add::getSize() const{
 void Add::createVariableMap(context &context) const{
   branchList[0]->createVariableMap(context);
   branchList[1]->createVariableMap(context);
+}
+
+std::string Add::Returnid() const{
+  return branchList[0]->Returnid();
 }

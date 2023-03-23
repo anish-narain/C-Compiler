@@ -71,7 +71,6 @@
 <testcase name="compiler_tests/functions/call_five_args_external.c">
 </testcase>
 <testcase name="compiler_tests/functions/call_five_args_internal.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_functions_call_five_args_internal.compiler.stderr.log and ./bin/output/compiler_tests_functions_call_five_args_internal.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_functions_call_five_args_internal.compiler.stderr.log and ./bin/output/compiler_tests_functions_call_five_args_internal.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/functions/call_identity_external.c">
 </testcase>
@@ -166,7 +165,6 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_programs_multiply.compiler.stderr.log and ./bin/output/compiler_tests_programs_multiply.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_programs_multiply.compiler.stderr.log and ./bin/output/compiler_tests_programs_multiply.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/programs/sqrt.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_programs_sqrt.compiler.stderr.log and ./bin/output/compiler_tests_programs_sqrt.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_programs_sqrt.compiler.stderr.log and ./bin/output/compiler_tests_programs_sqrt.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/strings/chliteral.c">
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
@@ -178,7 +176,7 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_strings_literal.compiler.stderr.log and ./bin/output/compiler_tests_strings_literal.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_strings_literal.compiler.stderr.log and ./bin/output/compiler_tests_strings_literal.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/strings/puts.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_strings_puts.compiler.stderr.log and ./bin/output/compiler_tests_strings_puts.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_strings_puts.compiler.stderr.log and ./bin/output/compiler_tests_strings_puts.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/strings/search.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_strings_search.compiler.stderr.log and ./bin/output/compiler_tests_strings_search.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_strings_search.compiler.stderr.log and ./bin/output/compiler_tests_strings_search.compiler.stdout.log</error>

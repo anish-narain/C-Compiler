@@ -53,6 +53,9 @@ void LogicalAnd::RISCOutput(std::ostream &dst, context &context, int destReg) co
     dst << "li " << context.reg(destReg) << ", 0" << std::endl;
     dst << "." << branch2 << ":" << std::endl;
 
+    context.freedReg(left_reg);
+    context.freedReg(right_reg);
+
 }
 
 int LogicalAnd::getSize() const{
