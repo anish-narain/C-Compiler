@@ -476,7 +476,7 @@ labeled_statement
 selection_statement
 	: IF '(' expression ')' statement  { $$ = new If($3, $5); }
 	| IF '(' expression ')' statement ELSE statement { $$ = new If_Else($3, $5, $7); }
-	| SWITCH '(' expression ')' statement
+	| SWITCH '(' expression ')' statement { $$ = new Switch($3, $5); }
 	;
 
 iteration_statement

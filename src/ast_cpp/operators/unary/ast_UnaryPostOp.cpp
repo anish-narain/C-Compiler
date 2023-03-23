@@ -29,6 +29,10 @@ void UnaryPostOp::print(std::ostream &dst, std::string indent) const
 void UnaryPostOp::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
     branchList[0]->RISCOutput(dst, context, destReg);
+    std::string var_name = branchList[0]->Returnid();
+    int variableallocate = context.get_var_location(var_name);
+    dst << "addi " << context.reg(destReg) << ", " << context.reg(destReg) << ", -1" << std::endl;
+    dst << "sw " << context.reg(destReg) << ", " << variableallocate << "(s0)" <<std::endl;
 }
 
 int UnaryPostOp::getSize() const{

@@ -132,7 +132,7 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_misc_enum2.compiler.stderr.log and ./bin/output/compiler_tests_misc_enum2.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_misc_enum2.compiler.stderr.log and ./bin/output/compiler_tests_misc_enum2.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/misc/switch1.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_misc_switch1.compiler.stderr.log and ./bin/output/compiler_tests_misc_switch1.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_misc_switch1.compiler.stderr.log and ./bin/output/compiler_tests_misc_switch1.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/misc/switch2.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_misc_switch2.compiler.stderr.log and ./bin/output/compiler_tests_misc_switch2.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_misc_switch2.compiler.stderr.log and ./bin/output/compiler_tests_misc_switch2.compiler.stdout.log</error>
@@ -162,7 +162,6 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_programs_fibonacci.compiler.stderr.log and ./bin/output/compiler_tests_programs_fibonacci.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_programs_fibonacci.compiler.stderr.log and ./bin/output/compiler_tests_programs_fibonacci.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/programs/multiply.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/programs/sqrt.c">
 </testcase>
@@ -176,7 +175,7 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_strings_literal.compiler.stderr.log and ./bin/output/compiler_tests_strings_literal.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_strings_literal.compiler.stderr.log and ./bin/output/compiler_tests_strings_literal.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/strings/puts.c">
-<error type="error" message="Fail: see ./bin/output/compiler_tests_strings_puts.compiler.stderr.log and ./bin/output/compiler_tests_strings_puts.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_strings_puts.compiler.stderr.log and ./bin/output/compiler_tests_strings_puts.compiler.stdout.log</error>
+<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/strings/search.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_strings_search.compiler.stderr.log and ./bin/output/compiler_tests_strings_search.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_strings_search.compiler.stderr.log and ./bin/output/compiler_tests_strings_search.compiler.stdout.log</error>

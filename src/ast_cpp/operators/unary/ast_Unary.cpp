@@ -22,8 +22,8 @@ void Unary::print(std::ostream &dst, std::string indent) const
 
 void Unary::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
-    branchList[0]->RISCOutput(dst, context, destReg);
     branchList[1]->RISCOutput(dst, context, destReg);
+    branchList[0]->RISCOutput(dst, context, destReg);
 }
 
 int Unary::getSize() const{
@@ -33,6 +33,7 @@ int Unary::getSize() const{
 void Unary::createVariableMap(context &context) const{
   branchList[0]->createVariableMap(context);
   branchList[1]->createVariableMap(context);
+  
 }
 
 void Unary::isFunctionCall(context &context) const{
