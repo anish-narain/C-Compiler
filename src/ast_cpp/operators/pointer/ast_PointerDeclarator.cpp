@@ -25,6 +25,7 @@ void PointerDeclarator::RISCOutput(std::ostream &dst, context &context, int dest
 {
     branchList[0]->RISCOutput(dst, context, destReg);
     branchList[1]->RISCOutput(dst, context, destReg);
+    
 }
 
 void PointerDeclarator::isFunctionCall(context &context) const

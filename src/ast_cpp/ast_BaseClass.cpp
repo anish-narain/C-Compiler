@@ -68,3 +68,7 @@ void Base::isPointer(context &context) const{
  int Base::returnInt() const{
   std::cerr << "Base Class Reached. ERROR!!! (returnInt)" << std::endl;
 }
+
+std::string Base::returnOp() const{
+    std::cerr << "Base Class Reached. ERROR!!! (returnOp)" << std::endl;
+}

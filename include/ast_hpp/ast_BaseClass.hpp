@@ -51,6 +51,8 @@ public:
   virtual void isPointer(context &context) const;
 
   virtual int returnInt() const;
+
+  virtual std::string returnOp() const;
 };
 
 

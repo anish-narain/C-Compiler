@@ -24,6 +24,10 @@ void Unary::RISCOutput(std::ostream &dst, context &context, int destReg) const
 {
     branchList[1]->RISCOutput(dst, context, destReg);
     branchList[0]->RISCOutput(dst, context, destReg);
+
+    if(branchList[0]->returnOp() == "&"){
+      dst << "addi " << context.reg(destReg) << ",s0," << context.get_var_location(branchList[1]->Returnid()) << std::endl;
+    }
 }
 
 int Unary::getSize() const{
@@ -35,6 +39,11 @@ void Unary::createVariableMap(context &context) const{
   branchList[1]->createVariableMap(context);
   
 }
+
+std::string Unary::Returnid() const{
+  return branchList[0]->Returnid() + branchList[1]->Returnid();
+}
+
 
 void Unary::isFunctionCall(context &context) const{
   std::cerr << "UnaryFunctionCallReached" << std::endl;

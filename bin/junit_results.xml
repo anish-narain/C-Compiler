@@ -152,7 +152,6 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_pointer_assign.compiler.stderr.log and ./bin/output/compiler_tests_pointer_assign.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_pointer_assign.compiler.stderr.log and ./bin/output/compiler_tests_pointer_assign.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/pointer/dereference.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/pointer/index.c">
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>

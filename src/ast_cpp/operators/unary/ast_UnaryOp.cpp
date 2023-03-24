@@ -43,3 +43,7 @@ void UnaryOp::isFunctionCall(context &context) const{
 void UnaryOp::createVariableMap(context &context) const{}
 
 void  UnaryOp::isPointer(context &context) const{}
+
+std::string UnaryOp::returnOp() const{
+    return op;
+}
