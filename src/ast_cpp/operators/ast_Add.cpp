@@ -30,6 +30,16 @@ void Add::RISCOutput(std::ostream &dst, context &context, int destReg) const
     int left_reg = context.allocateRegister();
     int right_reg = context.allocateRegister();
 
+    
+/*
+    if(context.pointer_exists(id) == 1){
+      std::cerr << "LHS is pointer" << std::endl;
+    }
+    else{
+      std::cerr << "LHS is NOT pointer" << std::endl;
+    }
+  */
+
     branchList[0]->RISCOutput(dst, context, left_reg);
     branchList[1]->RISCOutput(dst, context, right_reg);
 
@@ -38,13 +48,30 @@ void Add::RISCOutput(std::ostream &dst, context &context, int destReg) const
 
     std::string id = branchList[0]->Returnid();
     std::string type;
-    
+
+  
     if (id == "int") { //if left branch is a constant int instead of a variable int
       type = "int";
     }
     else{
       type = context.returnVarType(id); 
     } 
+
+    int multiplier;
+    if (type == "int"){
+      multiplier = 4;
+    }
+    else if (type == "float"){
+      multiplier = 8;
+    }
+    else if(type == "double"){
+      multiplier = 8;
+    }
+
+    if(context.pointer_exists(id) == 1){
+      int val = branchList[1]->returnInt();
+      dst << "li "<< context.reg(right_reg) << "," << val*multiplier << std::endl;
+    }
 
     std::cerr << type << std::endl; //check if it works
 

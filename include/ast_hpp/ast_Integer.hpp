@@ -34,6 +34,8 @@ public:
 
     virtual void isPointer(context &context) const override;
 
+     virtual int returnInt() const override;
+
 
 };
 

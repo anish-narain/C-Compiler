@@ -49,6 +49,8 @@ public:
   virtual int GetArgLocation() const;
 
   virtual void isPointer(context &context) const;
+
+  virtual int returnInt() const;
 };
 
 

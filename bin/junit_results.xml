@@ -147,7 +147,6 @@
 <testcase name="compiler_tests/pointer/addressof.c">
 </testcase>
 <testcase name="compiler_tests/pointer/arithmetic.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/pointer/assign.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_pointer_assign.compiler.stderr.log and ./bin/output/compiler_tests_pointer_assign.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_pointer_assign.compiler.stderr.log and ./bin/output/compiler_tests_pointer_assign.compiler.stdout.log</error>

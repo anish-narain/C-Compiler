@@ -154,6 +154,15 @@ public:
         pointer_types[pointer_name] = variableMap_types[pointer_name];
     }
 
+    int pointer_exists(std::string name){
+        if (pointer_types.find(name) != pointer_types.end()) {
+            return 1;
+        } 
+        else {
+            return 0;
+        }
+    }
+
     //Parameters
     void addParameterName(std::string name){
         parameter_names.push_back(name);

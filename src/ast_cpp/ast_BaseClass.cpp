@@ -64,3 +64,7 @@ int Base::GetArgLocation() const{
 void Base::isPointer(context &context) const{
   std::cerr << "Base Class Reached. ERROR!!! (isPointer)" << std::endl;
 }
+
+ int Base::returnInt() const{
+  std::cerr << "Base Class Reached. ERROR!!! (returnInt)" << std::endl;
+}

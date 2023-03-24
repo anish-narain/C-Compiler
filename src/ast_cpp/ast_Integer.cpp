@@ -39,3 +39,7 @@ void Int::isFunctionCall(context &context) const{
 void Int::isPointer(context &context) const{
 
 }
+
+int Int::returnInt() const{
+  return int_value;
+}

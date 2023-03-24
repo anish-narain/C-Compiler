@@ -44,7 +44,23 @@ void Subtract::RISCOutput(std::ostream &dst, context &context, int destReg) cons
     else{
       type = context.returnVarType(id); 
     } 
-    
+
+    int multiplier;
+    if (type == "int"){
+      multiplier = 4;
+    }
+    else if (type == "float"){
+      multiplier = 8;
+    }
+    else if(type == "double"){
+      multiplier = 8;
+    }
+
+    if(context.pointer_exists(id) == 1){
+      int val = branchList[1]->returnInt();
+      dst << "li "<< context.reg(right_reg) << "," << val*multiplier << std::endl;
+    }
+
     if (type == "int"){
       dst << "sub " << context.reg(destReg) << ", " << context.reg(left_reg) << ", " << context.reg(right_reg) << std::endl;
     }
