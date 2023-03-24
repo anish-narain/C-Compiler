@@ -175,7 +175,7 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_strings_literal.compiler.stderr.log and ./bin/output/compiler_tests_strings_literal.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_strings_literal.compiler.stderr.log and ./bin/output/compiler_tests_strings_literal.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/strings/puts.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_strings_puts.compiler.stderr.log and ./bin/output/compiler_tests_strings_puts.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_strings_puts.compiler.stderr.log and ./bin/output/compiler_tests_strings_puts.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/strings/search.c">
 <error type="error" message="Fail: see ./bin/output/compiler_tests_strings_search.compiler.stderr.log and ./bin/output/compiler_tests_strings_search.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_strings_search.compiler.stderr.log and ./bin/output/compiler_tests_strings_search.compiler.stdout.log</error>

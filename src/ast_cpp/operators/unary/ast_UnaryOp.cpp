@@ -14,6 +14,12 @@ void UnaryOp::print(std::ostream &dst, std::string indent) const
     if (op == "-"){
         dst << "MINUS SIGN";
     }
+    else if (op == "&"){
+        dst << "&";
+    }
+    else if (op == "*"){
+        dst << "*";
+    }
 }
 
 void UnaryOp::RISCOutput(std::ostream &dst, context &context, int destReg) const
