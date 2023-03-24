@@ -112,10 +112,12 @@
 <testcase name="compiler_tests/integer/sub.c">
 </testcase>
 <testcase name="compiler_tests/local_var/constant_initialiser.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_local_var_constant_initialiser.assembler.stderr.log and ./bin/output/compiler_tests_local_var_constant_initialiser.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_local_var_constant_initialiser.assembler.stderr.log and ./bin/output/compiler_tests_local_var_constant_initialiser.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/local_var/dual_var.c">
 </testcase>
 <testcase name="compiler_tests/local_var/expression_initialiser.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_local_var_expression_initialiser.assembler.stderr.log and ./bin/output/compiler_tests_local_var_expression_initialiser.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_local_var_expression_initialiser.assembler.stderr.log and ./bin/output/compiler_tests_local_var_expression_initialiser.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/local_var/identity.c">
 </testcase>
@@ -145,6 +147,7 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_misc_typedef2.compiler.stderr.log and ./bin/output/compiler_tests_misc_typedef2.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_misc_typedef2.compiler.stderr.log and ./bin/output/compiler_tests_misc_typedef2.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/pointer/addressof.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_pointer_addressof.assembler.stderr.log and ./bin/output/compiler_tests_pointer_addressof.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_pointer_addressof.assembler.stderr.log and ./bin/output/compiler_tests_pointer_addressof.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/pointer/arithmetic.c">
 </testcase>
@@ -152,6 +155,7 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_pointer_assign.compiler.stderr.log and ./bin/output/compiler_tests_pointer_assign.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_pointer_assign.compiler.stderr.log and ./bin/output/compiler_tests_pointer_assign.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/pointer/dereference.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_pointer_dereference.assembler.stderr.log and ./bin/output/compiler_tests_pointer_dereference.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_pointer_dereference.assembler.stderr.log and ./bin/output/compiler_tests_pointer_dereference.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/pointer/index.c">
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
@@ -160,17 +164,19 @@
 <error type="error" message="Fail: see ./bin/output/compiler_tests_programs_fibonacci.compiler.stderr.log and ./bin/output/compiler_tests_programs_fibonacci.compiler.stdout.log">Fail: see ./bin/output/compiler_tests_programs_fibonacci.compiler.stderr.log and ./bin/output/compiler_tests_programs_fibonacci.compiler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/programs/multiply.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_programs_multiply.assembler.stderr.log and ./bin/output/compiler_tests_programs_multiply.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_programs_multiply.assembler.stderr.log and ./bin/output/compiler_tests_programs_multiply.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/programs/sqrt.c">
+<error type="error" message="Fail: see ./bin/output/compiler_tests_programs_sqrt.assembler.stderr.log and ./bin/output/compiler_tests_programs_sqrt.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_programs_sqrt.assembler.stderr.log and ./bin/output/compiler_tests_programs_sqrt.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/strings/chliteral.c">
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
 </testcase>
 <testcase name="compiler_tests/strings/escaped.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_strings_escaped.assembler.stderr.log and ./bin/output/compiler_tests_strings_escaped.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_strings_escaped.assembler.stderr.log and ./bin/output/compiler_tests_strings_escaped.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/strings/literal.c">
-<error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>
+<error type="error" message="Fail: see ./bin/output/compiler_tests_strings_literal.assembler.stderr.log and ./bin/output/compiler_tests_strings_literal.assembler.stdout.log">Fail: see ./bin/output/compiler_tests_strings_literal.assembler.stderr.log and ./bin/output/compiler_tests_strings_literal.assembler.stdout.log</error>
 </testcase>
 <testcase name="compiler_tests/strings/puts.c">
 <error type="error" message="Fail: simulation did not exit with exit-code 0">Fail: simulation did not exit with exit-code 0</error>

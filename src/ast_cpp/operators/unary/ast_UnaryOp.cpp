@@ -30,6 +30,8 @@ void UnaryOp::RISCOutput(std::ostream &dst, context &context, int destReg) const
     if (op == "*"){
         dst << "lw " << context.reg(destReg) << ", 0("  << context.reg(destReg) << ")" << std::endl;
     }
+
+    std::cerr << "UnaryOpFunctionCallReached" << std::endl;
 }
 
 int UnaryOp::getSize() const{
