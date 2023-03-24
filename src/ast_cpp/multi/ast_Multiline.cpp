@@ -42,3 +42,8 @@ void Multiline::isFunctionCall(context &context) const{
   branchList[1]->isFunctionCall(context);
  
 }
+
+void Multiline::isPointer(context &context) const{
+  branchList[0]->isPointer(context);
+  branchList[1]->isPointer(context);
+}

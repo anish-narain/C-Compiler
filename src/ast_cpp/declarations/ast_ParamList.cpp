@@ -32,3 +32,7 @@ int Param_List::getSize() const{
 void Param_List::createParameterMap(context &context) const{
   branchList[0]->createParameterMap(context);
 }
+
+void Param_List::isPointer(context &context) const{
+  branchList[0]->isPointer(context);
+}

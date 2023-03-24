@@ -46,3 +46,7 @@ void Return_Statement::isFunctionCall(context &context) const{
   std::cerr << "ReturnFunctionCallReached" << std::endl;
   branchList[0]->isFunctionCall(context);
 }
+
+void Return_Statement::isPointer(context &context) const{
+    branchList[0]->isPointer(context);
+}

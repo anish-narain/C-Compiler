@@ -45,3 +45,6 @@ void Function_Call_With_Arguments::isFunctionCall(context &context) const{
   context.FunctionCallOccurs();
 }
 
+void Function_Call_With_Arguments::isPointer(context &context) const{
+
+}

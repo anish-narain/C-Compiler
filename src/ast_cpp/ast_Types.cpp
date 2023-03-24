@@ -54,3 +54,6 @@ void Types::isFunctionCall(context &context) const{
   std::cerr << "TypesFunctionCall" << std::endl;
 }
 
+void Types::isPointer(context &context) const{
+
+}

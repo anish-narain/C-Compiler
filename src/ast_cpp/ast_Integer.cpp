@@ -36,3 +36,6 @@ void Int::isFunctionCall(context &context) const{
   std::cerr << "IntFunctionCall" << std::endl;
 }
 
+void Int::isPointer(context &context) const{
+
+}

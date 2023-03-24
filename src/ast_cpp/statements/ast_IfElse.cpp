@@ -63,3 +63,8 @@ void If_Else::isFunctionCall(context &context) const{
   branchList[1]->isFunctionCall(context);
  
 }
+
+void If_Else::isPointer(context &context) const{
+  branchList[0]->isPointer(context);
+  branchList[1]->isPointer(context);
+}

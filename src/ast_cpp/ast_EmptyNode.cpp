@@ -24,3 +24,7 @@ int EmptyNode::getSize() const{
 void EmptyNode::isFunctionCall(context &context) const{
   std::cerr << "EmptyNodeFunctionCall" << std::endl;
 }
+
+void EmptyNode::isPointer(context &context) const{
+
+}

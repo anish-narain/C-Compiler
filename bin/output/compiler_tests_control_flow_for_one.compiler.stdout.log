@@ -3,7 +3,9 @@
     IDENTIFIER f
     Compound Statements [
       TYPE: int      
+      Variable Declaration [
       IDENTIFIER x
+      ]
       For initilisation [
         Binary Assignment[
         LHS

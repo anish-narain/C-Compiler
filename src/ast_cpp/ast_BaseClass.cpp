@@ -60,3 +60,7 @@ void Base::isFunctionCall(context &context) const{
 int Base::GetArgLocation() const{
   std::cerr << "Base Class Reached. ERROR!!! (GetArgLocation)" << std::endl;
 }
+
+void Base::isPointer(context &context) const{
+  std::cerr << "Base Class Reached. ERROR!!! (isPointer)" << std::endl;
+}

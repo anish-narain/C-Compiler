@@ -3,9 +3,11 @@
     IDENTIFIER f
     Compound Statements [
       TYPE: int      
+      Variable Declaration [
       Array [
         IDENTIFIER x
         Integer : 8
+      ]
       ]
       Binary Assignment[
       LHS

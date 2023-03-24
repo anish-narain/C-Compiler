@@ -1,3 +1,12 @@
+Base Class Reached. ERROR!!! (isPointer)
+Base Class Reached. ERROR!!! (isPointer)
+Base Class Reached. ERROR!!! (isPointer)
+Base Class Reached. ERROR!!! (isPointer)
+Base Class Reached. ERROR!!! (isPointer)
+Base Class Reached. ERROR!!! (isPointer)
+Base Class Reached. ERROR!!! (isPointer)
+Base Class Reached. ERROR!!! (isPointer)
+Base Class Reached. ERROR!!! (isPointer)
 Base Class Reached. ERROR!!! (createParameterMap)
 Base Class Reached. ERROR!!! (ReturnId)
 Base Class Reached. ERROR!!! (createVariableMap)
@@ -33,8 +42,7 @@ Base Class Reached. ERROR!!! (isFunctionCall)
 Base Class Reached. ERROR!!! (isFunctionCall)
 ReturnFunctionCallReached
 IdentifierFunctionCall
-Variable not found
-Variable not found
+Base Class Reached. ERROR!!! (ReturnId)
 Base Class Reached. ERROR!!! (ReturnId)
 Error: Inner key not found.
 terminate called after throwing an instance of 'std::bad_alloc'

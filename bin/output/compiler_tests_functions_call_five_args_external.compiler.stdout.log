@@ -1,5 +1,6 @@
   New Function [
     TYPE: int    
+    Variable Declaration [
       IDENTIFIER g
       Function Parameters [
         TYPE: int        
@@ -13,6 +14,7 @@
         TYPE: int        
         IDENTIFIER e
       ]
+    ]
   ]
   New Function [
     Function Definition [

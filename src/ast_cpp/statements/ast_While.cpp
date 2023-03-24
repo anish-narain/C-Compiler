@@ -59,3 +59,8 @@ void While::isFunctionCall(context &context) const{
   branchList[0]->isFunctionCall(context); 
   branchList[1]->isFunctionCall(context);
 }
+
+void  While::isPointer(context &context) const{
+  branchList[0]->isPointer(context);
+  branchList[1]->isPointer(context);
+}

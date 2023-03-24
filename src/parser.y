@@ -341,7 +341,7 @@ init_declarator_list
 	;
 
 init_declarator
-	: declarator {$$ = $1;}
+	: declarator {$$ = new VariableDeclarator($1);}
 	| declarator '=' initializer {$$ = new VariableAssign($1, $3);}
 	;
 

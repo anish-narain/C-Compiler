@@ -36,3 +36,8 @@ int VariableDeclarator::getSize() const{
 std::string VariableDeclarator::Returnid() const{
   return branchList[0]->Returnid();
 }
+
+
+void VariableDeclarator::isPointer(context &context) const{
+  branchList[0]->isPointer(context);
+}

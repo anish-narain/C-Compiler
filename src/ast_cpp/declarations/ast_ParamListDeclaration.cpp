@@ -33,3 +33,8 @@ void Param_List_Declarator::createParameterMap(context &context) const{
   branchList[0]->createParameterMap(context);
   branchList[1]->createParameterMap(context);
 }
+
+void Param_List_Declarator::isPointer(context &context) const{
+  branchList[0]->isPointer(context);
+  branchList[1]->isPointer(context);
+}

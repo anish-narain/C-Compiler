@@ -8,11 +8,13 @@ public:
     int isFunction = 0;
     std::map<std::string, int> variable_bindings; //<variable_name, reg>
     std::vector<std::string> labels;
-    
+
     std::map<std::string, std::string> function_types; //<function_name, datatype>
     std::map<std::string, std::map<std::string, std::string>> function_parameters; //<function_name, <parameter_name, datatype>>
     std::map<std::string, std::map<std::string, std::string>> function_variables; //<function_name, <variable_name, datatype>>
-    
+    std::map<std::string, std::string> pointer_types; //<pointer_name, pointer_type>
+    std::map<std::string, std::string> variableMap_types; //<variable_name, variable_type>
+
     //Parameter vectors
     std::vector<std::string> parameter_names;
     std::vector<std::string> parameter_types;
@@ -144,6 +146,12 @@ public:
     //Variables
     void set_function_variables(std::string functionId, std::string variableName, std::string type){
         function_variables[functionId][variableName] = type;
+        variableMap_types[variableName] = type;
+    }
+
+    //Pointers
+    void set_pointer_type(std::string pointer_name){
+        pointer_types[pointer_name] = variableMap_types[pointer_name];
     }
 
     //Parameters

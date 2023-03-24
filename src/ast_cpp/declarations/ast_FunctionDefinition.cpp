@@ -36,6 +36,9 @@ void Function_Definition::RISCOutput(std::ostream &dst, context &context, int de
   context.set_function_type(function_id, branchList[0]->getType());
   std::string function_type = context.returnFunctionType(function_id);
 
+  branchList[1]->isPointer(context);
+  branchList[2]->isPointer(context);
+
   branchList[1]->createParameterMap(context); 
   context.addToFunctionParameters(function_id); 
   context.clearParameterVectors(); 
@@ -44,6 +47,9 @@ void Function_Definition::RISCOutput(std::ostream &dst, context &context, int de
   branchList[2]->createVariableMap(context);
   context.addToFunctionVariables(function_id);
   context.clearVariableVectors();
+
+  //context.printfunction_variables(dst);
+
 
   //check for function calls:
   int functionCall = 0;
@@ -110,4 +116,6 @@ int Function_Definition::getSize() const
 {
   return branchList[1]->getSize() + branchList[2]->getSize();
 }
+
+
 

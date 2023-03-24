@@ -3,9 +3,13 @@
     IDENTIFIER f
     Compound Statements [
       TYPE: int      
+      Variable Declaration [
       IDENTIFIER x
+      ]
       TYPE: int      
+      Variable Declaration [
       IDENTIFIER y
+      ]
       Binary Assignment[
       LHS
         IDENTIFIER y

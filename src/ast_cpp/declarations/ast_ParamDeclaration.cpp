@@ -57,3 +57,8 @@ void Param_Declarator::createParameterMap(context& context) const{
     context.addParameterName(var_id);
     context.addParameterType(var_type);
 }
+
+void Param_Declarator::isPointer(context &context) const{
+  branchList[0]->isPointer(context);
+  branchList[1]->isPointer(context);
+}

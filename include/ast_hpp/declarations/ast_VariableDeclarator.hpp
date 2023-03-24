@@ -28,6 +28,8 @@ public:
 
     virtual std::string Returnid() const override; 
 
+    virtual void isPointer(context &context) const override;
+
 };
 
 #endif

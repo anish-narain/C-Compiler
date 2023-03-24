@@ -41,4 +41,8 @@ void Function_Declarator_With_Param::createParameterMap(context &context) const{
   branchList[1]->createParameterMap(context);
 }
 
+void Function_Declarator_With_Param::isPointer(context &context) const{
+  branchList[0]->isPointer(context);
+  branchList[1]->isPointer(context);
+}
 

@@ -1,3 +1,8 @@
+Base Class Reached. ERROR!!! (isPointer)
+Base Class Reached. ERROR!!! (isPointer)
+Base Class Reached. ERROR!!! (isPointer)
+Base Class Reached. ERROR!!! (isPointer)
 Base Class Reached. ERROR!!! (createParameterMap)
 Base Class Reached. ERROR!!! (ReturnId)
-free(): invalid pointer
+terminate called after throwing an instance of 'std::bad_alloc'
+  what():  std::bad_alloc

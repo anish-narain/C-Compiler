@@ -39,3 +39,4 @@ void Function_Call_With_NoArguments::isFunctionCall(context &context) const{
   std::cerr << "REACHED Function_Call_With_NoArguments" << std::endl; 
   context.FunctionCallOccurs();
 }
+

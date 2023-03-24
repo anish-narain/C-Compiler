@@ -27,6 +27,9 @@ void UnaryOp::RISCOutput(std::ostream &dst, context &context, int destReg) const
     if (op == "-"){
         dst << "neg " << context.reg(destReg) << "," << context.reg(destReg) << std::endl;
     }
+    if (op == "*"){
+        dst << "lw " << context.reg(destReg) << ", 0("  << context.reg(destReg) << ")" << std::endl;
+    }
 }
 
 int UnaryOp::getSize() const{
@@ -38,3 +41,5 @@ void UnaryOp::isFunctionCall(context &context) const{
 }
 
 void UnaryOp::createVariableMap(context &context) const{}
+
+void  UnaryOp::isPointer(context &context) const{}

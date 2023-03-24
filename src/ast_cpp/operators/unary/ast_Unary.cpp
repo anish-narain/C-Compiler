@@ -41,3 +41,8 @@ void Unary::isFunctionCall(context &context) const{
   branchList[0]->isFunctionCall(context);
   branchList[1]->isFunctionCall(context);
 }
+
+void  Unary::isPointer(context &context) const{
+  branchList[0]->isPointer(context);
+  branchList[1]->isPointer(context);
+}

@@ -3,14 +3,20 @@
     IDENTIFIER f
     Compound Statements [
       TYPE: int      
+      Variable Declaration [
       IDENTIFIER i
+      ]
       TYPE: int      
+      Variable Declaration [
       Array [
         IDENTIFIER x
         Integer : 8
       ]
+      ]
       TYPE: int      
+      Variable Declaration [
       IDENTIFIER acc
+      ]
       For initilisation [
         Binary Assignment[
         LHS

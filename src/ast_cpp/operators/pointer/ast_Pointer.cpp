@@ -23,3 +23,5 @@ int Pointer::getSize() const{
 void Pointer::isFunctionCall(context &context) const{}
 
 void Pointer::createVariableMap(context &context) const{}
+
+void  Pointer::isPointer(context &context) const{}

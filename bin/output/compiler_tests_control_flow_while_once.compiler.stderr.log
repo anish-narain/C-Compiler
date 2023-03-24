@@ -1,3 +1,7 @@
+Base Class Reached. ERROR!!! (isPointer)
+Base Class Reached. ERROR!!! (isPointer)
+Base Class Reached. ERROR!!! (isPointer)
+Base Class Reached. ERROR!!! (isPointer)
 Base Class Reached. ERROR!!! (createParameterMap)
 Base Class Reached. ERROR!!! (createVariableMap)
 Base Class Reached. ERROR!!! (createVariableMap)
@@ -16,5 +20,3 @@ IdentifierFunctionCall
 Base Class Reached. ERROR!!! (isFunctionCall)
 ReturnFunctionCallReached
 IntFunctionCall
-Variable not found
-Variable not found

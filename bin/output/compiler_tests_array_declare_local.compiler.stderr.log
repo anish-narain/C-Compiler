@@ -1,3 +1,7 @@
+Base Class Reached. ERROR!!! (isPointer)
+Base Class Reached. ERROR!!! (isPointer)
+Base Class Reached. ERROR!!! (isPointer)
+Base Class Reached. ERROR!!! (isPointer)
 Base Class Reached. ERROR!!! (createParameterMap)
 Base Class Reached. ERROR!!! (ReturnId)
 Base Class Reached. ERROR!!! (createVariableMap)
@@ -15,5 +19,4 @@ CFunctionCall
 Base Class Reached. ERROR!!! (isFunctionCall)
 ReturnFunctionCallReached
 IdentifierFunctionCall
-Variable not found
-Variable not found
+Base Class Reached. ERROR!!! (ReturnId)

@@ -32,6 +32,8 @@ public:
 
     virtual void createParameterMap(context &context) const override;
 
+    virtual void isPointer(context &context) const override;
+
 };
 
 #endif

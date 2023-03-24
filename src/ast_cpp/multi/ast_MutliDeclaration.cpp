@@ -40,3 +40,8 @@ void MultiDeclaration::isFunctionCall(context &context) const{
   branchList[1]->isFunctionCall(context);
   
 }
+
+void  MultiDeclaration::isPointer(context &context) const{
+  branchList[0]->isPointer(context);
+  branchList[1]->isPointer(context);
+}

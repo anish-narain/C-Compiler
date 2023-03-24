@@ -43,5 +43,9 @@ void Identifier::isFunctionCall(context &context) const{
   std::cerr << "IdentifierFunctionCall" << std::endl;
 }
 
+void Identifier::isPointer(context &context) const{
+
+}
+
 
 

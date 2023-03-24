@@ -31,6 +31,8 @@ public:
     virtual void createVariableMap(context &context) const override;
 
     virtual void isFunctionCall(context &context) const override;
+
+    //virtual void isPointer(context &context) const override;
 };
 
 #endif

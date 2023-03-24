@@ -27,6 +27,8 @@ public:
 
     virtual void isFunctionCall(context &context) const override;
 
+    virtual void isPointer(context &context) const override;
+
 
 };
 

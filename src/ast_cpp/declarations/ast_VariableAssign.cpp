@@ -51,3 +51,8 @@ void VariableAssign::createVariableMap(context &context) const{
 std::string VariableAssign::Returnid() const{
   return branchList[0]->Returnid();
 }
+
+
+void VariableAssign::isPointer(context &context) const{
+  branchList[0]->isPointer(context);
+}

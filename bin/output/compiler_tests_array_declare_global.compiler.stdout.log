@@ -1,8 +1,10 @@
   New Function [
     TYPE: int    
+    Variable Declaration [
     Array [
       IDENTIFIER x
       Integer : 8
+    ]
     ]
   ]
   New Function [
@@ -16,4 +18,3 @@
   ]
 
 Compiling: compiler_tests/array/declare_global.c
-Compiled to: ./bin/output/compiler_tests_array_declare_global.s
