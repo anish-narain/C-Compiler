@@ -73,7 +73,7 @@ void Add::RISCOutput(std::ostream &dst, context &context, int destReg) const
       dst << "li "<< context.reg(right_reg) << "," << val*multiplier << std::endl;
     }
 
-    std::cerr << type << std::endl; //check if it works
+    //std::cerr << type << std::endl; //check if it works
 
     if (type == "int"){
       dst << "add " << context.reg(destReg) << ", " << context.reg(left_reg) << ", " << context.reg(right_reg) << std::endl;

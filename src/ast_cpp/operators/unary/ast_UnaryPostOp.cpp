@@ -45,3 +45,8 @@ void UnaryPostOp::isFunctionCall(context &context) const{
 void UnaryPostOp::createVariableMap(context &context) const{
   branchList[0]->createVariableMap(context);
 }
+
+std::string UnaryPostOp::Returnid() const{
+}
+
+void  UnaryPostOp::isPointer(context &context) const{}

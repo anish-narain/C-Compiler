@@ -93,9 +93,10 @@ void ValueAssign::RISCOutput(std::ostream &dst, context &context, int destReg) c
 }
 
 std::string ValueAssign::Returnid() const{
-  return branchList[0]->Returnid();
+  return branchList[0]->Returnid()+branchList[1]->Returnid();
 }
 
 void ValueAssign::isPointer(context &context) const{
   branchList[0]->isPointer(context);
+  branchList[1]->isPointer(context);
 }

@@ -44,7 +44,7 @@ void Multiply::RISCOutput(std::ostream &dst, context &context, int destReg) cons
       type = context.returnVarType(id); 
     } 
 
-    std::cerr << type << std::endl; //check if it works
+   // std::cerr << type << std::endl; //check if it works
 
     if (type == "int"){
        dst << "mul " << context.reg(destReg) << ", " << context.reg(left_reg) << ", " << context.reg(right_reg) << std::endl;

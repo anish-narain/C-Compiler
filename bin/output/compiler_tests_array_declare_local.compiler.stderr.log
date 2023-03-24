@@ -16,6 +16,5 @@ TypesFunctionCall
 Base Class Reached. ERROR!!! (isFunctionCall)
 CFunctionCall
 Base Class Reached. ERROR!!! (isFunctionCall)
-ReturnFunctionCallReached
 IdentifierFunctionCall
 Base Class Reached. ERROR!!! (ReturnId)

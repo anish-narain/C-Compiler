@@ -46,7 +46,7 @@ std::string Unary::Returnid() const{
 
 
 void Unary::isFunctionCall(context &context) const{
-  std::cerr << "UnaryFunctionCallReached" << std::endl;
+  //std::cerr << "UnaryFunctionCallReached" << std::endl;
   branchList[0]->isFunctionCall(context);
   branchList[1]->isFunctionCall(context);
 }

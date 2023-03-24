@@ -44,7 +44,7 @@ void Divide::RISCOutput(std::ostream &dst, context &context, int destReg) const
       type = context.returnVarType(id); 
     } 
 
-    std::cerr << type << std::endl; //check if it works
+    //std::cerr << type << std::endl; //check if it works
 
     if (type == "int"){
        dst << "div " << context.reg(destReg) << ", " << context.reg(left_reg) << ", " << context.reg(right_reg) << std::endl;

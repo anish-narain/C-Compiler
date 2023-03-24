@@ -47,7 +47,7 @@ void PointerDeclarator::createVariableMap(context &context) const{
 }
 
 void PointerDeclarator::isPointer(context &context) const{
-  std::cerr <<" is a pointer" << std::endl;
+  //std::cerr <<" is a pointer" << std::endl;
   std::string pointer_name = branchList[1]->Returnid();
   context.set_pointer_type(pointer_name);
   std::cerr << pointer_name << " is a pointer" << std::endl;

@@ -37,10 +37,8 @@ Base Class Reached. ERROR!!! (isFunctionCall)
 Base Class Reached. ERROR!!! (isFunctionCall)
 Base Class Reached. ERROR!!! (isFunctionCall)
 Base Class Reached. ERROR!!! (isFunctionCall)
-ReturnFunctionCallReached
 IdentifierFunctionCall
 Base Class Reached. ERROR!!! (ReturnId)
 Base Class Reached. ERROR!!! (ReturnId)
-Error: Inner key not found.
 terminate called after throwing an instance of 'std::bad_alloc'
   what():  std::bad_alloc

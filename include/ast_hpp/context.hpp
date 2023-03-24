@@ -115,7 +115,7 @@ public:
     int get_var_location(std::string variable_name) const {
         auto it = variable_bindings.find(variable_name);
         if (it == variable_bindings.end()) {
-            std::cerr << "Variable not found" << std::endl;
+            //std::cerr << "Variable not found" << std::endl;
             return -1;
         } 
         return it->second; // return the second item from the map[name
@@ -221,7 +221,7 @@ public:
         }
     
         // If the inner key is not found in any of the inner maps, print an error message and return an empty string
-        std::cerr << "Error: Inner key not found." << std::endl;
+        //std::cerr << "Error: Inner key not found." << std::endl;
         return "";
     }
 
