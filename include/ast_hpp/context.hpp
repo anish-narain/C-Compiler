@@ -115,7 +115,6 @@ public:
     int get_var_location(std::string variable_name) const {
         auto it = variable_bindings.find(variable_name);
         if (it == variable_bindings.end()) {
-            //std::cerr << "Variable not found" << std::endl;
             return -1;
         } 
         return it->second; // return the second item from the map[name
