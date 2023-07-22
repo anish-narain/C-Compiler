@@ -1,5 +1,7 @@
 # C-Compiler #
 
+<img width="550" alt="image" src="https://github.com/anish-narain/C-Compiler/assets/69715492/247b9186-f892-46c0-86de-5d4d3c5188ec">
+
 In this project, significant progress was made by achieving several milestones. The project started with the utilization of a template lexer and parser obtained from https://www.lysator.liu.se/c/ANSI-C-grammar-y.html and https://www.lysator.liu.se/c/ANSI-C-grammar-l.html, which were adapted to meet the specific requirements. With the parser structure in place, Abstract Syntax Trees (ASTs) were successfully created for various basic test cases.
 
 The process of building the ASTs involved the creation of header (.hpp) and implementation (.cpp) files, with Object-Oriented Programming (OOP) concepts like classes, constructors, methods, and inheritance being utilized. By employing inheritance, a hierarchical structure was established for representing the AST nodes, where the base node class was inherited by other classes.
