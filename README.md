@@ -16,6 +16,8 @@ In summary, the following key aspects were accomplished during this progress:
 4. Code generation for RISC-V: A robust process was developed to generate RISC-V assembly code from the constructed ASTs, allowing for the translation of C code into executable RISC-V machine code.
 5. Context handling: A context mechanism was implemented to manage and propagate essential information throughout the code generation process, ensuring the generation of correct and coherent RISC-V assembly output.
 
+<img width="1250" alt="image" src="https://github.com/anish-narain/C-Compiler/assets/69715492/52c0b652-0e88-42b1-a7f8-e6b835f6a78d">
+
 Project Management was a key contributor to the success of this project. NotionRecording is a recording, displaying how concepts of scrum and sprint planning were implemented using Notion.
 
 
